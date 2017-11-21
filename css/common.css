@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document
+Use for: aseoe.com   
+Version: 1.0
+Date: 2016/6/21
+Author:chenjie
+*/
+
+body, div, h1, h2, h3, h4, h5, h6, p, blockquote, dl, dt, dd, ul, ol, li, fieldset, form, tr, th, td, center, input, button, textarea{padding:0;margin:0}/*基础设置ˉ*/
+table { border-collapse: collapse; border-spacing: 0;}
+fieldset, img { border: 0;}
+ul,li{list-style:none;}
+h1, h2, h3, h4, h5, h6 {font-size: 100%; }
+
+/* 左右浮动 */
+.left{ float:left;}
+.right { float:right;}
+
+.txthide{text-indent:-9999em;overflow:hidden; line-height:0; font-size:0;}
+
+/* 相对定位 */
+.relative { position:relative;}
+.absolute { position:absolute;}
+
+/* 图片清除 */
+img{ vertical-align: top; border: none;}
+
+/* 清除浮动 */
+.clearfix:after{ content:""; height:0; visibility:hidden; display:block; clear:both;}
+.clearfix{ zoom:1;}
+
+/* 背景自适配样式 */
+ .ba{height:auto; overflow:hidden; width:100%; background:#fff url(images/banner.jpg) no-repeat top center; padding-top: 25%; background-size: 100% auto;}
+
+/*表单共用样式*/
+button,input,select,textarea{ font-size:12px;}
+input,textarea,img,select{outline:medium;}
+textarea{ resize:none;}
+
+input:hover {border-color: #00a4b7;}
+input:focus{border-color: #00a4b7;}
+textarea:focus{border-color: #00a4b7;}
+select:hover{ border-color: #00a4b7;}
+input{ padding-left:8px;}
+textarea{ padding:5px; line-height:22px;}
+
+/* a */
+a {color:#7c7c7c; text-decoration:none;}
+a:hover {color:#7c7c7c;} 
+
+body{font-size:12px; font-family:"Microsoft Yahei";}
+

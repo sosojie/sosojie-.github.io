@@ -1,108 +1,147 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>360</title>
-	<link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-	<div id="fullpage">
-		<!-- 第一屏 -->
-		<div class="section first">
-			<!-- LOGO -->
-			<div class="logo"></div>
-			<!-- 文字 -->
-			<div class="text">
-				<img src="./images/text_1.png" alt="">
-				<img src="./images/text_2.png" alt="">
-				<img src="./images/text_3.png" alt="">
-				<img src="./images/text_4.png" alt="">
-				<img src="./images/text_5.png" alt="">
-				<img src="./images/text_6.png" alt="">
-				<img src="./images/text_7.png" alt="">
-				<img src="./images/text_8.png" alt="">
-			</div>
-			<!-- 信息 -->
-			<div class="info"></div>
-		</div>
-		<!-- 第二屏 -->
-		<div class="section second">
-			<!-- 盾牌 -->
-			<div class="shield">
-				<img src="./images/shield_1.png" alt="">
-				<img src="./images/shield_2.png" alt="">
-				<img src="./images/shield_3.png" alt="">
-				<img src="./images/shield_4.png" alt="">
-				<img src="./images/shield_5.png" alt="">
-				<img src="./images/shield_6.png" alt="">
-				<img src="./images/shield_7.png" alt="">
-				<img src="./images/shield_8.png" alt="">
-				<img src="./images/shield_9.png" alt="">
-			</div>
-			<!-- 信息 -->
-			<div class="info"></div>
-		</div>
-		<!-- 第三屏 -->
-		<div class="section third">
-			<!-- 信息 -->
-			<div class="info"></div>
-			<!-- 圆环 -->
-			<div class="circle"></div>
-			<!-- 火箭 -->
-			<div class="rocket"></div>
-		</div>
-		<!-- 第四屏 -->
-		<div class="section fourth">
-			<!-- 搜索 -->
-			<div class="search">
-				<div class="key"></div>
-				<div class="input"></div>
-				<div class="wrap">
-					<div class="result"></div>
-				</div>
-			</div>
-			<!-- 信息 -->
-			<div class="info"></div>
-		</div>
-		<!-- 第五屏 -->
-		<div class="section fifth">
-			<!-- 信息 -->
-			<div class="info"></div>
-			<!-- 浏览器 -->
-			<div class="broswer">
-				<!-- 四边框 -->
-				<div class="leftline"></div>
-				<div class="topline"></div>
-				<div class="rightline"></div>
-				<div class="bottomline"></div>
-				<!-- 工具栏 -->
-				<div class="toolbar"></div>
-				<!-- 边框盒子 -->
-				<div class="box">
-					<span></span>
-				</div>
-				<div class="line"></div>
-				<!-- 其它 -->
-				<div class="extra"></div>
-			</div>
-		</div>
-	</div>
-	<script src="./js/jquery.min.js"></script>
-	<script src="./js/jquery.fullPage.min.js"></script>
-	<script>
-		$('#fullpage').fullpage({
-			// 设置背景色
-			sectionsColor : ['#0da5d6', '#2AB561', '#DE8910', '#16BA9D', '#0DA5D6'],
-			afterLoad: function (anchorLink, index) {
-				$('.section').removeClass('current');
-				
-				// 延时100毫秒执行
-				setTimeout(function () {
-					$('.section').eq(index - 1).addClass('current');
-				}, 100);
-			}
-		});
-	</script>
+<meta charset="utf-8">
+<!-- 关键字 -->
+<meta name="keywords" content="陈杰人个网站">
+<!-- 网页描述 -->
+<meta name="description" content="陈杰人个网站">
+<!-- 开发者名字 -->
+<meta name="Author" content="chenjie">
+<!-- icon图标 -->
+<link rel="icon" href="favicon.ico">
+<!-- 链接外部样式表文件 -->
+<link rel="stylesheet" href="css/common.css"/>
+<link rel="stylesheet" href="css/style.css"/>
+<!--  条件注释 只有ie能够识别-->
+<!--[if lte ie 8]>
+        <script src="js/html5shiv.min.js"></script>
+<![endif]-->
 
+<title>陈杰人个网站</title>
+
+
+</head>
+
+<body>
+<!-- 头部 -->
+  <div class="header">
+    <div class="w1024">
+        <div class="logo">
+          <img src="images/logo.png" height="55" width="57" alt="">
+        </div>
+        <div class="nav">
+          <ul>
+            <li class="current"><a href="">首页</a></li>
+            <li><a href="#about">关于</a></li>
+            <li><a href="#main">案例</a></li>
+            <li><a href="#footer">联系</a></li>
+          </ul>
+        </div>
+    </div>    
+  </div>
+  <!-- banner -->
+  <div class="banner"></div>
+  <!-- 关于我 -->
+  <div id="about" class="about">
+      <div class="about_content w1024">
+            <div class="about_zi">
+              <h2></h2>
+              <p>
+                我叫陈杰，从事网页设计相关工作8年，有丰富的企业建站，后台系统项目经验，<br>
+在工作中负责页面设计加页面排版，熟悉建站、后台系统的相关流程，有大型的后台系统的开发经验,对网页里面<br>
+用户体验方面有丰富的经验，熟练掌握PS、网页排版（常用的js效果）、html5+css3、web移动端排版、<br>
+响应式布局相关技术,服务的大型的项目有广州南沙进口溯源系统、液化汽监管系统、液化汽充装系统、
+              </p>
+              <div class="about_tu">
+                <ul>
+                  <li><img src="images/about_ps.jpg" height="60" width="60" alt=""></li>
+                  <li><img src="images/about_dw.jpg" height="60" width="60" alt=""></li>
+                  <li><img src="images/about_h5.jpg" height="60" width="60" alt=""></li>
+                </ul>
+              </div>
+            </div>
+      </div>
+  </div>
+  <!-- 主体部分 -->
+  <div id="main" class="main">
+      <div class="main_content w1024">
+        <h2>个人案例<p>每一个作品，都是用心去做的</p></h2>
+        <ul>
+          <li><a href="http://www.iflashbuy.com/" target='_blank'><img src="images/main_tu1.png" height="240" width="320" alt=""></a></li>
+          <li><a href="http://www.chinawidth.cn/" target='_blank'><img src="images/main_tu2.png" height="240" width="320" alt=""></a></li>
+          <li><a href="http://www.z-code.cn/" target='_blank'><img src="images/main_tu3.png" height="240" width="320" alt=""></a></li>
+          <li><a href=""><img src="images/main_tu4.png" height="240" width="320" alt=""></a></li>
+          <li><a href=""><img src="images/main_tu5.png" height="240" width="320" alt=""></a></li>
+          <li><a href=""><img src="images/main_tu6.png" height="240" width="320" alt=""></a></li>
+          <li><a href="http://218.108.122.10/fyAdmin" target='_blank'><img src="images/main_tu7.png" height="240" width="320" alt=""></a></li>
+          <li><a href=""><img src="images/main_tu8.png" height="240" width="320" alt=""></a></li>
+          <li><a href=""><img src="images/main_tu9.png" height="240" width="320" alt=""></a></li>
+        </ul>
+      </div>
+  </div>
+  <!-- 底部 -->
+  <div id="footer" class="footer">
+    <div class="footer_conter w1024">
+        <div class="footer_2">
+          <h3>光阴的故事里，希望有你参与，愿我们成为朋友，一起写下旅途故事！</h3>
+          <ul>
+            <li>
+              <p class="mar10"><img src="images/bottom_tu.png" height="24" width="22" alt=""></p>
+              <p>865286182</p>
+            </li>
+            <li>
+              <p class="mar10"><img src="images/bottom_tu2.png" height="24" width="22" alt=""></p>
+              <p>18702092475</p>
+            </li>
+            <li>
+              <p class="mar10"><img src="images/bottom_tu3.png" height="24" width="22" alt=""></p>
+              <p>865286182@qq.com</p>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </div>
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script>
+  $(function(){
+    /*固定导航栏*/
+    var headerTop = $('.header').height();
+    $(window).scroll(function(event) {
+      var docScrollTop = $(document).scrollTop();
+      if(docScrollTop>=headerTop){
+        $('.header').css({
+          'position':'fixed',
+          'top':0
+        });
+        $('.banner').css('margin-top',$('.header').height());
+      }else{
+        $('.header').css({
+          'position':'static'
+        })
+        $('.banner').css('margin-top',0);
+      }
+    });
+
+    /*导航切换效果*/
+    $('.nav li').click(function(){
+      $(this).addClass('current').siblings().removeClass('current');
+    });
+
+    /*案例效果*/
+     $('.main_content li').append('<p></p>');
+     var arr = new Array('闪购官网','宽度信息官网','真知码官网','ICO溯源APP','中国进出口商品溯源系统','ICO溯源码管理平台','瓶装液化气充装管理','广州南洲水经营管理平台','真知码APP');
+     $('.main_content li p').each(function(index, el) {
+       $(this).html(arr[index]);
+     });
+     $('.main_content li').mouseenter(function() {
+       $(this).children('p').stop().animate({bottom:0},200);
+     }).mouseleave(function() {
+        $(this).children('p').stop().animate({bottom:-40},200);
+    });
+
+
+  })
+  </script>
 </body>
 </html>
