@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>印码管理</title>
+<link href="css/common.css" rel="stylesheet" />
+<link href="css/index.css" rel="stylesheet" />
+<style>
+.ycgl_tc_1{margin:0px auto;}
+.ycgl_tc_1 li{ overflow:hidden;}
+.yyzx_lr a{ color:#1b66c7;}
+
+</style>
+</head>
+
+<body>
+
+<!--新增 弹窗 -->
+         <div id="light3" class="ycgl_tc yctc_498">
+            <!--列表 -->
+            <div class="htyg_tc">
+                <ul>
+                    <li class="htyg_tc_1">新增印码</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light3').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/htyg_tc.png"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            <div class="yctc_458 ycgl_tc_1">
+                <ul>
+                     <li>
+                         <p class="right_yhgl"><em style="color: #ff0000;">*</em>批次 </p>
+                         <p><input type="text" name="textfield" class="input_400" id="textfield" /></p>
+                     </li>
+                     <div class="clear"></div>
+                       <li>
+                         <p class="right_yhgl"><em style="color: #ff0000;">*</em>标签类型 </p>
+                         <p>
+                             <span style="margin-top: 10px;"><input type="radio" name="radio" id="radio" value="radio" /></span>
+                             <span style="margin-left: 5px;">单层码 </span>
+                         </p>
+                          <p>
+                             <span style="margin-top: 10px;"><input type="radio" name="radio" id="radio" value="radio" /></span>
+                             <span style="margin-left: 5px;">双层码</span>
+                         </p>
+                          <p>
+                             <span style="margin-top: 10px;"><input type="radio" name="radio" id="radio" value="radio" /></span>
+                             <span style="margin-left: 5px;">刮刮卡</span>
+                         </p>
+                     </li>
+                     <div class="clear"></div>
+                     <li>
+                         <p class="right_yhgl"><em style="color: #ff0000;">*</em>标签规格 </p>
+                         <p><select name="select" class="select_400" id="select"><option>全部</option></select></p>
+                     </li>
+                     <div class="clear"></div>
+                     <li>
+                         <p class="right_yhgl"><em style="color: #ff0000;">*</em>每卷数量 </p>
+                         <p><input type="text" name="textfield" class="input_400" id="textfield" /></p>
+                     </li>
+                     <div class="clear"></div>
+                     <li>
+                         <p class="right_yhgl"><em style="color: #ff0000;">*</em>卷数 </p>
+                         <p><input type="text" name="textfield" class="input_400" id="textfield" /></p>
+                     </li>
+                     <div class="clear"></div>
+                     <li>
+                         <p class="right_yhgl"><em style="color: #ff0000;">*</em>用途 </p>
+                         <p><textarea name="textarea" id="textarea" class="textarea_352" cols="45" rows="5"></textarea></p>
+                     </li>
+                     <div class="clear"></div>
+                     
+
+                     <li style="margin-top: 30px; margin-left: 140px;">
+                     <p class="ybjk_pcgl_2" style="margin-right:0px;"><a href="#">保存</a></p>
+                    <p class="ybjk_pcgl_1" style="margin-right:0px;"><a href = "javascript:void(0)" onclick = "document.getElementById('light3').style.display='none';document.getElementById('fade').style.display='none'">关闭</a></p> 
+                     </li>
+                     
+                </ul>
+            </div>
+         
+         </div> 
+        <div id="fade" class="black_overlay"></div>         
+        
+<!--新增 弹窗 -->
+
+<!--头部-->
+<div class="top">
+	<div class="top_1">
+    	<div class="top_2"><a href="index.html"><img src="images/logo.png"/></a></div>
+    	<div class="sunnva">heyang 您好! <a href="#">修改密码</a> <a href="#">退出登录</a></div>
+    </div>
+</div>
+<!--头部-->
+
+<!--主框架-->
+<div class="ymfw-container">
+
+	<!--用码服务左边-->
+	<div class="ymfw-left">
+    
+       <!--左边1--> 
+      <div class="ymfw-left_1">
+          <h2><p><img src="images/ymfw-left_1.png"/></p> 
+          <p class="ymfw-left_2">数据管理</p></h2>
+          <ul>
+            <li><a href="wygl.html" >企业管理</a></li>
+            <li><a href="jsgl.html">角色管理</a></li>
+            <li><a href="yhgl.html">用户管理</a></li>
+          </ul>
+        </div>
+        <!--左边1--> 
+         <!--左边1--> 
+        <div class="ymfw-left_1">
+            <h2><p><img src="images/ymfw-left_1.png"/></p> 
+            <p class="ymfw-left_2">码管理</p></h2>
+            <ul>
+              <li><a href="jmgl.html">进码管理</a></li>
+              <li><a href="ymgl.html" class="ymfw-left_5">印码管理</a></li>
+              <li><a href="ddgl.html">订单管理</a></li>
+            </ul>
+            
+        </div>
+         <!--左边1--> 
+      <!--左边1--> 
+        <div class="ymfw-left_1">
+            <h2><p><img src="images/ymfw-left_1.png"/></p> 
+            <p class="ymfw-left_2">内容管理</p></h2>
+            <ul>
+              <li><a href="xtxx.html">溯源资讯</a></li>
+              <li><a href="xtgg.html">系统公告</a></li>
+            </ul>
+            
+        </div>
+         <!--左边1--> 
+         <!--左边1--> 
+      <div class="ymfw-left_1" style="padding-bottom:0px; border-bottom:none;">
+          <h2><p><img src="images/ymfw-left_1.png"/></p> 
+            <p class="ymfw-left_2">业务监管</p></h2>
+            <ul>
+              <li><a href="smtj.html">扫码统计</a></li>
+              <li><a href="ymtj.html">用码统计</a></li>
+            </ul>
+            
+        </div>
+         <!--左边1--> 
+
+     </div>	
+    <!--用码服务左边-->  
+    
+    <!--用码服务右边-->
+	<div class="ymfw-right">
+		<div class="ymfw-right_1">印码管理</div>
+
+        <div class=" ymfw-right-zgj">
+        	<div class="yyzx">
+                <p class="yyzx_ny">
+                    <a href ="javascript:void(0)" class="btn_printing">新增印码</a>
+                </p>
+                <p class="yyzx_nf"><a href ="javascript:void(0)" class="btn_code">验收标签</a></p>
+            </div>
+            <div class="jmgl">
+                <p>进码总数 <em class="jmgl_1">1200</em></p>
+                <p>印码总数 <em class="jmgl_1">1200</em></p>
+                <p>库存总数 <em class="jmgl_1">1200</em></p>
+            </div>
+            <div class="ymfw-right-zgj_4" style="height: 40px; ">
+            	<ul>
+                	<li>
+                    <p>日期范围</p> 
+                    <p>
+                        <span><input type="text" name="textfield" class="input_179" id="textfield" /></span>
+                        <span>到</span>
+                        <span><input type="text" name="textfield" class="input_179" id="textfield" /></span>
+                    </p> 
+                    </li>
+                    
+                    <li class="ymfw-right-zgj_4r"><p><a href="#">查询</a></p> </li>
+                </ul>
+           </div>
+           <div class="yyzx_lr" style="border-top: 1px solid #ddd; border-left: 1px solid #ddd;">
+                <table>
+                    <tr>
+                        <th width="120">日期</th>
+                        <th width="68">批次</th>
+                        <th width="252" style="width:190px;">标签规格</th>
+                        <th width="90">用途</th>
+                        <th width="90">每卷数量</th>
+                        <th width="68">卷数</th>
+                        <th width="80">印码数量</th>
+                        <th width="80"> 防伪类型</th>
+                        <th width="80"> 印码状态</th>
+                        <th width="68">操作</th>
+                    </tr>
+                    <tr>
+                        <td>2014-12-20</td>
+                        <td>1</td>
+                        <td><p class="ymgl_252" style="width:190px;">30*30防水不干胶</p></td>
+                        <td>镀膜测试</td>
+                        <td>1000</td>
+                        <td>10</td>
+                        <td>2000</td>
+                        <td>单层码</td>
+                        <td>已印码</td>
+                        <td><span class="ymfw-right-yhgl">
+                        <a href ="#">导出</a></span> </td>
+                    </tr>
+                </table>
+             </div>
+              <div class="yyzx_1" style="margin-right: 20px;">
+
+                        <p class="yyzx_2"><a href="#"></a></p>
+                        <p style="margin-left:5px; margin-right:5px;">1/10</p>
+                        <p class="yyzx_3"><a href="#"></a></p>
+                        <p style="margin-left:12px; margin-right:8px;"><input type="text" name="textfield" class="input_58" id="textfield" /></p>
+                        <p class="ymfw-right-zgj_7"><a href="#">跳转</a></p>
+               </div>
+          </div>
+            <div class="clear"></div>
+        </div>
+    </div>	
+    <!--用码服务右边-->  
+    
+</div>
+<!--主框架-->
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="js/layer/layer.js"></script>
+<script type="text/javascript" src="js/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="js/validation.js"></script>
+<script type="text/javascript" src="js/common.js"></script> 
+<script type="text/javascript">
+
+//验收标签
+$('a.btn_code').on('click',function(){dialogAdd(this);});
+function dialogAdd(myobj){
+  var id=$(myobj).attr('data-id');
+  var content='<div class="ycgl_tc_1">'+
+                   '<ul>'+
+                       '<li style=" line-height:22px; margin-top:0px;">'+
+                       		'<p class="yspq">验收时间：2016-11-08</p> <p class="yspq" style=" margin-right:0;">验收人：许北雄</p>'+
+                       '</li>'+
+					    '<li style=" line-height:22px;" class="pqzd">'+
+                        	'<p style=" margin-right:40px;"><label><span class="yspq_2"><input type="radio" name="radio" checked="true" id="radio" value="radio" /></span>手动清点<span></span></label></p>'+
+							'<p><label><span class="yspq_2"><input type="radio" name="radio" id="radio" value="add" /></span>自动清点<span></span></label></p>'+
+                       '</li>'+
+					   '<li style=" line-height:22px;" class="bqzd_div">'+
+                        	'<div class="bqzd_divt"><p style=" margin-right:0px; margin-bottom:20px;"><span>验证标签：</span> <span><input type="text" style=" width:219px;"  name="zipcode" class="input_179" /></span> <span class="pqzd_3" style=" margin-left:10px; margin-right:10px;"><a href="javascript:void(0)">添加</a></span> <span class="pqzd_3"><a href="javascript:void(0)">扫下一卷</a></span></p><div class="clear"></div><div class="qy_ddglqk_2"><table><tr><th width="150">卷号</th><th width="150">码值</th><th> 卷内序号</th><th>操作</th></tr><tr><td>JB-201608110014</td> <td>4253452345234524</td> <td>1</td> <td><a href ="javascript:void(0)" class="btn_del" style=" color:#1b66c7;">删除</a></td></tr></table></div></div> '+
+							'<div class="bqzd_divt" style=" display:none;"><p style=" margin-right:0px; margin-bottom:10px;"><span>设定连扫次数：</span> <span><input type="text" style=" width:277px;"  name="zipcode" class="input_179" /></span> <span class="pqzd_3" style=" margin-left:10px; margin-right:10px;"><a href="javascript:void(0)">确定</a></span></p><div class="clear"></div><p style=" margin-right:0px; margin-bottom:20px;"><span>验证标签：</span> <span><input type="text" style=" width:305px;"  name="zipcode" class="input_179" /></span> <span class="pqzd_3" style=" margin-left:10px; margin-right:10px;"><a href="javascript:void(0)">添加</a></span></p><div class="clear"></div><div class="qy_ddglqk_2"><table><tr><th width="150">卷号</th><th width="150">码值</th><th> 卷内序号</th><th>操作</th></tr><tr><td>JB-201608110014</td> <td>4253452345234524</td> <td>1</td> <td><a href ="javascript:void(0)" class="btn_del" style=" color:#1b66c7;">删除</a></td></tr></table></div></div>'+
+                       '</li>'+
+                '</ul>'+
+            '</div>';
+  fyDialogCode({
+    layer:top.layer,
+    title:'验收标签',
+    width:'520px',
+	height:'400px',
+    content:content,
+    handleSuccess:function(layero,index){/*弹窗出现后回调*/
+		 $('input.btn_ok',layero).val('验收');
+		//删除
+		$('a.btn_del').on('click',function(){
+			fyConfirm({
+				layer:layer,
+				content:'确定删除标签吗？',
+				handleOk:function(){/*点【确定】按钮回调*/},
+				handleCancel:function(){/*点【取消】按钮回调*/}
+			});
+		});
+		
+		//滑动门效果
+		$('.pqzd p').on('click',function(){
+			var index = $(this).index();
+			$('.bqzd_div .bqzd_divt').eq(index).show().siblings().hide();
+		})
+    },
+    handleOk:function(erro,layero,index){
+      /*点【保存】按钮回调*/
+      console.log(formdata);
+	  
+	if(!formValid(formdata,erro)){
+		return false;
+	}
+      //到此检测通过，提交form到后端
+      var params={
+        url:'',
+        type:'post',
+        data:formdata,
+        success:function(res){
+          console.log(res);
+        },
+        dataType:'json'
+      };
+	   var waiting_obj=new waiting({doc:document,layer:layer});
+  	   waiting_obj.start();
+      //setTimeout(function(){waiting_obj.stop();},2000);//处理完成后，关闭waiting_obj.stop();
+      $.ajax(params);
+    },
+    handleCancel:function(layero,index){
+      /*点【取消】按钮回调*/
+    }
+  });
+}
+</script>
+</body>
+</html>

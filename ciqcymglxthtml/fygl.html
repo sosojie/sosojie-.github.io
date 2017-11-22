@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>返佣管理</title>
+<link href="css/common.css" rel="stylesheet" />
+<link href="css/index.css" rel="stylesheet" />
+<style>
+.ycgl_tc_1{margin:0px 20px;}
+.ycgl_tc_1 li{ overflow:hidden;}
+.yyzx_lr a{ color:#1b66c7;}
+.fygl-dz{ margin-left:10px;}
+.fygl-dz a{ width: 100px;height: 28px; display: block;font-family: "微软雅黑";color: #fff;background-image:linear-gradient(#2f7de2,#1b66c7); text-align: center;-moz-border-radius: 5px;-webkit-border-radius: 5px;
+  border-radius: 5px;line-height: 28px; font-size:12px;}
+.fygl-dz a:hover{ background-image:linear-gradient(#1b66c7,#2f7de2);}
+
+</style>
+
+</head>
+
+<body>
+<!--头部-->
+<div class="top">
+	<div class="top_1">
+    	<div class="top_2"><img src="images/logo.png"/></div>
+    	<div class="sunnva">heyang 您好! <a href="#">修改密码</a> <a href="#">退出登录</a></div>
+    </div>
+</div>
+<!--头部-->
+
+<!--主框架-->
+<div class="ymfw-container">
+
+	<!--用码服务左边-->
+	<div class="ymfw-left">
+    <!--左边1--> 
+        <div class="ymfw-left_1">
+            <h2><p><img src="images/ymfw-left_1.png"/></p> 
+            <p class="ymfw-left_2">在线签约</p></h2>
+            <ul>
+              <li><a href="zxcy_htbi.html" >合同备案</a></li>
+              <li><a href="zxcy_ddgl.html">订单管理 </a></li>
+              <li><a href="zxcy_czgl.html">充值管理</a></li>
+            </ul>
+            
+        </div>
+         <!--左边1--> 
+         <!--左边2--> 
+        <div class="ymfw-left_1">
+            <h2><p><img src="images/ymfw-left_1.png"/></p> 
+            <p class="ymfw-left_2">码管理</p></h2>
+            <ul>
+              <li><a href="ddgl.html">订单管理</a></li>
+              <li><a href="mzdcx.html">码状态查询</a></li>
+            </ul>
+            
+        </div>
+         <!--左边2--> 
+         <!--左边3--> 
+        <div class="ymfw-left_1">
+            <h2><p><img src="images/ymfw-left_1.png"/></p> 
+            <p class="ymfw-left_2">业务管理</p></h2>
+            <ul>
+              <li><a href="fygl.html" class="ymfw-left_5">返佣管理</a></li>
+              <li><a href="shdzgl.html">收货地址管理</a></li>
+              <li><a href="wtfwsh.html">委托服务审核</a></li>
+            </ul>
+            
+        </div>
+         <!--左边3--> 
+          <!--左边4--> 
+        <div class="ymfw-left_1" style="border-bottom:0;">
+            <h2><p><img src="images/ymfw-left_1.png"/></p> 
+            <p class="ymfw-left_2">真知码数据采集管理</p></h2>
+            <ul>
+              <li><a href="zzmsysjgl.html">真知码数据采集管理</a></li>
+            </ul>
+            
+        </div>
+         <!--左边4-->      
+  </div>	
+    <!--用码服务左边-->  
+    
+    <!--用码服务右边-->
+	<div class="ymfw-right">
+		<div class="ymfw-right_1">返佣管理</div>
+        	 <div class="yyzx">
+                <p class="yyzx_ny"><a href ="javascript:void(0)" >导出Excel</a></p>
+            </div>    
+             <div class="ymfw-right-zgj_4" style="margin-top:20px;">
+            	<ul>
+                	<li style="margin-right:10px;">
+                           <p>企业名称</p> 
+                           <p><input type="text"  name="textfield" class="input_179" id="textfield" /></p> 
+                    </li>
+                               
+                                 
+                   <li style="margin-right:10px;">
+                            <p>日期</p> 
+                            <p>
+                                <span><input type="text" name="begin_time" class="input_179 Wdate" id="textfield" onfocus="WdatePicker();" /></span>
+                                <span>到</span>
+                                <span><input type="text" name="end_time" class="input_179 Wdate" id="textfield" onfocus="WdatePicker();" /></span>
+                           </p> 
+                     </li>
+                    <li class="ymfw-right-zgj_4r"><p><a href="#">查询</a></p> <p><a href="#">重置</a></p> </li>
+                </ul>
+           </div>   
+        	<div class=" ymfw-right-zgj">
+        	<div class="qy_czgl" style="margin-top:10px;">
+            	<ul>
+                    <li class="qy_czgl_mr">待结算</li>
+                    <li>已结算</li>
+                    <p style="float: right; margin-left:50px;">总计：<span style=" color:#f00;">25</span>笔<span style="margin-left:20px; color:#f00;">2515</span>元</p>
+                </ul>
+            </div>
+            
+            <div class="qy_czgl_kj">
+            	<!--切换1-->
+            	<div class="qy_czgl_lr">
+                         <div class="yyzx_lr" style=" border-left: 1px solid #ddd; border-top: 1px solid #ddd; margin-top:0px;">
+                            <table>
+                                <tr>
+                                    <th width="200">开始日期</th>
+                                    <th width="200">结束日期</th>
+                                    <th width="200">码数量</th>
+                                    <th width="200">返佣</th>
+                                    <th width="100">操作</th>
+                                </tr>
+                                <tr>
+                                    <td>卓志</td>
+                                    <td>民营</td>
+                                    <td>卓志</td>
+                                    <td>2016-8-23</td>
+                                    <td>
+                                    <span ><a href ="javascript:void(0)" class="btn_dz">对帐</a></span>
+                                    </td>
+                                </tr>
+                            </table>
+                     </div>
+             			<div class="yyzx_1" style="margin-right: 20px;">
+
+                        <p class="yyzx_2"><a href="#"></a></p>
+                        <p style="margin-left:5px; margin-right:5px;">1/10</p>
+                        <p class="yyzx_3"><a href="#"></a></p>
+                        <p style="margin-left:12px; margin-right:8px;"><input type="text" name="textfield" class="input_58" id="textfield" /></p>
+                        <p class="ymfw-right-zgj_7"><a href="#">跳转</a></p>
+               </div>
+                </div>
+                <!--切换1 end-->
+                
+                <!--切换2 -->
+                <div class="qy_czgl_lr" style="display:none;">
+                        <div class="yyzx_lr" style=" border-left: 1px solid #ddd; border-top: 1px solid #ddd; margin-top:0px;">
+                            <table>
+                                <tr>
+                                    <th width="200">开始日期</th>
+                                    <th width="200">结束日期</th>
+                                    <th width="200">码数量</th>
+                                    <th width="200">返佣</th>
+                                    <th width="100">操作</th>
+                                </tr>
+                                <tr>
+                                    <td>卓志</td>
+                                    <td>民营</td>
+                                    <td>卓志</td>
+                                    <td>2016-8-23</td>
+                                    <td>
+                                    <span ><a href ="javascript:void(0)" class="btn_dz">对帐</a></span>
+                                    </td>
+                                </tr>
+                            </table>
+                     </div>
+             			<div class="yyzx_1" style="margin-right: 20px;">
+
+                        <p class="yyzx_2"><a href="#"></a></p>
+                        <p style="margin-left:5px; margin-right:5px;">1/10</p>
+                        <p class="yyzx_3"><a href="#"></a></p>
+                        <p style="margin-left:12px; margin-right:8px;"><input type="text" name="textfield" class="input_58" id="textfield" /></p>
+                        <p class="ymfw-right-zgj_7"><a href="#">跳转</a></p>
+               </div>
+                </div>
+                 <!--切换2 end -->
+                 
+            </div>
+            
+            <div class="clear"></div>
+        </div>
+    </div>	
+    <!--用码服务右边-->  
+    
+</div>
+<!--主框架-->
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="js/layer/layer.js"></script>
+<script type="text/javascript" src="js/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="js/validation.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+//对帐
+$('a.btn_dz').on('click',function(){dialogAddv(this);});
+function dialogAddv(myobj){
+  var id=$(myobj).attr('data-id');
+  var content='<div class="ycgl_tc_1">'+
+                   '<ul>'+
+                        '<li style=" line-height:22px; margin-top:20px;">'+
+                       		'<p style=" margin-right:0;"><span>服务企业：</span> <span>广东卓志供应链服务集团有限公司</span> <span class="fygl-dz"><a href ="javascript:void(0)" class="btn_view">查看返佣规则</a></span> </p>'+
+                       '</li>'+
+					   '<li style=" line-height:22px;">'+
+                       		'<p style=" margin-right:0; width:250px;"><span >开始日期：</span> <span>2016-07-23</span></p>'+
+							'<p style=" margin-right:0;"><span class="yygl_1xz">发码数量：</span> <span>100000</span> <span style=" margin-left:10px;">枚</span></p>'+
+                       '</li>'+
+					  '<li style=" line-height:22px;">'+
+                       		'<p style=" margin-right:0; width:250px;"><span >结束日期：</span> <span>2016-07-23</span></p>'+
+							'<p style=" margin-right:0;"><span class="yygl_1xz">返佣金额：</span> <span>410</span>  <span style=" margin-left:10px;">元</span></p>'+
+                       '</li>'+
+					   '<li style=" border-left: 1px solid #ddd; border-top: 1px solid #ddd;">'+
+							'<table><tr> <th width="170">用码企业</th> <th width="170">发码批次</th> <th width="125">发码日期</th> <th width="105">本次发码量</th> <th width="105">累计码量</th> <th width="125">返佣费率（元）</th> <th width="105">返佣</th> </tr><tr><td><p class="white-space" style=" width:150px;">100</p></td> <td><p class="white-space" style=" width:150px;">100</p></td> <td>2016-08-23</td> <td>100</td> <td>100</td> <td>10000</td> <td>0.111</td> </tr></table>'+
+					  '</li>'+
+					    
+                '</ul>'+
+            '</div><div class="footer"><div class="error_box" style=" margin-top:10px;"></div><ul><li><input type="button" value="导出Excel" class="btn_ok"></li><li><input type="button" value="关闭" class="btn_cancel"></li></ul></div>';
+  fyDialogFinancial({
+    layer:top.layer,
+    title:'返佣对帐',
+    width:'920px',
+	height:'350px',
+    content:content,
+    handleSuccess:function(layero,index){/*弹窗出现后回调*/
+		//查看返佣规则
+		$('a.btn_view').on('click',function(){dialogView(this);});
+		function dialogView(myobj){
+		  var id=$(myobj).attr('data-id');
+			var content='<div class="ycgl_tc_1">'+
+							 '<ul>'+
+							   '<li style=" border-left: 1px solid #ddd; border-top: 1px solid #ddd;">'+
+									'<table><tr> <th width="180">上限</th> <th width="180">下限</th> <th width="180">返佣（元）</th> </tr><tr><td>100</td> <td>10000</td> <td>0.111</td> </tr></table>'+
+							   '</li>'+
+						'</ul>'+
+					'</div>';
+			fyDialogComView({
+				layer:top.layer,
+				title:'查看返佣规则',
+				width:'550px',
+				height:'350px',
+				content:content,
+				handleSuccess:function(_layero,_index){/*弹窗出现后回调*/
+					$('#layui-layer-shade'+_index,top.document).css('z-index',120);
+				}
+			});
+		}
+		//查看返佣规则 end
+	
+    },
+    handleOk:function(erro,layero,index){
+      /*点【保存】按钮回调*/
+      //erro.html('请输入有效姓名');
+      console.log(formdata);
+	if(!formValid(formdata,erro)){
+		return false;
+	}
+      //到此检测通过，提交form到后端
+      var params={
+        url:'',
+        type:'post',
+        data:formdata,
+        success:function(res){
+          console.log(res);
+        },
+        dataType:'json'
+      };
+	   var waiting_obj=new waiting({doc:document,layer:layer});
+ 	   waiting_obj.start();
+      //setTimeout(function(){waiting_obj.stop();},2000);//处理完成后，关闭waiting_obj.stop();
+      $.ajax(params);
+    },
+    handleCancel:function(layero,index){
+      /*点【取消】按钮回调*/
+    }
+  });
+}
+</script>
+</body>
+</html>

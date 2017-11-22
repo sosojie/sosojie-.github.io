@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>报表统计</title>
+<link href="css/css.css" rel="stylesheet" />
+</head>
+
+
+<body>
+<!--头部 -->
+<div class="gzt">
+	<div class="gzt_1">
+    	<ul>
+        	<li class="gzt_1_1"><img src="images/gzt.jpg"></li>
+            <li class="gzt_1_2"><span>您好，方贤浩</span><a href="#">修改密码</a><a href="#">退出登录</a></li>
+        </ul>
+    </div>
+</div>
+<!--头部 -->
+
+<div class="gzt_1">
+    	<!--1 -->
+    	<div class="gzt_3">
+        	<ul>
+            	<li><a href="gzt.html" >工作台</a></li>
+                <li><a href="bssgl.html">档案管理</a></li>
+                <li><a href="gdgl_zxts.html">工单管理</a></li>
+                <li><a href="xzgl_htgl.html">行政管理</a></li>
+                <li><a href="rsgl_zbsz.html">人事管理</a></li>
+                <li><a href="cwgl_zsd.html">财务管理</a></li>
+                <li><a href="ssdgl.html">订单管理</a></li>
+                <li><a href="bgyp_ypsq.html">办公用品</a></li>
+                <li><a href="tjbp_ysbp.html" class="gzt_3_1">统计报表</a></li>
+                <li><a href="xtgl_pmgl.html">系统管理</a></li>
+            </ul>
+        </div>
+        <!--1 -->
+      <div class="clear"></div>
+      <div class="hygl_left">
+      	   <h2 style="background:url(images/hygl2_8.jpg) 20px center no-repeat;">报表统计</h2>	
+           <ul>
+               <li><a href="#" class="hygl_left_1">实收报表</a></li>
+               <li><a href="#" >应付报表</a></li>
+           </ul>
+      </div>
+      <div class="hygl_right">
+      	<div class="hygl_1">贵宾卡管理</div>
+        <!--1 -->
+        <div class="psrwd">
+        	<ul>
+            	<li><p><a href="#">上上月</a></p> <p style="margin-left:10px; margin-right:10px;"><a href="#">上月</a></p><p style="margin-right:150px;"><a href="#">本月</a></p></li>
+            	 <li>统计门店：</li>	
+                  <li >
+                   <select class="psrwd_1_5" name="">
+            	  <option>请输入</option>
+            	  </select>
+                  </li> 
+                  
+                   <li >
+                    <select class="psrwd_1_5" name="">
+            	  <option>请输入</option>
+            	  </select>
+                   </li>
+                  <li>统计时间：</li>	
+                    <li >
+                   <input class="psrwd_1_5" type="text" x-webkit-speech="" autofocus="" placeholder="请选择日期"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" >
+                   </li>
+                   
+              <li >
+                   <input class="psrwd_1_5" type="text" x-webkit-speech="" autofocus="" placeholder="请选择日期"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" >
+         </li>
+
+                   <li><input type="submit" class="psrwd_1_2" name="button" id="button" value="筛选"></li>
+            </ul>
+        </div>
+        <!--1 -->
+        <div class="clear"></div>
+        
+           <!--2 -->
+       <div class="psrwd_0" >
+        
+        	<ul>
+            	<li>
+                	<a href = "javascript:void(0)" onclick = "document.getElementById('light1').style.display='block';document.getElementById('fade').style.display='block'"><p style="margin-top:2px;"><img src="images/gpk_3.jpg" ></p> 
+                	<p>导出报表</p></a>
+                </li>
+            </ul>
+      </div>
+        <!--2 -->
+        
+         <!--添加弹窗1 -->
+         <div id="light1" class="yjd_tc">
+         	<!--列表 -->
+         	<div class="htyg_tc">
+            	<ul>
+                	<li class="htyg_tc_1">入库登记</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light1').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/hygl_06.jpg"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            <div class=" yjd_1">
+            	
+                  <!--1 -->
+                 <div class="yjd_2">
+                 	<ul>
+                    	<li>
+                        <p>导入文件：</p><p><input type="text" class="gpk_200" name="textfield" id="textfield"  /></p><p style="margin-left:10px; margin-top:2px;"><input type="submit" class="psrwd_1_2" name="button" id="button" value="浏览"></p>
+                        </li>
+                        <li>
+                        	<p>&nbsp;&nbsp;&nbsp;&nbsp;品类：</p> 
+                            <p><span style="margin-top:2px;"><input type="radio" name="radio" id="radio" value="radio" /></span> <span>5加仑</span></p>	
+                            <p style=" margin-left:15px; "><span style="margin-top:2px;"><input type="radio" name="radio" id="radio" value="radio" /></span> <span>3加仑</span></p>	
+                        </li>
+                        
+                        <li>
+                        <p>含水数量：</p>
+                        <p>
+                         <input class="gpk_180" type="text" x-webkit-speech="" autofocus="" placeholder="请输入"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" >
+                       </p>
+                        </li>
+                         <li>
+                        <p>截止日期：</p><p><input type="text" class="gpk_180" name="textfield" id="textfield"  /></p>
+                        </li>
+                        
+                        <div class="clear"></div>
+                            <li >
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;备注：</p> <p>  <textarea name="Content" rows="6" id="Content"  class="gpk_7_2"onfocus="if(this.value=='备忘') {this.value='';}this.style.color='#999';" onBlur="if(this.value=='') {this.value='备忘';this.style.color='#999';}">不可超过50中文字符</textarea></p>
+                            </li>
+                            <li style="margin-top:10px;">
+                            	<span class="htyg_tc_6" style="margin-left:150px;"><a href="#">保存</a></span> 
+                        
+                        		<span class="htyg_tc_7"><a href = "javascript:void(0)" onclick = "document.getElementById('light1').style.display='none';document.getElementById('fade').style.display='none'">取消</a></span>
+                            </li>
+                    </ul>
+                 </div>	
+                  <!--1 -->
+   
+                  
+                
+            </div>
+            
+         
+        </div> 
+        <div id="fade" class="black_overlay"></div>  
+        <!--添加弹窗1 -->
+		<div class="tjbp_ysbp">应收、实收统计</div>
+        <!--切换效果-->
+        
+        <div class="sub_zzjs" style="border-top:1px solid #ddd; margin-top:15px;">
+        
+        		<div class="psrwd_5_1 psrwd_5_2" style="background:#f5f5f5;">
+                            <p class="tjbp_ysbp_100">统计项目</p> 
+                            <p class=" tjbp_ysbp_100">平均单价</p> 
+                            <p class="tjbp_ysbp_100">应收数量</p> 
+                            <p class="tjbp_ysbp_100"> 应收金额</p> 
+                            <p class="tjbp_ysbp_100">实收数量</p> 
+                            <p class=" tjbp_ysbp_100">实收金额</p> 
+                            <p class="tjbp_ysbp_100">已结算数量</p> 
+                             <p class="tjbp_ysbp_100">已结算金额</p> 
+                            <p class="tjbp_ysbp_100"> 未结算数量
+                            
+                            </p> 
+                            <p class="tjbp_ysbp_103">未结算金额</p> 
+               </div>
+                        
+                        <!--1  -->
+                        
+                        <div class="psrwd_5_1 " >
+                            <p class="tjbp_ysbp_100" style=" height:60px;">
+                            	<span class="tjbp_ysbp_49" style="height:60px; line-height:60px;">水费</span>
+                                <span class="tjbp_ysbp_49" style="border-right:none;">
+                                	 <span class="tjbp_ysbp_49 psrwd_5_2" style="border-bottom:1px solid #ddd;">预售</span>
+                                     <span class="tjbp_ysbp_49 psrwd_5_2">月结</span>
+                                </span>
+                            </p> 
+                            <p class="tjbp_ysbp_1">
+                            	<span class="tjbp_ysbp_100 psrwd_5_2 tjbp_ysbp_bottom">2</span>  
+                                <span class="tjbp_ysbp_100 psrwd_5_2 tjbp_ysbp_bottom">2</span> 
+                                <span class="tjbp_ysbp_100 psrwd_5_2 tjbp_ysbp_bottom">2</span> <span class="tjbp_ysbp_100 psrwd_5_2 tjbp_ysbp_bottom">2</span> 
+                                <span class="tjbp_ysbp_100 psrwd_5_2 tjbp_ysbp_bottom">2</span> <span class="tjbp_ysbp_100 psrwd_5_2 tjbp_ysbp_bottom">2</span> 
+                                <span class="tjbp_ysbp_100 psrwd_5_2 tjbp_ysbp_bottom">2</span> <span class="tjbp_ysbp_100 psrwd_5_2 tjbp_ysbp_bottom">2</span> 
+                                <span class="tjbp_ysbp_103 psrwd_5_2 tjbp_ysbp_bottom">2</span> 
+                                
+                                <span class="tjbp_ysbp_100 psrwd_5_2 ">2</span>  
+                                <span class="tjbp_ysbp_100 psrwd_5_2">2</span> 
+                                <span class="tjbp_ysbp_100 psrwd_5_2">2</span> <span class="tjbp_ysbp_100 psrwd_5_2">2</span> 
+                                <span class="tjbp_ysbp_100 psrwd_5_2">2</span> <span class="tjbp_ysbp_100 psrwd_5_2">2</span> 
+                                <span class="tjbp_ysbp_100 psrwd_5_2">2</span> <span class="tjbp_ysbp_100 psrwd_5_2">2</span> 
+                                <span class="tjbp_ysbp_103 psrwd_5_2">2</span>
+                            </p>
+               </div>
+                        
+                        <!--2  -->
+                        
+                        <div class="psrwd_5_1 psrwd_5_2">
+                            <p class="tjbp_ysbp_100">水票</p> 
+                            <p class=" tjbp_ysbp_100">3</p> 
+                            <p class="tjbp_ysbp_100">3</p> 
+                            <p class="tjbp_ysbp_100"> 3</p> 
+                            <p class="tjbp_ysbp_100">3</p> 
+                            <p class=" tjbp_ysbp_100">3</p> 
+                            <p class="tjbp_ysbp_100">3</p> 
+                             <p class="tjbp_ysbp_100">3</p> 
+                            <p class="tjbp_ysbp_100"> 3
+                            
+                            </p> 
+                            <p class="tjbp_ysbp_103">3</p> 
+               </div>
+                        
+                        <!--3  -->
+                        
+                        <div class="psrwd_5_1 psrwd_5_2">
+                            <p class="tjbp_ysbp_100">水机清洗</p> 
+                            <p class=" tjbp_ysbp_100">3</p> 
+                            <p class="tjbp_ysbp_100">3</p> 
+                            <p class="tjbp_ysbp_100"> 3</p> 
+                            <p class="tjbp_ysbp_100">3</p> 
+                            <p class=" tjbp_ysbp_100">3</p> 
+                            <p class="tjbp_ysbp_100">3</p> 
+                             <p class="tjbp_ysbp_100">3</p> 
+                            <p class="tjbp_ysbp_100"> 3
+                            
+                            </p> 
+                            <p class="tjbp_ysbp_103">3</p> 
+               </div>
+                        
+                        <!--4  -->
+                        
+                        <div class="psrwd_5_1 psrwd_5_2">
+                            <p class="tjbp_ysbp_100">押金</p> 
+                            <p class=" tjbp_ysbp_100">3</p> 
+                            <p class="tjbp_ysbp_100">3</p> 
+                            <p class="tjbp_ysbp_100"> 3</p> 
+                            <p class="tjbp_ysbp_100">3</p> 
+                            <p class=" tjbp_ysbp_100">3</p> 
+                            <p class="tjbp_ysbp_100">3</p> 
+                             <p class="tjbp_ysbp_100">3</p> 
+                            <p class="tjbp_ysbp_100"> 3
+                            
+                            </p> 
+                            <p class="tjbp_ysbp_103">3</p> 
+               </div>
+                        
+                        <!--5  -->
+                        
+                         <div class="psrwd_5_1 psrwd_5_2">
+                            <p class="tjbp_ysbp_100">其他</p> 
+                            <p class=" tjbp_ysbp_100">3</p> 
+                            <p class="tjbp_ysbp_100">3</p> 
+                            <p class="tjbp_ysbp_100"> 3</p> 
+                            <p class="tjbp_ysbp_100">3</p> 
+                            <p class=" tjbp_ysbp_100">3</p> 
+                            <p class="tjbp_ysbp_100">3</p> 
+                             <p class="tjbp_ysbp_100">3</p> 
+                            <p class="tjbp_ysbp_100"> 3
+                            
+                            </p> 
+                            <p class="tjbp_ysbp_103">3</p> 
+               </div>
+                        
+                        <!--6  -->
+                  	
+                        
+                      
+                        
+                      
+                        
+                      
+                       
+                        <div class="psrwd_6" style="margin-left:300px;">
+                            <span style="margin-right:10px;">1-10/1000</span>
+                        	<span><a href="#"><img src="images/hygl_02.jpg" ></a></span>
+                            <span><a href="#"><img src="images/hygl_03.jpg" ></a></span>
+                            <span style="margin-right:0px;">
+                            
+                            	<div class="psrwd_7">
+                                        <a href="#" class="hygl_6_1">1</a>
+                                        <a href="#">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#">4</a>
+                                        <a href="#">5</a>
+                                        <a href="#">6</a>
+                                        <a href="#">...</a>
+                                        <a href="#">10</a>
+                            </div>	
+                            </span>
+                            <span><a href="#"><img src="images/hygl_04.jpg"></a></span>
+                            <span><a href="#"><img src="images/hygl_05.jpg"></a></span>
+                            <div class="clear"></div>
+                            
+                        </div>
+        </div>              
+        <div class="clear"></div>
+        
+        
+      </div>
+</div>
+</body>
+</html>

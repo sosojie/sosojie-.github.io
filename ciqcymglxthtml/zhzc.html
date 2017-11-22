@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>账号注册</title>
+<link href="css/common.css" rel="stylesheet" />
+<link href="css/index.css" rel="stylesheet" />
+
+</head>
+
+<body>
+<!--头部-->
+<div class="top">
+	<div class="top_1">
+    	<div class="top_2"><img src="images/logo.png"/></div>
+    	<div class="sunnva">heyang 您好! <a href="#">修改密码</a> <a href="#">退出登录</a></div>
+    </div>
+</div>
+<!--头部-->
+
+
+<!--主框架-->
+<div class="ymfw-container">
+	<div class="ymfw-right_1">账号注册</div> 
+    <div class="zhzc">
+    	<ul>
+        	<li class="zhzc_mt15">
+            	<p class="zhzc_width"><em class="zhzc_cored">*</em>企业备案号：</p>
+                <p class="zhzc_ml10"><input type="text" name="company" class="input_510" /></p>
+            </li>
+            <li class="zhzc_mt15">
+            	<p class="zhzc_width"><em class="zhzc_cored">*</em>用户名：</p>
+                <p class="zhzc_ml10"><input type="text" name="user" class="input_510" /></p>
+            </li>
+            <li class="zhzc_mt15">
+            	<p class="zhzc_width"><em class="zhzc_cored">*</em>设置密码：</p>
+                <p class="zhzc_ml10"><input type="password" name="password" class="input_510" /></p>
+            </li>
+            <li class="zhzc_mt15">
+            	<p class="zhzc_width"><em class="zhzc_cored">*</em>确认密码：</p>
+                <p class="zhzc_ml10"><input type="password" name="crpassword" class="input_510" /></p>
+            </li>
+            <li class="zhzc_mt15">
+            	<p class="zhzc_width"><em class="zhzc_cored">*</em>手机号码：</p>
+                <p class="zhzc_ml10"><input type="text" name="mobile" class="input_510" /></p>
+            </li>
+            <li class="zhzc_mt15">
+            	<p class="zhzc_width"><em class="zhzc_cored">*</em>验证码：</p>
+                <p class="zhzc_ml10"><input type="text" name="code" class="input_400" /></p>
+                <p class="zhzc_ml10"><input type="button" name="captcha" value="获取验证码" class="button_80" /></p>
+            </li>
+             <li class="zhzc_mt15">
+            	<p class="zhzc_mlt100"><input type="checkbox" name="checkbox" id="checkbox" value="1" /></p>
+                <p class="zhzc_ml10">我已阅读并同意<a href="yhxy.html" style="color:#1492ff;">《用户注册协议》</a></p>
+            </li>
+            
+        </ul>
+        <div class="pmgl_tcym_1 error_box">
+             <em style="margin-left:5px; color:#d22222;"></em>
+       </div>
+        <div class="zhzc_2">
+        	<a class="btn_save" href="javascript:void(0);">立即注册</a>
+        </div>
+    </div>
+    
+</div>
+<!--主框架-->
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="js/validation.js"></script>
+<script>
+	jQuery(function($){
+		//新增
+		$('a.btn_save').on('click',newSave);
+		$('input[name="captcha"]').on('click',function(){
+			var self=this;
+			var i=60;
+			var timer=setInterval(function(){
+				$(self).val('倒计时'+(i--)+'秒');
+				if(i==0){
+					$(self).val('重新获取验证码');
+					clearInterval(timer);
+				}
+			},500);
+			//请求发验证码
+			var params={
+				url:'',
+				type:'post',
+				data:'',
+				success:function(res){
+					console.log(res);
+				},
+				dataType:'json'
+			};
+			$.ajax(params);
+
+		});
+	});
+	function newSave(){
+	
+	var form={
+		company:$('input[name="company"]').val(),
+		user:$('input[name="user"]').val(),
+		password:$('input[name="password"]').val(),
+		crpassword:$('input[name="crpassword"]').val(),
+		mobile:$('input[name="mobile"]').val(),
+		code:$('input[name="code"]').val(),
+	};
+	newSaveValid(form);
+	//到此检测通过，提交form到后端
+	var params={
+		url:'',
+		type:'post',
+		data:form,
+		success:function(res){
+			console.log(res);
+		},
+		dataType:'json'
+	};
+	$.ajax(params);
+}
+function newSaveValid(form){
+	var err=$('.error_box>em');	
+	if(valid_test.isEmpty(form.company)){
+		err.html('请输入企业备案号');
+		return false;
+	}else{
+		err.empty();
+	}
+	if(valid_test.isEmpty(form.user)){
+		err.html('请选择用户名');
+		return false;
+	}else{
+		err.empty();
+	}
+	if(valid_test.isEmpty(form.password)){
+		err.html('请输入密码');
+		return false;
+	}else{
+		err.empty();
+	}
+	if(valid_test.isEmpty(form.crpassword)){
+		err.html('请在输入一次密码');
+		return false;
+	}else{
+		err.empty();
+	}
+	if(form.password!=form.crpassword){
+		err.html('两次密码不一致');
+		return false;
+	}
+	if(!valid_test.mobile(form.mobile)){
+		err.html('请输入有效手机号');
+		return false;
+	}else{
+		err.empty();
+	}
+	if(!valid_test.isNum(form.code)){
+		err.html('请输入验证码');
+		return false;
+	}else{
+		err.empty();
+	}
+	var checkbox=$('input[name="checkbox"]:checked').val();
+	if(!checkbox){
+		err.html('请打勾 我已阅读并同意');
+		return false;
+	}else{
+		err.empty();
+	}
+}
+</script>
+</body>
+</html>

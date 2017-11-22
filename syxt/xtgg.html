@@ -1,0 +1,717 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>系统公告</title>
+<link href="css/common.css" rel="stylesheet" />
+<link href="css/index.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script> 
+<script type="text/javascript">  
+        //多行文本输入框剩余字数计算  
+        function checkMaxInput(obj, maxLen) {  
+            if (obj == null || obj == undefined || obj == "") {  
+                return;  
+            }  
+            if (maxLen == null || maxLen == undefined || maxLen == "") {  
+                maxLen = 100;  
+            }  
+  
+            var strResult;  
+            var $obj = $(obj);  
+            var newid = $obj.attr("id") + 'msg';  
+  
+            if (obj.value.length > maxLen) { //如果输入的字数超过了限制  
+                obj.value = obj.value.substring(0, maxLen); //就去掉多余的字  
+                strResult = '<span id="' + newid + '" class=\'Max_msg\' >剩(' + (maxLen - obj.value.length) + ')字</span>'; //计算并显示剩余字数  
+            }  
+            else {  
+                strResult = '<span id="' + newid + '" class=\'Max_msg\' >剩(' + (maxLen - obj.value.length) + ')字</span>'; //计算并显示剩余字数  
+            }  
+  
+            var $msg = $("#" + newid);  
+            if ($msg.length == 0) {  
+                $obj.after(strResult);  
+            }  
+            else {  
+                $msg.html(strResult);  
+            }  
+        }  
+  
+        //清空剩除字数提醒信息  
+        function resetMaxmsg() {  
+            $("span.Max_msg").remove();  
+        }  
+</script>  
+</head>
+
+<body>
+
+<!--添加弹窗 删除 -->
+		 <div id="light1" class="ycgl_tc yctc_498">
+         	<!--列表 -->
+         	<div class="htyg_tc">
+            	<ul>
+                	<li class="htyg_tc_1">提醒</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light1').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/htyg_tc.png"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            <div class="yctc_458 ycgl_tc_1">
+            	<ul style="width:220px; height:106px; margin:25px auto;">
+                	 <li style="font-size:14px; height:66px; text-align:center;">确定删除吗？删除后将不能恢复。</li>
+                     <div class="clear"></div>
+                     <li><p class="ybjk_pcgl_1" style="margin-right:10px; margin-left: 0px;"><a href = "javascript:void(0)" onclick = "document.getElementById('light1').style.display='none';document.getElementById('fade').style.display='none'">关闭</a></p> 
+                     <p class="ybjk_pcgl_2" style="margin-right:0px; "><a href="#">确认</a></p></li>
+                     
+                </ul>
+            </div>
+         
+         </div> 
+        <div id="fade" class="black_overlay"></div>         
+        
+<!--添加弹窗删除 -->
+
+<!--添加弹窗 下线 -->
+		 <div id="light4" class="ycgl_tc yctc_498">
+         	<!--列表 -->
+         	<div class="htyg_tc">
+            	<ul>
+                	<li class="htyg_tc_1">提醒</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light1').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/htyg_tc.png"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            <div class="yctc_458 ycgl_tc_1">
+            	<ul style="width:220px; height:106px; margin:25px auto;">
+                	 <li style="font-size:14px; height:66px; text-align:center;">确定下线该溯源资讯吗？</li>
+                     <div class="clear"></div>
+                     <li><p class="ybjk_pcgl_1" style="margin-right:10px;"><a href = "javascript:void(0)" onclick = "document.getElementById('light4').style.display='none';document.getElementById('fade').style.display='none'">关闭</a></p> <p class="ybjk_pcgl_2"><a href="#">确认</a></p></li>
+                     
+                </ul>
+            </div>
+         
+         </div> 
+        <div id="fade" class="black_overlay"></div>         
+        
+<!--添加弹窗 下线 -->
+
+<!--添加弹窗 上线 -->
+		 <div id="light5" class="ycgl_tc yctc_498">
+         	<!--列表 -->
+         	<div class="htyg_tc">
+            	<ul>
+                	<li class="htyg_tc_1">提醒</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light5').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/htyg_tc.png"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            <div class="yctc_458 ycgl_tc_1">
+            	<ul style="width:285px; height:106px; margin:25px auto;">
+                	 <li style="font-size:14px; height:66px; text-align:center;"><p>确定马上发布吗？</p> 
+                     <p style="margin-top:9px;"><input type="checkbox" name="checkbox" value="checkbox" checked="checked"  /></p> 
+                     <p style="font-size:12px; margin-left: 0px; margin-right: 0px;">同时设置本条资讯置顶</p>
+                     </li>
+                     <div class="clear"></div>
+                     <li style="margin-left:30px;"><p class="ybjk_pcgl_1" style="margin-right:10px;"><a href = "javascript:void(0)" onclick = "document.getElementById('light5').style.display='none';document.getElementById('fade').style.display='none'">关闭</a></p> <p class="ybjk_pcgl_2"><a href="#">确认</a></p></li>
+                     
+                </ul>
+            </div>
+         
+         </div> 
+        <div id="fade" class="black_overlay"></div>         
+        
+<!--添加弹窗 上线 -->
+
+<!--添加弹窗 设置优先级 -->
+		 <div id="light3" class="ycgl_tc yctc_900">
+         	<!--列表 -->
+         	<div class="htyg_tc">
+            	<ul>
+                	<li class="htyg_tc_1">设置优先级</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light3').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/htyg_tc.png"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            <div class="yctc_860 ycgl_tc_1">
+            	<ul>
+                	<li style="line-height:20px; margin-top:0px; height:25px;">您可添加10条资讯，并对它们进行置顶排序。</li>
+                    <div class="clear"></div>
+                	<li>
+                    <p>标题</p> 
+                    <p><input id="country_name"  class="input_648"name="country_name" type="text" list="country" />
+                    	<datalist id="country">
+                           <option style="line-height:30px; height:30px;" value="Afghanistan 阿富汗"></option>
+                           <option style="line-height:30px; height:30px;" value="Albania 阿尔巴尼亚"></option>
+                           <option style="line-height:30px; height:30px;" value="Algeria 阿尔及利亚"></option>
+                           <option style="line-height:30px; height:30px;" value="Andorra 安道尔共和国"></option>
+                           <option style="line-height:30px; height:30px;" value="Angola 安哥拉"></option>
+                        </datalist>
+                    </p> 
+                    <p style="color:#ff3300;">添加成功！</p>
+                    </li>
+                    <div class="clear"></div>
+                    <li class="ybjk_syzx_3">
+                    	<table>
+                        	<tr>
+                            	<th class="th_469">资讯标题</th>
+                                <th>发布时间</th>
+                                <th class="th_168">操作</th>
+                            </tr>
+                            <tr>
+                            	<td class="th_469">广州日报：广东11项检验检疫创新制度发布 跨境电商商品可以溯源</td>
+                                <td>2016-1-26  12:35:25</td>
+                                <td>
+                                <p class="ybjk_syzx_3_1" ><a href="#"></a></p> 
+                                <p class="ybjk_syzx_3_2"><a href="#"></a></p> 
+                                <p class="ybjk_syzx_3_3"><a href="#"></a></p></td>
+                            </tr>
+                             <tr>
+                            	<td class="th_469">广州日报：广东11项检验检疫创新制度发布 跨境电商商品可以溯源</td>
+                                <td>2016-1-26  12:35:25</td>
+                                <td>
+                                <p class="ybjk_syzx_3_1" ><a href="#"></a></p> 
+                                <p class="ybjk_syzx_3_2"><a href="#"></a></p> 
+                                </td>
+                            </tr>
+                             <tr>
+                            	<td class="th_469">广州日报：广东11项检验检疫创新制度发布 跨境电商商品可以溯源</td>
+                                <td>2016-1-26  12:35:25</td>
+                                <td>
+                                <p class="ybjk_syzx_3_1" ><a href="#"></a></p> 
+                                </td>
+  
+                            </tr>
+                        </table>
+                    </li>
+                     
+                </ul>
+            </div>
+          <div class="ybjk_syzx_2">
+         	  <p class="ybjk_pcgl_1" style="margin-left:345px;">
+              <a href = "javascript:void(0)" onclick = "document.getElementById('light3').style.display='none';document.getElementById('fade').style.display='none'">关闭</a></p> 
+              <p class="ybjk_pcgl_2"><a href="#">提交</a></p>	
+         </div>
+         </div> 
+        <div id="fade" class="black_overlay"></div>         
+        
+<!--添加弹窗 设置优先级 -->
+
+<!--添加弹窗 新增资讯 -->
+		 <div id="light2" class="ycgl_tc yctc_900">
+         	<!--列表 -->
+         	<div class="htyg_tc">
+            	<ul>
+                	<li class="htyg_tc_1">预览</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/htyg_tc.png"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            <div class="yctc_860 ycgl_tc_1">
+            	<ul>
+                	<li>
+                    	<p>资讯标题</p> <p><input type="text" name="textfield" class="input_498" id="textfield" /></p> <p style="color:#888;">0/50</p>
+                    </li>
+                    <div class="clear"></div>
+                    <li style="height:70px; line-height:70px;">
+                    	<p style="width:57px;">缩略图</p> <p class="ybjk_syzx_1"><a href="#"></a></p> <p style="color:#888;">支持jpg/gif/png格式，RGB模式，大小小于500kb</p>
+                    </li>
+                    <div class="clear"></div>
+                    <li><p style=" height:45px; line-height:45px;">资讯摘要</p> 
+                    <p>
+                    <span><textarea class="textarea_758" name="textarea" id="textarea" cols="45" rows="5"></textarea>
+ 					</span>           
+            </p> 
+                    </li>
+                    
+                    <div class="clear"></div>
+                    <li><p>资讯内容</p> 
+                    <p><textarea class="textarea_720" name="textarea" id="textarea" cols="45" rows="5"></textarea></p> 
+                    </li>
+                    <div class="clear"></div>
+                    <li>
+                    	<p>资讯来源</p> <p><input type="url" name="textfield" class="input_498" id="textfield" /></p>
+                    </li>
+                    <div class="clear"></div>
+                     <li>
+                    	<p>发布设定</p> <p><span style="margin-top:8px; margin-right:5px;"><input type="radio" name="radio" /></span> <span>手动发布</span></p>
+                        <p style="margin-left:35px; margin-right:35px;"><span style="margin-top:8px; margin-right:5px;"><input type="radio" name="radio" /></span> <span>自动发布</span></p>
+                        <p><span style="margin-top:8px; margin-right:5px;"><input type="radio" name="radio" id="radio" value="0" checked="checked" /></span> <span>发布同时置顶</span></p>
+                    </li>
+                    <div class="clear"></div>
+                    <li><p style="margin-left:185px; margin-right:35px;"><span style="margin-top:8px; margin-right:5px;"><input type="radio" name="radio" /></span> <span>马上发布</span></p>
+                    <p><span style="margin-top:8px; margin-right:5px;"><input type="radio" name="radio" /></span> <span>指定时间发布</span></p>
+                    <p><input type="text" name="textfield" class="input_200" id="textfield" /></p>
+                    </li>
+                </ul>
+            </div>
+         <div class="ybjk_syzx_2">
+         	  <p class="ybjk_pcgl_1" style="margin-left:345px;">
+              <a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='none';document.getElementById('fade').style.display='none'">关闭</a></p> 
+              <p class="ybjk_pcgl_2"><a href="#">提交</a></p>	
+         </div>
+         
+         </div> 
+        <div id="fade" class="black_overlay"></div>         
+        
+<!--添加弹窗 新增资讯 -->
+
+<!--添加弹窗 资讯详情_待发布 -->
+<div id="light6" class="ycgl_tc yctc_900">
+         	<!--列表 -->
+         	<div class="htyg_tc">
+            	<ul>
+                	<li class="htyg_tc_1">资讯详情</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light6').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/htyg_tc.png"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            <div class="yctc_860 ycgl_tc_1">
+            	<ul>
+                	<li>
+                    	<p>资讯标题</p> <p>广州日报：广东11项检验检疫创新制度发布 跨境电商商品可以溯源</p> 
+                    </li>
+                    <div class="clear"></div>
+                    <li style="height:70px; line-height:70px;">
+                    	<p style="width:57px;">缩略图</p> <p><img src="images/ybjk_syzx_1_2.png"/></p> 
+                    </li>
+                    <div class="clear"></div>
+                    <li><p>资讯摘要</p> 
+                    <p style="width:760px; margin-right:0px;">广州日报讯 （记者杨进 通讯员岳俭宣）昨日上午，广东出入境检验检疫局与广东省自贸办在广州南沙港联合召开自贸区检验检疫创新制度发布会。</p> 
+                    </li>
+                    
+                    <div class="clear"></div>
+                    <li><p>资讯内容</p> 
+                    <p>
+                    <textarea class="textarea_720" name="textarea" id="textarea" cols="45" rows="5">广州日报讯 （记者杨进 通讯员岳俭宣）昨日上午，广东出入境检验检疫局与广东省自贸办在广州南沙港联合召开自贸区检验检疫创新制度发布会，发布支持广东自贸区发展的11项检验检疫创新制度。
+据介绍，这些创新制度包括打造“智检口岸”平台、率先建立跨境电商商品溯源平台、全面对接内陆“无水港”、构建市场采购出口“南沙”模式、创新进口食品快速放行模式等。
+广东省政府副秘书长刘晓捷、广州市副市长蔡朝林等领导出席该活动。</textarea></p> 
+                    </li>
+                    <div class="clear"></div>
+                    <li>
+                    	<p>资讯来源</p> <p>http://img05.tooopen.com/images/20140506/sy_60482271366.jpg</p>
+                    </li>
+                    <div class="clear"></div>
+                     <li>
+                    	<p>发布设定</p> <p>指定时间发布 2016-01-01 11:11:11，发布同时置顶</p>
+                    </li>
+                    <div class="clear"></div>
+                    <li>
+                    <p style="width:850px; text-align:center; color:#164e91; font-size:12px;">录入  2015-11-12 12:12  欧阳明明</p>
+                    </li>
+                </ul>
+   </div>
+         <div class="ybjk_syzx_2">
+         	  <p class="ybjk_pcgl_2" style="margin-left:405px;">
+              <a href="#">修改</a>
+             </p> 	
+         </div>
+         
+         </div> 
+        <div id="fade" class="black_overlay"></div>         
+        
+<!--添加弹窗 资讯详情_待发布 -->
+
+<!--添加弹窗 资讯详情_已发布 -->
+<div id="light7" class="ycgl_tc yctc_900">
+         	<!--列表 -->
+         	<div class="htyg_tc">
+            	<ul>
+                	<li class="htyg_tc_1">资讯详情</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light7').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/htyg_tc.png"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            <div class="yctc_860 ycgl_tc_1">
+            	<ul>
+                	<li>
+                    	<p>资讯标题</p> <p>广州日报：广东11项检验检疫创新制度发布 跨境电商商品可以溯源</p> 
+                    </li>
+                    <div class="clear"></div>
+                    <li style="height:70px; line-height:70px;">
+                    	<p style="width:57px;">缩略图</p> <p><img src="images/ybjk_syzx_1_2.png"/></p> 
+                    </li>
+                    <div class="clear"></div>
+                    <li><p>资讯摘要</p> 
+                    <p style="width:785px; margin-right:0px;">广州日报讯 （记者杨进 通讯员岳俭宣）昨日上午，广东出入境检验检疫局与广东省自贸办在广州南沙港联合召开自贸区检验检疫创新制度发布会。</p> 
+                    </li>
+                    
+                    <div class="clear"></div>
+                    <li><p>资讯内容</p> 
+                    <p>
+                    <textarea class="textarea_720" name="textarea" id="textarea" cols="45" rows="5">广州日报讯 （记者杨进 通讯员岳俭宣）昨日上午，广东出入境检验检疫局与广东省自贸办在广州南沙港联合召开自贸区检验检疫创新制度发布会，发布支持广东自贸区发展的11项检验检疫创新制度。
+据介绍，这些创新制度包括打造“智检口岸”平台、率先建立跨境电商商品溯源平台、全面对接内陆“无水港”、构建市场采购出口“南沙”模式、创新进口食品快速放行模式等。
+广东省政府副秘书长刘晓捷、广州市副市长蔡朝林等领导出席该活动。</textarea></p> 
+                    </li>
+                    <div class="clear"></div>
+                    <li>
+                    	<p>资讯来源</p> <p>http://img05.tooopen.com/images/20140506/sy_60482271366.jpg</p>
+                    </li>
+                    <div class="clear"></div>
+                     <li>
+                    	<p>发布设定</p> <p>指定时间发布 2016-01-01 11:11:11，发布同时置顶</p>
+                    </li>
+                    <div class="clear"></div>
+                    <li>
+                    <p style="width:850px; text-align:center; color:#164e91; font-size:12px;">发布   2015-11-12 12:12  欧阳明明</p>
+                    </li>
+                </ul>
+   </div>
+         <div class="ybjk_syzx_2">
+         	 <p class="ybjk_pcgl_2" style="margin-left:405px;">
+              <a href="#">修改</a>
+             </p> 	
+         </div>
+         
+         </div> 
+        <div id="fade" class="black_overlay"></div>         
+        
+<!--添加弹窗 资讯详情_已发布 -->
+
+<!--添加弹窗 资讯详情_已下线 -->
+<div id="light8" class="ycgl_tc yctc_900">
+         	<!--列表 -->
+         	<div class="htyg_tc">
+            	<ul>
+                	<li class="htyg_tc_1">资讯详情</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light8').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/htyg_tc.png"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            <div class="yctc_860 ycgl_tc_1">
+            	<ul>
+                	<li>
+                    	<p>资讯标题</p> <p>广州日报：广东11项检验检疫创新制度发布 跨境电商商品可以溯源</p> 
+                    </li>
+                    <div class="clear"></div>
+                    <li style="height:70px; line-height:70px;">
+                    	<p style="width:57px;">缩略图</p> <p><img src="images/ybjk_syzx_1_2.png"/></p> 
+                    </li>
+                    <div class="clear"></div>
+                    <li><p>资讯摘要</p> 
+                    <p style="width:785px; margin-right:0px;">广州日报讯 （记者杨进 通讯员岳俭宣）昨日上午，广东出入境检验检疫局与广东省自贸办在广州南沙港联合召开自贸区检验检疫创新制度发布会。</p> 
+                    </li>
+                    
+                    <div class="clear"></div>
+                    <li><p>资讯内容</p> 
+                    <p>
+                    <textarea class="textarea_720" name="textarea" id="textarea" cols="45" rows="5">广州日报讯 （记者杨进 通讯员岳俭宣）昨日上午，广东出入境检验检疫局与广东省自贸办在广州南沙港联合召开自贸区检验检疫创新制度发布会，发布支持广东自贸区发展的11项检验检疫创新制度。
+据介绍，这些创新制度包括打造“智检口岸”平台、率先建立跨境电商商品溯源平台、全面对接内陆“无水港”、构建市场采购出口“南沙”模式、创新进口食品快速放行模式等。
+广东省政府副秘书长刘晓捷、广州市副市长蔡朝林等领导出席该活动。</textarea></p> 
+                    </li>
+                    <div class="clear"></div>
+                    <li>
+                    	<p>资讯来源</p> <p>http://img05.tooopen.com/images/20140506/sy_60482271366.jpg</p>
+                    </li>
+                    <div class="clear"></div>
+                     <li>
+                    	<p>发布设定</p> <p>指定时间发布 2016-01-01 11:11:11，发布同时置顶</p>
+                    </li>
+                    <div class="clear"></div>
+                    <li>
+                    <p style="width:850px; text-align:center; color:#164e91; font-size:12px;">下线    2015-11-12 12:12  欧阳明明</p>
+                    </li>
+                </ul>
+   </div>
+         
+         
+         </div> 
+        <div id="fade" class="black_overlay"></div>         
+        
+<!--添加弹窗 资讯详情_已下线 -->
+
+
+<!--头部-->
+<div class="top">
+	<div class="top_1">
+    	<div class="top_2"><a href="index.html"><img src="images/logo.png"/></a></div>
+    	<div class="sunnva">heyang 您好! <a href="#">修改密码</a> <a href="#">退出登录</a></div>
+    </div>
+</div>
+<!--头部-->
+
+<!--主框架-->
+<div class="ymfw-container">
+
+	<!--用码服务左边-->
+	<div class="ymfw-left">
+        <!--左边1--> 
+      <div class="ymfw-left_1">
+          <h2><p><img src="images/ymfw-left_1.png"/></p> 
+          <p class="ymfw-left_2">数据管理</p></h2>
+          <ul>
+            <li><a href="wygl.html" >企业管理</a></li>
+            <li><a href="jsgl.html">角色管理</a></li>
+            <li><a href="yhgl.html">用户管理</a></li>
+          </ul>
+        </div>
+        <!--左边1--> 
+         <!--左边1--> 
+        <div class="ymfw-left_1">
+            <h2><p><img src="images/ymfw-left_1.png"/></p> 
+            <p class="ymfw-left_2">码管理</p></h2>
+            <ul>
+              <li><a href="jmgl.html">进码管理</a></li>
+              <li><a href="ymgl.html">印码管理</a></li>
+              <li><a href="ddgl.html">订单管理</a></li>
+            </ul>
+            
+        </div>
+         <!--左边1--> 
+      <!--左边1--> 
+        <div class="ymfw-left_1">
+            <h2><p><img src="images/ymfw-left_1.png"/></p> 
+            <p class="ymfw-left_2">内容管理</p></h2>
+            <ul>
+              <li><a href="xtxx.html" >溯源资讯</a></li>
+              <li><a href="xtgg.html" class="ymfw-left_5">系统公告</a></li>
+            </ul>
+            
+        </div>
+         <!--左边1--> 
+         <!--左边1--> 
+      <div class="ymfw-left_1" style="padding-bottom:0px; border-bottom:none;">
+          <h2><p><img src="images/ymfw-left_1.png"/></p> 
+            <p class="ymfw-left_2">业务监管</p></h2>
+            <ul>
+              <li><a href="smtj.html">扫码统计</a></li>
+              <li><a href="ymtj.html">用码统计</a></li>
+            </ul>
+            
+        </div>
+         <!--左边1--> 
+   </div>	
+    <!--用码服务左边-->  
+    
+    <!--用码服务右边-->
+	<div class="ymfw-right">
+		<div class="ymfw-right_1">系统公告</div>
+        <div class=" ymfw-right-zgj">
+        	<div class="yyzx">
+            	<a style="background: url(images/button_1.png) no-repeat;" href ="javascript:void(0)" onclick = "document.getElementById('light2').style.display='block';document.getElementById('fade').style.display='block'"></a> 
+                <a style="background: url(images/button_2.png) no-repeat;" href ="javascript:void(0)" onclick = "document.getElementById('light3').style.display='block';document.getElementById('fade').style.display='block'"></a>
+            </div>
+            <div class="ymfw-right-zgj_4">
+            	<ul>
+                	<li>
+                    <p>关键字</p> 
+                    <p><input type="text" name="textfield" class="input_298" placeholder="搜索标题/内容" id="textfield" /></p> 
+                    </li>
+                    <li>
+                    <p>操作日期</p> 
+                    <p><input type="text" name="textfield" class="input_179" id="textfield" /></p> 
+                    <p>至</p> 
+                    <p style="margin-right:0px;"><input type="text" name="textfield" class="input_179" id="textfield" /></p> 
+                    </li>
+                    <div class="clear"></div>
+                    <li>
+                    	<p>录入人</p> 
+                    	<p><input type="text" name="textfield" class="input_128" id="textfield" /></p> 
+                    </li>
+                     <li>
+                    	<p>发布人</p> 
+                    	<p><input type="text" name="textfield" class="input_128" id="textfield" /></p> 
+                    </li>
+                    <li style="margin-right:32px;">
+                    <p>发布日期</p> 
+                    <p><input type="text" name="textfield" class="input_179" id="textfield" /></p> 
+                    <p>至</p> 
+                    <p style="margin-right:0px;"><input type="text" name="textfield" class="input_179" id="textfield" /></p> 
+                    
+                    </li>
+                    <li ><p><a href="#">查询</a></p> <p style="margin-right:0px;"><a href="#">重置</a></p></li>
+                </ul>
+           </div>
+           <div class="yyzx_lr">
+           <!--切换效果 -->
+           	   <div class="wjmm_1">
+            	<ul class="menu_zzjs_net">
+                 <li class="this_zzjs"><a href="javascript:void(0)">待发布</a></li>
+                 
+                 <li><a href="javascript:void(0)"> 已发布</a></li>
+                 <li ><a href="javascript:void(0)"> 已下线</a></li>
+        	 </ul>
+            </div>
+            	
+              <!--效果1 -->
+               <div class="sub_zzjs">
+         	  <ul style="display:block;">
+              	  <li >
+                   <div class="ymfw-right-zgj_5">
+                    <table>
+                        <tr style="color:#888888; font-size:14px;">
+                            <th class="th_349 yyzx_td-20">资讯标题</th>
+                            <th class="th_99">录入人</th>
+                            <th class="th_149">录入时间</th>
+                            <th class="th_149">预定发布时间</th>
+                            <th class="th_208">操作</th>
+                        </tr>
+                        <tr class="yyzx_tr">
+                            <td class="yyzx_td-20 th_zdsw"><a href ="javascript:void(0)" onclick = "document.getElementById('light6').style.display='block';document.getElementById('fade').style.display='block'">大公报：电商进口货随时可溯源电源口随时可溯源...</a></td>
+                            <td>欧阳明明</td>
+                            <td class="fon-si">2015-12-12 12:12:12</td>
+                            <td class="fon-si"></td>
+                            <td>
+                            <a href="xqym.html" target="_blank" style="margin-left:14px;">预览</a>
+                            <a style="margin-left:14px;" href ="javascript:void(0)" onclick = "document.getElementById('light6').style.display='block';document.getElementById('fade').style.display='block'">修改</a>
+                            <a style="margin-left:14px;" href ="javascript:void(0)" onclick = "document.getElementById('light5').style.display='block';document.getElementById('fade').style.display='block'">发布</a>
+                            
+                            <a style="margin-left:14px; margin-right:14px;" href ="javascript:void(0)" onclick = "document.getElementById('light1').style.display='block';document.getElementById('fade').style.display='block'" >删除</a>
+                            </td>
+                        </tr>
+                         <tr class="yyzx_tr">
+                            <td class="yyzx_td-20 th_zdsw"><a href ="javascript:void(0)" onclick = "document.getElementById('light6').style.display='block';document.getElementById('fade').style.display='block'">大公报：电商进口货随时可溯源电源口随时可溯源...</a></td>
+                            <td>欧阳明明</td>
+                            <td class="fon-si">2015-12-12 12:12:12</td>
+                            <td class="fon-si"></td>
+                            <td>
+                            <a href="xqym.html" target="_blank" style="margin-left:14px;">预览</a>
+                         
+                            
+                            <a style="margin-left:14px; margin-right:14px;" href ="javascript:void(0)" onclick = "document.getElementById('light1').style.display='block';document.getElementById('fade').style.display='block'" >删除</a>
+                            </td>
+                        </tr>
+                        
+                    </table>
+                    
+               </div>
+               <div class="yyzx_1">
+
+                   	    <p class="yyzx_2"><a href="#"></a></p>
+                        <p style="margin-left:5px; margin-right:5px;">1/10</p>
+                        <p class="yyzx_3"><a href="#"></a></p>
+                        <p style="margin-left:12px; margin-right:8px;"><input type="text" name="textfield" class="input_58" id="textfield" /></p>
+                        <p class="ymfw-right-zgj_7"><a href="#">跳转</a></p>
+               </div>
+
+               </li>
+              </ul>
+              <!--效果1 -->
+              
+              <!--效果2 -->
+         	  <ul>
+              	  <li>
+                  	   <div class="ymfw-right-zgj_5">
+                            <table>
+                                <tr style="color:#888888; font-size:14px;">
+                                    <th class="th_498 yyzx_td-20">资讯标题</th>
+                                    <th class="th_99">发布人</th>
+                                    <th class="th_149">发布时间</th>
+                                    <th class="th_208">操作</th>
+                                </tr>
+                                <tr class="yyzx_tr">
+                                    <td class="yyzx_td-20 th_zdsw_1"><a href ="javascript:void(0)" onclick = "document.getElementById('light7').style.display='block';document.getElementById('fade').style.display='block'">大公报：电商进口货随时可溯源电源口随时可溯源...</a></td>
+                                    <td>欧阳明明</td>
+                                    <td class="fon-si">2015-12-12 12:12:12</td>
+                                    <td style="text-align:left;">
+                                    <a href="xqym.html" target="_blank"style="margin-left:14px;">预览</a>
+                                    <a style="margin-left:14px;" href ="javascript:void(0)" onclick = "document.getElementById('light7').style.display='block';document.getElementById('fade').style.display='block'">修改</a>
+                                    <a style="margin-left:14px;" href ="javascript:void(0)" onclick = "document.getElementById('light4').style.display='block';document.getElementById('fade').style.display='block'">下线</a>
+                                    <a style="margin-left:14px; margin-right:14px;" href="#">删除</a>
+                                    </td>
+                                </tr>
+                            </table>
+               		 </div>
+                      <div class="yyzx_1">
+
+                   	    <p class="yyzx_2"><a href="#"></a></p>
+                        <p style="margin-left:5px; margin-right:5px;">1/10</p>
+                        <p class="yyzx_3"><a href="#"></a></p>
+                        <p style="margin-left:12px; margin-right:8px;"><input type="text" name="textfield" class="input_58" id="textfield" /></p>
+                        <p class="ymfw-right-zgj_7"><a href="#">跳转</a></p>
+               </div>
+                  </li>
+              </ul> 
+              <!--效果2 -->
+              
+              <!--效果3 -->
+         	  <ul>
+              	  <li>
+                  	   <div class="ymfw-right-zgj_5">
+                            <table>
+                                <tr style="color:#888888; font-size:14px;">
+                                    <th class="th_498 yyzx_td-20">资讯标题</th>
+                                    <th class="th_99">发布人</th>
+                                    <th class="th_149">发布时间</th>
+                                    <th class="th_208">操作</th>
+                                </tr>
+                                <tr class="yyzx_tr">
+                                    <td class="yyzx_td-20 th_zdsw_1"><a href ="javascript:void(0)" onclick = "document.getElementById('light8').style.display='block';document.getElementById('fade').style.display='block'">大公报：电商进口货随时可溯源电源口随时可溯源...</a></td>
+                                    <td>欧阳明明</td>
+                                    <td class="fon-si">2015-12-12 12:12:12</td>
+                                    <td >
+                                    <a href="#">预览</a>
+
+                                    <a style="margin-left:14px;" href="#">删除</a>
+                                    </td>
+                                </tr>
+                            </table>
+               		 </div>
+                      <div class="yyzx_1">
+
+                   	    <p class="yyzx_2"><a href="#"></a></p>
+                        <p style="margin-left:5px; margin-right:5px;">1/10</p>
+                        <p class="yyzx_3"><a href="#"></a></p>
+                        <p style="margin-left:12px; margin-right:8px;"><input type="text" name="textfield" class="input_58" id="textfield" /></p>
+                        <p class="ymfw-right-zgj_7"><a href="#">跳转</a></p>
+               </div>
+                  </li>
+              </ul> 
+              <!--效果3 -->
+              </div>
+               <script>
+            function $_class(name){
+             var elements = document.getElementsByTagName("*");
+             for(s=0;s<elements.length;s++){
+              if(elements[s].className==name){
+               return  elements[s];
+              }
+             }
+            }
+            var tabList = $_class("menu_zzjs_net").getElementsByTagName("li")
+             tabCon = $_class("sub_zzjs").getElementsByTagName("ul");
+            for(i=0;i<tabList.length;i++){
+             (function(){
+              var t = i;
+              tabList[t].onmouseover = function(){
+               for(o=0;o<tabCon.length;o++){
+                tabCon[o].style.display = "none";
+                tabList[o].className = "";
+                if(t==o){
+                 this.className = "this_zzjs";
+                 tabCon[o].style.display = "block";
+                }
+               }
+              }
+             })();
+			 
+            }		 
+            </script>
+             <!--切换效果 -->
+             </div>
+          </div>
+            <div class="clear"></div>
+        </div>
+    </div>	
+    <!--用码服务右边-->  
+    
+</div>
+<!--主框架-->
+
+</body>
+</html>

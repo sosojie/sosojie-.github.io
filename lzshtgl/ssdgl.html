@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>送水单管理</title>
+<link href="css/css.css" rel="stylesheet" />
+</head>
+
+
+<body>
+<!--头部 -->
+<div class="gzt">
+	<div class="gzt_1">
+    	<ul>
+        	<li class="gzt_1_1"><img src="images/gzt.jpg"></li>
+            <li class="gzt_1_2"><span>您好，方贤浩</span><a href="#">修改密码</a><a href="#">退出登录</a></li>
+        </ul>
+    </div>
+</div>
+<!--头部 -->
+
+<div class="gzt_1">
+    	<!--1 -->
+    	<div class="gzt_3">
+        	<ul>
+            	  <li><a href="gzt.html" >工作台</a></li>
+                <li><a href="bssgl.html">档案管理</a></li>
+                <li><a href="gdgl_zxts.html">工单管理</a></li>
+                <li><a href="xzgl_htgl.html">行政管理</a></li>
+                <li><a href="rsgl_zbsz.html">人事管理</a></li>
+                <li><a href="cwgl_zsd.html">财务管理</a></li>
+                <li><a href="ssdgl.html" class="gzt_3_1">订单管理</a></li>
+                <li><a href="bgyp_ypsq.html">办公用品</a></li>
+                <li><a href="tjbp_ysbp.html">统计报表</a></li>
+                <li><a href="xtgl_pmgl.html">系统管理</a></li>
+            </ul>
+        </div>
+        <!--1 -->
+      <div class="clear"></div>
+      <div class="hygl_left">
+      	   <h2 style="background:url(images/hygl2_6.jpg) no-repeat 20px center;">订单管理</h2>	
+           <ul>
+               <li><a href="#" class="hygl_left_1">送水单管理</a></li>
+               <li><a href="#">订水单管理</a></li>
+                <li><a href="#">送货单管理</a></li>
+               <li><a href="#">订货单管理</a></li>
+           </ul>
+      </div>
+      <div class="hygl_right">
+      	<div class="hygl_1">送水单管理</div>
+        <!--1 -->
+        <div class="psrwd">
+        	<ul>
+                  <li >
+                 <input type="text" class="psrwd_1_0" name="textfield" id="textfield" value="户编号/电话/地址" onMouseOver="this.style.borderColor='#00a4b7'" onMouseOut="this.style.borderColor=''" onFocus="if (value =='户编号/电话/地址'){value =''}" onBlur="if (value ==''){value='户编号/电话/地址'}"/ /></li>
+                  <li >
+                 <input type="text" class="hygl_2_3" name="textfield" id="textfield" value="开始时间" onMouseOver="this.style.borderColor='#00a4b7'" onMouseOut="this.style.borderColor=''" onFocus="if (value =='开始时间'){value =''}" onBlur="if (value ==''){value='开始时间'}"/ /></li>
+                 <li style="margin-right:10px;"><p class="hygl_2_1">至</p>
+                 <p><input type="text" class="hygl_2_3" name="textfield" id="textfield" value="结束时间" onMouseOver="this.style.borderColor='#00a4b7'" onMouseOut="this.style.borderColor=''" onFocus="if (value =='结束时间'){value =''}" onBlur="if (value ==''){value='结束时间'}"/ /></p></li>
+                 <li> <select class="psrwd_1_0" name="">
+            	  <option>选择水店</option>
+            	  </select></li>
+                  <li> <select class="psrwd_1_0" name="">
+            	  <option>选择送水员</option>
+            	  </select></li>
+                   <li><input type="submit" class="psrwd_1_2" name="button" id="button" value="查询"></li>
+            </ul>
+        </div>
+        <!--1 -->
+         <div class="psrwd_0">
+        
+        	<ul>
+            	<li>
+                	<a href="#"><p><img src="images/psrwd_0.jpg" ></p> 
+                	<p>打印单据</p></a>
+                </li>
+                <li>
+                	<a href = "javascript:void(0)" onclick = "document.getElementById('light5').style.display='block';document.getElementById('fade').style.display='block'">
+                    <p style="margin-top:2px;"><img src="images/psrwd_1.jpg" ></p> 
+                	<p>取消</p></a>
+                </li>
+                
+            </ul>
+       </div>
+        
+         <!--1-1 -->
+        
+        <!--添加弹窗 -->
+         <div id="light" class="ssdgl_tc">
+         	<!--列表 -->
+         	<div class="htyg_tc">
+            	<ul>
+                	<li class="htyg_tc_1">订单详情</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/hygl_06.jpg"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            
+            <div class=" ssdgl_1">
+            	<div class="ssdgl_2">
+                	<!--1 -->
+                    <div class="ssdgl_3">
+                    	<h2><img src="images/ssdgl.jpg"></h2>
+                    	<ul>
+                       	  <li><p style="color:#00a4b7;">客户下单</p><p style="color:#999;">2015-12-11 15:45</p></li>
+                          <li style="margin-left:30px;"><p style="color:#999;">配送</p><!--<p style="color:#999;">2015-12-11 15:45</p>--></li>
+                          <li style="margin-left:40px;"><p style="color:#999;">签收</p><!--<p style="color:#999;">2015-12-11 15:45</p> --></li>
+                           <li style="margin-left:40px;"><p style="color:#999;">回单确认</p><!--<p style="color:#999;">2015-12-11 15:45</p>--></li>
+                            
+                      </ul>
+                      <div class=" clear"></div>
+                  </div>
+                  <!--1 -->
+
+                  <!--2 -->
+                  <div class="ssdgl_4">
+                  		<h2>订单概要</h2>
+                        <ul>
+                        	<li>&nbsp;&nbsp;订单号：<span style="color:#005ea7;">3-201505280001</span></li>
+                            <li>
+                            <p>预约时间：</p> 
+                            <p style="margin-right:5px;"><select class="ssdgl_select_160" name="">
+            	  <option>今天（2015-05-01）</option></select></p> 
+                            <p> <select class="ssdgl_select_160" name="">
+            	  <option>13:00-15:00</option></select></p>
+                            </li>
+                            <div class="clear"></div>
+                            <li>
+                            	<p>订单备注：</p>
+                                <p><input type="text" class="ssdgl_select_310" name="textfield" id="textfield" value="输入配送中的相关特殊情况，如:送前先电话" onMouseOver="this.style.borderColor='#00a4b7'" onMouseOut="this.style.borderColor=''" onFocus="if (value =='输入配送中的相关特殊情况，如:送前先电话'){value =''}" onBlur="if (value ==''){value='输入配送中的相关特殊情况，如:送前先电话'}"/ /></p>
+                            </li>
+                            <div class="clear"></div>
+                            <li>订单来源：  微信自助下单</li>
+                            <li>下单时间：  <span style="color:#999;">2015-05-21 21:00</span></li>
+                            <li>&nbsp;&nbsp;送水员： ——</li>
+                            <li>
+                            	<p >客户信息：</p>
+                                <p >NO.10000&nbsp;&nbsp;张丽丽&nbsp;&nbsp;VIP客户<br />   
+                                    15896355514   广州市天河区东圃镇东圃大马路51号</p>
+                            </li>
+                        </ul>
+                        <div class="ssdgl_5"><img src="images/ssdgl_5.jpg" ></div>
+                  </div>
+                  <!--2 -->	
+                  <!--3 -->	
+                  <div class="ssdgl_6">
+                  		<h2>送水单明细</h2>
+                        <div class="ssdgl_6_1">
+                        	 <ul>
+                        	<li style="background:#f5f5f5;"><p class="ssdgl_6_2">品类</p> 
+                            	<p class="ssdgl_6_3">数量</p> <p  class="ssdgl_6_4">应回桶数</p>
+                            </li>
+                            <li><p class="ssdgl_6_2">5加仑桶装水</p> 
+                            	<p class="ssdgl_6_3">100</p> <p  class="ssdgl_6_4">5</p>
+                            </li>
+                            <li><p class="ssdgl_6_2">3加仑桶装水</p> 
+                            	<p class="ssdgl_6_3">100</p> <p  class="ssdgl_6_4">5</p>
+                            </li>
+                             <li><p class="ssdgl_6_2">350ml*24支（膜装）</p> 
+                            	<p class="ssdgl_6_3">100</p> <p  class="ssdgl_6_4">5</p>
+                            </li>
+                        </ul>
+                        
+                        </div>
+                       
+                  </div>
+                  <!--3 -->
+                  
+                  <!--4 -->
+                  <div class="ssdgl_7">
+                  		<h2>关联收款单：</h2>
+                        <ul>
+                        	<li><span style="margin-top:2px;"><input type="checkbox" checked="false" name="checkbox" id="checkbox" /></span> <span> 订单号：2-201505280001 <em style="margin-left:5px;">￥650.00</em></span></li>
+                            <div class="clear"></div>
+                            <li><span><input type="checkbox" checked="false" name="checkbox" id="checkbox" /></span> <span> 订单号：2-201505280001 <em style="margin-left:5px;">贵宾卡-NO.22222222</em></span></li>
+                            <div class="clear"></div>
+                            <li style="margin-top:10px;"><textarea name="Content" rows="6" id="Content"  class="ssdgl_7_2"onfocus="if(this.value=='备忘') {this.value='';}this.style.color='#999';" onBlur="if(this.value=='') {this.value='备忘';this.style.color='#999';}"maxlength="20">备忘</textarea> </li>
+                            <li style="margin-top:10px;">
+                            	<span class="htyg_tc_6" style="margin-left:218px;"><a href="#">保存</a></span> 
+                        
+                        		<span class="htyg_tc_7"><a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">取消</a></span>
+                            </li>
+                        </ul>	
+                  </div>
+                  <!--4 -->
+                  
+                    
+                </div>
+                
+            </div>
+            
+         
+         </div> 
+        <div id="fade" class="black_overlay"></div>  
+        <!--添加弹窗 -->
+        
+          <!--添加弹窗2 -->
+         <div id="light1" class="ssdgl_tc">
+         	<!--列表 -->
+         	<div class="htyg_tc">
+            	<ul>
+                	<li class="htyg_tc_1">订单详情</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light1').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/hygl_06.jpg"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            
+            <div class=" ssdgl_1">
+            	<div class="ssdgl_2">
+                	<!--1 -->
+                    <div class="ssdgl_3">
+                    	<h2><img src="images/ssdgl_2.jpg"></h2>
+                    	<ul>
+                       	  <li><p style="color:#00a4b7;">客户下单</p><p style="color:#999;">2015-12-11 15:45</p></li>
+                          <li style="margin-left:30px; "><p style="color:#00a4b7;">配送</p><p style="color:#999;">2015-12-11 15:45</p></li>
+                          <li style="margin-left:40px;"><p style="color:#999;">签收</p><!--<p style="color:#999;">2015-12-11 15:45</p> --></li>
+                           <li style="margin-left:40px;"><p style="color:#999;">回单确认</p><!--<p style="color:#999;">2015-12-11 15:45</p>--></li>
+                            
+                      </ul>
+                      <div class=" clear"></div>
+                  </div>
+                  <!--1 -->
+
+                  <!--2 -->
+                  <div class="ssdgl_4">
+                  		<h2>订单概要</h2>
+                        <ul>
+                        	<li>&nbsp;&nbsp;订单号：<span style="color:#005ea7;">3-201505280001</span></li>
+                            <li>
+                            <p>预约时间：</p> 
+                            <p style="margin-right:5px;">今天（2015-05-01）</p> 
+                            <p> 13:00-15:00 </p>
+                            </li>
+                            <div class="clear"></div>
+                            <li>
+                            	<p>订单备注：</p>
+                                <p>输入配送中的相关特殊情况，如:送前先电话</p>
+                            </li>
+                            <div class="clear"></div>
+                            <li>订单来源：  微信自助下单</li>
+                            <li>下单时间：  <span style="color:#999;">2015-05-21 21:00</span></li>
+                            <li>&nbsp;&nbsp;送水员： 张先生</li>
+                            <li>
+                            	<p >客户信息：</p>
+                                <p >NO.10000&nbsp;&nbsp;张丽丽&nbsp;&nbsp;VIP客户<br />   
+                                    15896355514   广州市天河区东圃镇东圃大马路51号</p>
+                            </li>
+                        </ul>
+                        <div class="ssdgl_5"><img src="images/ssdgl_5.jpg" ></div>
+                  </div>
+                  <!--2 -->	
+                  <!--3 -->	
+                  <div class="ssdgl_6">
+                  		<h2>送水单明细</h2>
+                        <div class="ssdgl_6_1">
+                        	 <ul>
+                        	<li style="background:#f5f5f5;"><p class="ssdgl_6_2">品类</p> 
+                            	<p class="ssdgl_6_3">数量</p> <p  class="ssdgl_6_4">应回桶数</p>
+                            </li>
+                            <li><p class="ssdgl_6_2">5加仑桶装水</p> 
+                            	<p class="ssdgl_6_3">100</p> <p  class="ssdgl_6_4">5</p>
+                            </li>
+                            <li><p class="ssdgl_6_2">3加仑桶装水</p> 
+                            	<p class="ssdgl_6_3">100</p> <p  class="ssdgl_6_4">5</p>
+                            </li>
+                             <li><p class="ssdgl_6_2">350ml*24支（膜装）</p> 
+                            	<p class="ssdgl_6_3">100</p> <p  class="ssdgl_6_4">5</p>
+                            </li>
+                        </ul>
+                        
+                        </div>
+                       
+                  </div>
+                  <!--3 -->
+                  
+                  <!--4 -->
+                  <div class="ssdgl_7">
+                  		<h2>关联收款单：</h2>
+                        <ul>
+                        	<li><span style="margin-top:2px;"><input type="checkbox" checked="false" name="checkbox" id="checkbox" /></span> <span> 订单号：2-201505280001 <em style="margin-left:5px;">￥650.00</em></span></li>
+                            <div class="clear"></div>
+                            <li><span><input type="checkbox" checked="false" name="checkbox" id="checkbox" /></span> <span> 订单号：2-201505280001 <em style="margin-left:5px;">贵宾卡-NO.22222222</em></span></li>
+                            <div class="clear"></div>
+                            <li style="margin-top:10px;"><textarea name="Content" rows="6" id="Content"  class="ssdgl_7_2"onfocus="if(this.value=='备忘') {this.value='';}this.style.color='#999';" onBlur="if(this.value=='') {this.value='备忘';this.style.color='#999';}">备忘</textarea> </li>
+                            <li style="margin-top:10px;">
+                            	<span class="htyg_tc_6" style="margin-left:218px;"><a href="#">保存</a></span> 
+                        
+                        		<span class="htyg_tc_7"><a href = "javascript:void(0)" onclick = "document.getElementById('light1').style.display='none';document.getElementById('fade').style.display='none'">取消</a></span>
+                            </li>
+                        </ul>	
+                  </div>
+                  <!--4 -->
+                  
+                    
+                </div>
+                
+            </div>
+            
+         
+         </div> 
+        <div id="fade" class="black_overlay"></div>  
+        <!--添加弹窗2 -->
+        
+          <!--添加弹窗3 -->
+         <div id="light2" class="ssdgl_tc">
+         	<!--列表 -->
+         	<div class="htyg_tc">
+            	<ul>
+                	<li class="htyg_tc_1">订单详情</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/hygl_06.jpg"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            
+            <div class=" ssdgl_1">
+            	<div class="ssdgl_2">
+                	<!--1 -->
+                    <div class="ssdgl_3">
+                    	<h2><img src="images/ssdgl_3.jpg"></h2>
+                    	<ul>
+                       	  <li><p style="color:#00a4b7;">客户下单</p><p style="color:#999;">2015-12-11 15:45</p></li>
+                          <li style="margin-left:30px; "><p style="color:#00a4b7;">配送</p><p style="color:#999;">2015-12-11 15:45</p></li>
+                          <li style="margin-left:40px; "><p style="color:#00a4b7;">签收</p><p style="color:#999;">2015-12-11 15:45</p> </li>
+                           <li style="margin-left:40px;"><p style="color:#999;">回单确认</p><!--<p style="color:#999;">2015-12-11 15:45</p>--></li>
+                            
+                      </ul>
+                      <div class=" clear"></div>
+                  </div>
+                  <!--1 -->
+
+                  <!--2 -->
+                  <div class="ssdgl_4">
+                  		<h2>订单概要</h2>
+                        <ul>
+                        	<li>&nbsp;&nbsp;订单号：<span style="color:#005ea7;">3-201505280001</span></li>
+                            <li>
+                            <p>预约时间：</p> 
+                            <p style="margin-right:5px;">今天（2015-05-01）</p> 
+                            <p> 13:00-15:00 </p>
+                            </li>
+                            <div class="clear"></div>
+                            <li>
+                            	<p>订单备注：</p>
+                                <p>输入配送中的相关特殊情况，如:送前先电话</p>
+                            </li>
+                            <div class="clear"></div>
+                            <li>订单来源：  微信自助下单</li>
+                            <li>下单时间：  <span style="color:#999;">2015-05-21 21:00</span></li>
+                            <li>&nbsp;&nbsp;送水员： 张先生</li>
+                            <li>
+                            	<p >客户信息：</p>
+                                <p >NO.10000&nbsp;&nbsp;张丽丽&nbsp;&nbsp;VIP客户<br />   
+                                    15896355514   广州市天河区东圃镇东圃大马路51号</p>
+                            </li>
+                        </ul>
+                        <div class="ssdgl_5"><img src="images/ssdgl_5.jpg" ></div>
+                  </div>
+                  <!--2 -->	
+                  <!--3 -->	
+                  <div class="ssdgl_6">
+                  		<h2>送水单明细</h2>
+                        <div class="ssdgl_6_1">
+                        	 <ul>
+                        	<li style="background:#f5f5f5;"><p class="ssdgl_6_2">品类</p> 
+                            	<p class="ssdgl_6_3">数量</p> <p  class="ssdgl_6_4">应回桶数</p>
+                            </li>
+                            <li><p class="ssdgl_6_2">5加仑桶装水</p> 
+                            	<p class="ssdgl_6_3">100</p> <p  class="ssdgl_6_4">5</p>
+                            </li>
+                            <li><p class="ssdgl_6_2">3加仑桶装水</p> 
+                            	<p class="ssdgl_6_3">100</p> <p  class="ssdgl_6_4">5</p>
+                            </li>
+                             <li><p class="ssdgl_6_2">350ml*24支（膜装）</p> 
+                            	<p class="ssdgl_6_3">100</p> <p  class="ssdgl_6_4">5</p>
+                            </li>
+                        </ul>
+                        
+                        </div>
+                       
+                  </div>
+                  <!--3 -->
+                  
+                  <!--4 -->
+                  <div class="ssdgl_7">
+                  		<h2>关联收款单：</h2>
+                        <ul>
+                        	<li><span style="margin-top:2px;"><input type="checkbox" checked="false" name="checkbox" id="checkbox" /></span> <span> 订单号：2-201505280001 <em style="margin-left:5px;">￥650.00</em></span></li>
+                            <div class="clear"></div>
+                            <li><span><input type="checkbox" checked="false" name="checkbox" id="checkbox" /></span> <span> 订单号：2-201505280001 <em style="margin-left:5px;">贵宾卡-NO.22222222</em></span></li>
+                            <div class="clear"></div>
+                            <li style="margin-top:10px;"><textarea name="Content" rows="6" id="Content"  class="ssdgl_7_2"onfocus="if(this.value=='备忘') {this.value='';}this.style.color='#999';" onBlur="if(this.value=='') {this.value='备忘';this.style.color='#999';}"maxlength="20">备忘</textarea> </li>
+                            <li style="margin-top:10px;">
+                            	<span class="htyg_tc_6" style="margin-left:218px;"><a href="#">保存</a></span> 
+                        
+                        		<span class="htyg_tc_7"><a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='none';document.getElementById('fade').style.display='none'">取消</a></span>
+                            </li>
+                        </ul>	
+                  </div>
+                  <!--4 -->
+                  
+                    
+                </div>
+                
+            </div>
+            
+         
+         </div> 
+        <div id="fade" class="black_overlay"></div>  
+        <!--添加弹窗3 -->
+        
+          <!--添加弹窗4 -->
+         <div id="light3" class="ssdgl_tc">
+         	<!--列表 -->
+         	<div class="htyg_tc">
+            	<ul>
+                	<li class="htyg_tc_1">订单详情</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light3').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/hygl_06.jpg"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            
+            <div class=" ssdgl_1">
+            	<div class="ssdgl_2">
+                	<!--1 -->
+                    <div class="ssdgl_3">
+                    	<h2><img src="images/ssdgl_4.jpg"></h2>
+                    	<ul>
+                       	  <li><p style="color:#00a4b7;">客户下单</p><p style="color:#999;">2015-12-11 15:45</p></li>
+                          <li style="margin-left:30px; "><p style="color:#00a4b7;">配送</p><p style="color:#999;">2015-12-11 15:45</p></li>
+                          <li style="margin-left:40px; "><p style="color:#00a4b7;">签收</p><p style="color:#999;">2015-12-11 15:45</p> </li>
+                           <li style="margin-left:40px;"><p style="color:#00a4b7;">回单确认</p><p style="color:#999;">2015-12-11 15:45</p></li>
+                            
+                      </ul>
+                      <div class=" clear"></div>
+                  </div>
+                  <!--1 -->
+
+                  <!--2 -->
+                  <div class="ssdgl_4">
+                  		<h2>订单概要</h2>
+                        <ul>
+                        	<li>&nbsp;&nbsp;订单号：<span style="color:#005ea7;">3-201505280001</span></li>
+                            <li>
+                            <p>预约时间：</p> 
+                            <p style="margin-right:5px;">今天（2015-05-01）</p> 
+                            <p> 13:00-15:00 </p>
+                            </li>
+                            <div class="clear"></div>
+                            <li>
+                            	<p>订单备注：</p>
+                                <p>输入配送中的相关特殊情况，如:送前先电话</p>
+                            </li>
+                            <div class="clear"></div>
+                            <li>订单来源：  微信自助下单</li>
+                            <li>下单时间：  <span style="color:#999;">2015-05-21 21:00</span></li>
+                            <li>&nbsp;&nbsp;送水员： 张先生</li>
+                            <li>
+                            	<p >客户信息：</p>
+                                <p >NO.10000&nbsp;&nbsp;张丽丽&nbsp;&nbsp;VIP客户<br />   
+                                    15896355514   广州市天河区东圃镇东圃大马路51号</p>
+                            </li>
+                        </ul>
+                        <div class="ssdgl_5"><img src="images/ssdgl_5.jpg" ></div>
+                  </div>
+                  <!--2 -->	
+                  <!--3 -->	
+                  <div class="ssdgl_6_0">
+                  		<h2>送水单明细</h2>
+                        <div class="ssdgl_6_1">
+                        	 <ul>
+                        	<li style="background:#f5f5f5;"><p class="ssdgl_6_2">品类</p> 
+                            	<p class="ssdgl_6_3">数量</p> <p  class="ssdgl_6_4">应回桶数</p> <p  class="ssdgl_6_4">实回桶数</p>
+                            </li>
+                            <li><p class="ssdgl_6_2">5加仑桶装水</p> 
+                            	<p class="ssdgl_6_3">100</p> <p  class="ssdgl_6_4">5</p> <p  class="ssdgl_6_4">5</p>
+                            </li>
+                            <li><p class="ssdgl_6_2">3加仑桶装水</p> 
+                            	<p class="ssdgl_6_3">100</p> <p  class="ssdgl_6_4">5</p> <p  class="ssdgl_6_4">5</p>
+                            </li>
+                             <li><p class="ssdgl_6_2">350ml*24支（膜装）</p> 
+                            	<p class="ssdgl_6_3">100</p> <p  class="ssdgl_6_4">5</p> <p  class="ssdgl_6_4">5</p>
+                            </li>
+                        </ul>
+                        
+                        </div>
+                       
+                  </div>
+                  <!--3 -->
+                  
+                  <!--4 -->
+                  <div class="ssdgl_7">
+                  		<h2>关联收款单：</h2>
+                        <ul>
+                        	<li><span style="margin-top:2px;"><input type="checkbox" checked="false" name="checkbox" id="checkbox" /></span> <span> 订单号：2-201505280001 <em style="margin-left:5px;">￥650.00</em></span></li>
+                            <div class="clear"></div>
+                            <li><span><input type="checkbox" checked="false" name="checkbox" id="checkbox" /></span> <span> 订单号：2-201505280001 <em style="margin-left:5px;">贵宾卡-NO.22222222</em></span></li>
+                            <div class="clear"></div>
+                            <li style="margin-top:10px;"><textarea name="Content" rows="6" id="Content"  class="ssdgl_7_2"onfocus="if(this.value=='备忘') {this.value='';}this.style.color='#999';" onBlur="if(this.value=='') {this.value='备忘';this.style.color='#999';}"maxlength="20">备忘</textarea> </li>
+                            <li style="margin-top:10px;">
+                            	<span class="htyg_tc_6" style="margin-left:218px;"><a href="#">保存</a></span> 
+                        
+                        		<span class="htyg_tc_7"><a href = "javascript:void(0)" onclick = "document.getElementById('light3').style.display='none';document.getElementById('fade').style.display='none'">取消</a></span>
+                            </li>
+                        </ul>	
+                  </div>
+                  <!--4 -->
+                  
+                    
+                </div>
+                
+            </div>
+            
+         
+         </div> 
+        <div id="fade" class="black_overlay"></div>  
+        <!--添加弹窗4 -->
+        
+        <!--添加弹窗5 -->
+         <div id="light4" class="ssdgl_tcps">
+         	<!--列表 -->
+         	<div class="htyg_tc">
+            	<ul>
+                	<li class="htyg_tc_1">配送</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light4').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/hygl_06.jpg"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            <div class="ssdgl_tcps_1">
+            	<ul>
+                	<li>订单号：<span style="color:#005ea7;">3-201505280001</span></li>
+                    <li><p>配送员：</p> 
+                            <p style="margin-right:5px;"><select class="ssdgl_select_152" name="">
+            	  <option>区庄自营店</option></select></p> 
+                            <p> <select class="ssdgl_select_152" name="">
+            	  <option>请选择</option></select></p></li>
+                  <div class="clear"></div>
+                    <li><textarea name="Content" rows="6" id="Content"  class="ssdgl_textarea368"onfocus="if(this.value=='备忘') {this.value='';}this.style.color='#999';" onBlur="if(this.value=='') {this.value='备忘';this.style.color='#999';}"maxlength="20">备忘</textarea></li>
+                    <li> 
+                    <p class="htyg_tc_6" style="margin-left:118px;"><a href="#">保存</a></p> 
+                        
+                   <p class="htyg_tc_7"><a href = "javascript:void(0)" onclick = "document.getElementById('light4').style.display='none';document.getElementById('fade').style.display='none'">取消</a></p></li>
+                </ul>
+            </div>
+            
+         
+         </div> 
+        <div id="fade" class="black_overlay"></div>  
+        <!--添加弹窗5 -->
+        
+        <!--添加弹窗6 -->
+         <div id="light5" class="ssdgl_tcps">
+         	<!--列表 -->
+         	<div class="htyg_tc">
+            	<ul>
+                	<li class="htyg_tc_1">取消</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light5').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/hygl_06.jpg"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            <div class="ssdgl_tcps_1">
+            	<ul>
+                	<li class="ssdgl_tcps_2">确认取消该送水单？</li>
+                    <li><textarea name="Content" rows="6" id="Content"  class="ssdgl_textarea368"onfocus="if(this.value=='备忘') {this.value='';}this.style.color='#999';" onBlur="if(this.value=='') {this.value='备忘';this.style.color='#999';}"maxlength="20">备忘</textarea></li>
+                    <li> 
+                    <p class="htyg_tc_6" style="margin-left:118px;"><a href="#">保存</a></p> 
+                        
+                   <p class="htyg_tc_7"><a href = "javascript:void(0)" onclick = "document.getElementById('light5').style.display='none';document.getElementById('fade').style.display='none'">取消</a></p></li>
+                </ul>
+            </div>
+            
+         
+         </div> 
+        <div id="fade" class="black_overlay"></div>  
+        <!--添加弹窗6 -->
+        
+         <!--添加弹窗7 -->
+         <div id="light6" class="ssdgl_tcps">
+         	<!--列表 -->
+         	<div class="htyg_tc">
+            	<ul>
+                	<li class="htyg_tc_1">签收</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light6').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/hygl_06.jpg"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            <div class="ssdgl_tcps_1">
+            	<ul>
+                	<li class="ssdgl_tcps_2">确认签收该送水单？</li>
+                    <li><textarea name="Content" rows="6" id="Content"  class="ssdgl_textarea368"onfocus="if(this.value=='备忘') {this.value='';}this.style.color='#999';" onBlur="if(this.value=='') {this.value='备忘';this.style.color='#999';}"maxlength="20">备忘</textarea></li>
+                    <li> 
+                    <p class="htyg_tc_6" style="margin-left:118px;"><a href="#">保存</a></p> 
+                        
+                   <p class="htyg_tc_7"><a href = "javascript:void(0)" onclick = "document.getElementById('light6').style.display='none';document.getElementById('fade').style.display='none'">取消</a></p></li>
+                </ul>
+            </div>
+            
+         
+         </div> 
+        <div id="fade" class="black_overlay"></div>  
+        <!--添加弹窗7 -->
+        
+         <!--添加弹窗8 -->
+         <div id="light7" class="ssdgl_tcps">
+         	<!--列表 -->
+         	<div class="htyg_tc">
+            	<ul>
+                	<li class="htyg_tc_1">拒收</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light7').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/hygl_06.jpg"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            <div class="ssdgl_tcps_1">
+            	<ul>
+                	<li class="ssdgl_tcps_2">确认拒收该送水单？</li>
+                    <li><textarea name="Content" rows="6" id="Content"  class="ssdgl_textarea368"onfocus="if(this.value=='备忘') {this.value='';}this.style.color='#999';" onBlur="if(this.value=='') {this.value='备忘';this.style.color='#999';}"maxlength="20">备忘</textarea></li>
+                    <li> 
+                    <p class="htyg_tc_6" style="margin-left:118px;"><a href="#">保存</a></p> 
+                        
+                   <p class="htyg_tc_7"><a href = "javascript:void(0)" onclick = "document.getElementById('light7').style.display='none';document.getElementById('fade').style.display='none'">取消</a></p></li>
+                </ul>
+            </div>
+            
+         
+         </div> 
+        <div id="fade" class="black_overlay"></div>  
+        <!--添加弹窗8 -->
+        
+          <!--添加弹窗 -->
+         <div id="light8" class="ssdgl_tc">
+         	<!--列表 -->
+         	<div class="htyg_tc">
+            	<ul>
+                	<li class="htyg_tc_1">订单详情</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light8').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/hygl_06.jpg"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            
+            <div class=" ssdgl_1">
+            	<div class="ssdgl_2">
+                	
+
+                  <!--2 -->
+                  <div class="ssdgl_4" style="margin-top:0px;">
+                        <ul>
+                        	<li>&nbsp;&nbsp;订单号：<span style="color:#005ea7;">3-201505280001</span></li>
+                           
+                            <li>
+                            	<p >客户信息：</p>
+                                <p >NO.10000&nbsp;&nbsp;张丽丽&nbsp;&nbsp;VIP客户<br />   
+                                    15896355514   广州市天河区东圃镇东圃大马路51号</p>
+                            </li>
+                        </ul>
+                        
+                  </div>
+                  <!--2 -->	
+                  <!--3 -->	
+                  <div class="ssdgl_6_0">
+                  		<h2>回单信息</h2>
+                        <div class="ssdgl_6_1">
+                        	 <ul>
+                        	<li style="background:#f5f5f5;"><p class="ssdgl_6_2">品类</p> 
+                            	<p class="ssdgl_6_3">数量</p> <p  class="ssdgl_6_4">应回桶数</p> <p  class="ssdgl_6_4">实回桶数</p>
+                            </li>
+                            <li><p class="ssdgl_6_2">5加仑桶装水</p> 
+                            	<p class="ssdgl_6_3">100</p> <p  class="ssdgl_6_4">5</p> <p  class="ssdgl_6_4">5</p>
+                            </li>
+                            <li><p class="ssdgl_6_2">3加仑桶装水</p> 
+                            	<p class="ssdgl_6_3">100</p> <p  class="ssdgl_6_4">5</p> <p  class="ssdgl_6_4">5</p>
+                            </li>
+                             <li><p class="ssdgl_6_2">350ml*24支（膜装）</p> 
+                            	<p class="ssdgl_6_3">100</p> <p  class="ssdgl_6_4">5</p> <p  class="ssdgl_6_4">5</p>
+                            </li>
+                        </ul>
+                        
+                        </div>
+                       
+                  </div>
+                  <!--3 -->
+                  
+                  <!--4 -->
+                  <div class="ssdgl_7">
+                  		<h2>关联收款单：</h2>
+                        <ul>
+                        	<li><span style="margin-top:2px;"><input type="checkbox" checked="false" name="checkbox" id="checkbox" /></span> <span> 订单号：2-201505280001 <em style="margin-left:5px;">￥650.00</em></span></li>
+                            <div class="clear"></div>
+                            <li><span><input type="checkbox" checked="false" name="checkbox" id="checkbox" /></span> <span> 订单号：2-201505280001 <em style="margin-left:5px;">贵宾卡-NO.22222222</em></span></li>
+                            <div class="clear"></div>
+                            <li style="margin-top:10px;"><textarea name="Content" rows="6" id="Content"  class="ssdgl_7_2"onfocus="if(this.value=='备忘') {this.value='';}this.style.color='#999';" onBlur="if(this.value=='') {this.value='备忘';this.style.color='#999';}"maxlength="20">备忘</textarea> </li>
+                            <li style="margin-top:10px;">
+                            	<span class="htyg_tc_6" style="margin-left:218px;"><a href="#">保存</a></span> 
+                        
+                        		<span class="htyg_tc_7"><a href = "javascript:void(0)" onclick = "document.getElementById('light8').style.display='none';document.getElementById('fade').style.display='none'">取消</a></span>
+                            </li>
+                        </ul>	
+                  </div>
+                  <!--4 -->
+                  
+                    
+                </div>
+                
+            </div>
+            
+         
+         </div> 
+        <div id="fade" class="black_overlay"></div>  
+        <!--添加弹窗9 -->
+        
+        
+        
+        
+        
+        <!--切换效果-->
+        
+        <div class="psrwd_5">
+    	 <!--导航  -->
+        	<ul class="menu_zzjs_net">
+                 <li class="this_zzjs"><a href="javascript:void(0)">待配送（12）</a></li>
+                 <li><a href="javascript:void(0)"> 配送中（12）</a></li>
+                 <li><a href="javascript:void(0)"> 已签收（67）</a></li>
+                 <li style="width:251px;"><a href="javascript:void(0)"> 全部送水单</a></li>
+        	 </ul>
+        <!--导航  -->
+     </div>
+     <div class="clear"></div>
+         <div class="sub_zzjs">
+         	  <ul style="display:block;">
+              	  <li >
+                  		<div class="psrwd_5_1 psrwd_5_2" style="background:#f5f5f5;">
+                        	<p class="w30" style="margin-top:3px;"><input type="checkbox" name="checkbox" id="checkbox" /></p> 
+                            <p class="w180">配送信息</p> <p class="w212">品类</p> <p class="w70">数量（桶）</span> 
+                            <p class="w70">应回桶数</p> <p class="w240">配送地址</p> <p class="w90">订单状态</p> <p class="w90" style="border-right:none;">操作</p> 
+                            
+                        </div>
+                        
+                        <!--1  -->
+                        <div class="psrwd_5_1 ">
+                        	<p class="w30 psrwd_8_3"><input type="checkbox" name="checkbox" id="checkbox" /></p> 
+                            <p class="w973">
+                            	<p class="w973 psrwd_8">
+                                	<span class="w180_1" >送水单号：<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'"><em style="color:#005ea7;">3-201505280001</em></a><br />
+                                    区庄自营店<br />
+                                    <em style="color:#999;">2015-4-28 10:23</em>
+                                    
+                                    </span>
+                                    <span class="w212 psrwd_line25">5加仑<br />
+                                    3加仑<br />
+                                    3加仑<br />
+                                    3加仑<br />
+                                    支装水350ml*24支（箱装）</span>
+                                    <span class="w70 psrwd_line25">5<br />134<br />1
+                                    </span>
+                                    <span class="w70 psrwd_line25">5<br />134<br />1
+                                    </span>
+                                    <span class="w240_1">NO.100000 陈丽丽 020-2806263<br />
+                                    环市东路398号
+                                    </span>
+                                    <span class="w90 psrwd_8_2" >待配送</span>
+                                    <span class="w90_1" > <a href="#">打印单据</a><br />
+                                    <a href = "javascript:void(0)" onclick = "document.getElementById('light4').style.display='block';document.getElementById('fade').style.display='block'">配送</a><br />
+                                   <a href = "javascript:void(0)" onclick = "document.getElementById('light5').style.display='block';document.getElementById('fade').style.display='block'">取消</a></span>
+                                    
+                                </p>
+                                <p class="w973 psrwd_9">
+                                	<span class="ssdgl_78">应收货款：</span>
+                                    <span class="ssdgl_652">
+                                    	  <span class="ssdgl_214"><input type="checkbox" checked="false" name="checkbox" id="checkbox" /> 订单号：2-201505280001 <em style="margin-left:5px;">￥650.00</em></span>
+                                          <span class="ssdgl_214"><input type="checkbox" checked="false" name="checkbox" id="checkbox" /> 订单号：2-201505280001 <em style="margin-left:5px;">贵宾卡-NO.22222222</em></span>
+                                          <span class="ssdgl_214"><input type="checkbox" checked="false" name="checkbox" id="checkbox" /> 订单号：2-201505280001 <em style="margin-left:5px;">￥650.00</em></span>
+                                          <span class="ssdgl_214"><input type="checkbox" checked="false" name="checkbox" id="checkbox" /> 订单号：2-201505280001 <em style="margin-left:5px;">贵宾卡-NO.22222222</em></span>
+                                          
+                                    </span>
+                                    
+                                </p>
+                            </p>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="psrwd_8_1"></div>
+                        <!--1  -->
+                        <!--2  -->
+                        <div class="psrwd_5_1 ">
+                        	<p class="w30 psrwd_8_3"><input type="checkbox" name="checkbox" id="checkbox" /></p> 
+                            <p class="w973">
+                            	<p class="w973 psrwd_8">
+                                	<span class="w180_1" >送水单号：<a href="#"><em style="color:#005ea7;">3-201505280001</em></a><br />
+                                    区庄自营店<br />
+                                    <em style="color:#999;">2015-4-28 10:23</em>
+                                    
+                                    </span>
+                                    <span class="w212 psrwd_line25">5加仑<br />
+                                    3加仑<br />
+                                    支装水350ml*24支（箱装）</span>
+                                    <span class="w70 psrwd_line25">5<br />134<br />1
+                                    </span>
+                                    <span class="w70 psrwd_line25">5<br />134<br />1
+                                    </span>
+                                    <span class="w240_1">NO.100000 陈丽丽 020-2806263<br />
+                                    环市东路398号
+                                    </span>
+                                    <span class="w90 psrwd_8_2" >待配送</span>
+                                    <span class="w90_1" > <a href="#" style="color:#999;">再次打印</a><br /><a href="#">配送</a><br /><a href="#">取消</a></span>
+                                    
+                                </p>
+                                <p class="w973 psrwd_9">
+                                	<span class="ssdgl_78">应收货款：</span>
+                                    <span class="ssdgl_652">
+                                    	  <span class="ssdgl_214"><input type="checkbox" checked="false" name="checkbox" id="checkbox" /> 订单号：2-201505280001 <em style="margin-left:5px;">￥650.00</em></span>
+                                          <span class="ssdgl_214"><input type="checkbox" checked="false" name="checkbox" id="checkbox" /> 订单号：2-201505280001 <em style="margin-left:5px;">贵宾卡-NO.22222222</em></span>
+                                          
+                                    </span>
+                                </p>
+                            </p>
+                            <div class="clear"></div>
+                        </div>
+                        
+                        <!--2 -->
+                       
+                        <div class="psrwd_6">
+                            <span style="margin-right:10px;">1-10/1000</span>
+                        	<span><a href="#"><img src="images/hygl_02.jpg" ></a></span>
+                            <span><a href="#"><img src="images/hygl_03.jpg" ></a></span>
+                            <span style="margin-right:0px;">
+                            
+                            	<div class="psrwd_7">
+                                        <a href="#" class="hygl_6_1">1</a>
+                                        <a href="#">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#">4</a>
+                                        <a href="#">5</a>
+                                        <a href="#">6</a>
+                                        <a href="#">...</a>
+                                        <a href="#">10</a>
+                                    </div>	
+                            </span>
+                            <span><a href="#"><img src="images/hygl_04.jpg"></a></span>
+                            <span><a href="#"><img src="images/hygl_05.jpg"></a></span>
+                            <div class="clear"></div>
+                            
+                        </div>
+                        
+                        
+						<div class="clear"></div>
+                  </li>
+              </ul>
+              <!--切换二 -->
+              
+               <ul>
+              	  <li >
+                  
+                  <div class="psrwd_5_1 psrwd_5_2" style="background:#f5f5f5;">
+                        	
+                            <p class="w180">配送信息</p> <p class="w212">品类</p> <p class="w70">数量（桶）</span> 
+                            <p class="w70">应回桶数</p> <p class="w240">配送地址</p> <p class="w90">订单状态</p> <p class="w90" style="border-right:none;">操作</p> 
+                            
+                        </div>
+                        
+                        <!--1  -->
+                        <div class="psrwd_5_1 ">
+                        	
+                            <p class="w973">
+                            	<p class="w973_1 psrwd_8">
+                                	<span class="w180_1" >送水单号：<a href = "javascript:void(0)" onclick = "document.getElementById('light1').style.display='block';document.getElementById('fade').style.display='block'"><em style="color:#005ea7;">3-201505280001</em></a><br />
+                                    区庄自营店/ 欧阳龙龙<br />
+                                    <em style="color:#999;">2015-4-28 10:23</em>
+                                    
+                                    </span>
+                                    <span class="w212 psrwd_line25">5加仑<br />
+                                    3加仑<br />
+                                    支装水350ml*24支（箱装）</span>
+                                    <span class="w70 psrwd_line25">5<br />134<br />1
+                                    </span>
+                                    <span class="w70 psrwd_line25">5<br />134<br />1
+                                    </span>
+                                    <span class="w240_1">NO.100000 陈丽丽 020-2806263<br />
+                                    环市东路398号
+                                    </span>
+                                    <span class="w90 psrwd_8_2" >配送中</span>
+                                    <span class="w90_1" ><a href = "javascript:void(0)" onclick = "document.getElementById('light6').style.display='block';document.getElementById('fade').style.display='block'">签收</a><br />
+                                    <a href = "javascript:void(0)" onclick = "document.getElementById('light7').style.display='block';document.getElementById('fade').style.display='block'">拒收</a></span>
+                                    
+                                </p>
+                                <p class="w973 psrwd_10">
+                                	<span class="ssdgl_78">应收货款：</span>
+                                    <span class="ssdgl_652">
+                                    	  <span class="ssdgl_214"><input type="checkbox" checked="false" name="checkbox" id="checkbox" /> 订单号：2-201505280001 <em style="margin-left:5px;">￥650.00</em></span>
+                                          <span class="ssdgl_214"><input type="checkbox" checked="false" name="checkbox" id="checkbox" /> 订单号：2-201505280001 <em style="margin-left:5px;">贵宾卡-NO.22222222</em></span>
+                                          <span class="ssdgl_214"><input type="checkbox" checked="false" name="checkbox" id="checkbox" /> 订单号：2-201505280001 <em style="margin-left:5px;">￥650.00</em></span>
+                                          <span class="ssdgl_214"><input type="checkbox" checked="false" name="checkbox" id="checkbox" /> 订单号：2-201505280001 <em style="margin-left:5px;">贵宾卡-NO.22222222</em></span>
+                                    </span>
+                                </p>
+                            </p>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="psrwd_8_1"></div>
+                        <!--1  -->
+                        <!--2  -->
+                        <div class="psrwd_5_1 ">
+                        	 
+                            <p class="w973">
+                            	<p class="w973_1 psrwd_8">
+                                	<span class="w180_1" ><a href="#">送水单号：<em style="color:#005ea7;">3-201505280001</em></a><br />
+                                    区庄自营店 / 欧阳龙龙<br />
+                                    <em style="color:#999;">2015-4-28 10:23</em>
+                                    
+                                    </span>
+                                    <span class="w212 psrwd_line25">5加仑<br />
+                                    3加仑<br />
+                                    支装水350ml*24支（箱装）</span>
+                                    <span class="w70 psrwd_line25">5<br />134<br />1
+                                    </span>
+                                    <span class="w70 psrwd_line25">5<br />134<br />1
+                                    </span>
+                                    <span class="w240_1">NO.100000 陈丽丽 020-2806263<br />
+                                    环市东路398号
+                                    </span>
+                                    <span class="w90 psrwd_8_2" >配送中</span>
+                                    <span class="w90_1" > <a href="#">签收</a><br /><a href="#">拒收</a></span>
+                                    
+                                </p>
+                                <p class="w973 psrwd_10">
+                                	<span class="ssdgl_78">应收货款：</span>
+                                    <span class="ssdgl_652">
+                                    	  <span class="ssdgl_214"><input type="checkbox" checked="false" name="checkbox" id="checkbox" /> 订单号：2-201505280001 <em style="margin-left:5px;">￥650.00</em></span>
+                                          <span class="ssdgl_214"><input type="checkbox" checked="false" name="checkbox" id="checkbox" /> 订单号：2-201505280001 <em style="margin-left:5px;">贵宾卡-NO.22222222</em></span>
+                                          
+                                    </span>
+                                </p>
+                            </p>
+                            <div class="clear"></div>
+                        </div>
+                        
+                        <!--2 -->
+                       
+                        <div class="psrwd_6" >
+                            <span style="margin-right:10px;">1-10/1000</span>
+                        	<span><a href="#"><img src="images/hygl_02.jpg" ></a></span>
+                            <span><a href="#"><img src="images/hygl_03.jpg" ></a></span>
+                            <span style="margin-right:0px;">
+                            
+                            	<div class="psrwd_7">
+                                        <a href="#" class="hygl_6_1">1</a>
+                                        <a href="#">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#">4</a>
+                                        <a href="#">5</a>
+                                        <a href="#">6</a>
+                                        <a href="#">...</a>
+                                        <a href="#">10</a>
+                                    </div>	
+                            </span>
+                            <span><a href="#"><img src="images/hygl_04.jpg"></a></span>
+                            <span><a href="#"><img src="images/hygl_05.jpg"></a></span>
+                            <div class="clear"></div>
+                            
+                        </div>
+                        
+						<div class="clear"></div>
+                  </li>
+              </ul>
+              <!--切换二 -->
+              
+              <!--切换三 -->
+              <ul>
+              	  <li >
+                  		<div class="psrwd_5_1 psrwd_5_2" style="background:#f5f5f5;">
+                        	<p class="w30">序号</p> 
+                            <p class="w180">配送信息</p> <p class="w212">品类</p> <p class="w70">数量（桶）</span> 
+                            <p class="w70">应回桶数</p> <p class="w240">配送地址</p> <p class="w90">订单状态</p> <p class="w90" style="border-right:none;">操作</p> 
+                            
+                        </div>
+                        
+                        <!--1  -->
+                        <div class="psrwd_5_1 ">
+                        	<p class="w30 psrwd_8_3">1</p> 
+                            <p class="w973">
+                       	  <p class="w973 psrwd_8">
+                                	<span class="w180_1" >送水单号：<a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='block';document.getElementById('fade').style.display='block'"><em style="color:#005ea7;">3-201505280001</em></a><br />
+                                    区庄自营店/ 欧阳龙龙<br />
+                                    <em style="color:#999;">2015-4-28 10:23</em>
+                                    
+                                    </span>
+                                    <span class="w212 psrwd_line25">5加仑<br />
+                                    3加仑<br />
+                                    支装水350ml*24支（箱装）</span>
+                                    <span class="w70 psrwd_line25">5<br />134<br />1
+                                    </span>
+                                    <span class="w70 psrwd_line25">5<br />134<br />1
+                                    </span>
+                                    <span class="w240_1">NO.100000 陈丽丽 020-2806263<br />
+                                    环市东路398号
+                                    </span>
+                                    <span class="w90 psrwd_8_2" style="color:#999;">已签收</span>
+                                    <span class="w90_1" > <a href = "javascript:void(0)" onclick = "document.getElementById('light8').style.display='block';document.getElementById('fade').style.display='block'">回单确认 </a></span>
+                                    
+                                </p>
+                                <p class="w973 psrwd_9">
+                                	<span class="ssdgl_78">应收货款：</span>
+                                    <span class="ssdgl_652">
+                                        <span class="ssdgl_214"><input type="checkbox" checked="false" name="checkbox"  id="checkbox" /> 订单号：2-201505280001 <em style="margin-left:5px;">￥650.00</em></span>
+                                        <span class="ssdgl_214"><input type="checkbox" checked="false" name="checkbox" id="checkbox" /> 订单号：2-201505280001 <em style="margin-left:5px;">贵宾卡-NO.22222222</em></span>
+                                        <span class="ssdgl_214"><input type="checkbox" checked="false" name="checkbox" id="checkbox" /> 订单号：2-201505280001 <em style="margin-left:5px;">￥650.00</em></span>
+                                        <span class="ssdgl_214"><input type="checkbox" checked="false" name="checkbox" id="checkbox" /> 订单号：2-201505280001 <em style="margin-left:5px;">贵宾卡-NO.22222222</em></span>
+                                        
+                                  </span>
+                          </p>
+                            </p>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="psrwd_8_1"></div>
+                        <!--1  -->
+                        <!--2  -->
+                        <div class="psrwd_5_1 ">
+                        	<p class="w30 psrwd_8_3">2</p> 
+                            <p class="w973">
+                            	<p class="w973 psrwd_8">
+                                	<span class="w180_1" ><a href="#">送水单号：<em style="color:#005ea7;">3-201505280001</em></a><br />
+                                    区庄自营店 / 欧阳龙龙<br />
+                                    <em style="color:#999;">2015-4-28 10:23</em>
+                                    
+                                    </span>
+                                    <span class="w212 psrwd_line25">5加仑<br />
+                                    3加仑<br />
+                                    支装水350ml*24支（箱装）</span>
+                                    <span class="w70 psrwd_line25">5<br />134<br />1
+                                    </span>
+                                    <span class="w70 psrwd_line25">5<br />134<br />1
+                                    </span>
+                                    <span class="w240_1">NO.100000 陈丽丽 020-2806263<br />
+                                    环市东路398号
+                                    </span>
+                                    <span class="w90 psrwd_8_2" style="color:#999;">已签收</span>
+                                    <span class="w90_1" > <a href="#">回单确认 </a></span>
+                                    
+                                </p>
+                                <p class="w973 psrwd_9">
+                                	<span class="ssdgl_78">应收货款：</span>
+                                    <span class="ssdgl_652">
+                                    	  <span class="ssdgl_214"><input type="checkbox" checked="false" name="checkbox" id="checkbox" /> 订单号：2-201505280001 <em style="margin-left:5px;">￥650.00</em></span>
+                                          <span class="ssdgl_214"><input type="checkbox" checked="false" name="checkbox" id="checkbox" /> 订单号：2-201505280001 <em style="margin-left:5px;">贵宾卡-NO.22222222</em></span>
+                                          
+                                    </span>
+                                </p>
+                            </p>
+                            <div class="clear"></div>
+                        </div>
+                        
+                        <!--2 -->
+                       
+                        <div class="psrwd_6">
+                            <span style="margin-right:10px;">1-10/1000</span>
+                        	<span><a href="#"><img src="images/hygl_02.jpg" ></a></span>
+                            <span><a href="#"><img src="images/hygl_03.jpg" ></a></span>
+                            <span style="margin-right:0px;">
+                            
+                            	<div class="psrwd_7">
+                                        <a href="#" class="hygl_6_1">1</a>
+                                        <a href="#">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#">4</a>
+                                        <a href="#">5</a>
+                                        <a href="#">6</a>
+                                        <a href="#">...</a>
+                                        <a href="#">10</a>
+                                    </div>	
+                            </span>
+                            <span><a href="#"><img src="images/hygl_04.jpg"></a></span>
+                            <span><a href="#"><img src="images/hygl_05.jpg"></a></span>
+                            <div class="clear"></div>
+                            
+                        </div>
+                        
+						<div class="clear"></div>
+                  </li>
+              </ul>
+              <!--切换三 -->
+              
+              <!--切换四 -->
+              <ul>
+              	  <li >
+                  		<div class="psrwd_5_1 psrwd_5_2" style="background:#f5f5f5;">
+                        	<p class="w30">序号</p> 
+                            <p class="w180">配送信息</p> <p class="w212">品类</p> <p class="w70">数量（桶）</span> 
+                            <p class="w70">应回桶数</p> <p class="w240">配送地址</p> <p class="w90"><select class="ssdgl_70" name="">
+            	  <option >订单状态</option>
+                  <option>待配送</option>
+                  <option>配送中</option>
+                  <option>已签收</option>
+                  <option>已取消</option>
+                  <option>已拒收</option>
+                  <option>已回单</option>
+            	  </select></p> <p class="w90" style="border-right:none;">操作</p> 
+                            
+                        </div>
+                        
+                       <!--1  -->
+                        <div class="psrwd_5_1 ">
+                        	<p class="w30 psrwd_8_3">1</p> 
+                            <p class="w973">
+                            	<p class="w973 psrwd_8">
+                                	<span class="w180_1" >送水单号：<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'"><em style="color:#005ea7;">3-201505280001</em></a><br />
+                                    区庄自营店<br />
+                                    <em style="color:#999;">2015-4-28 10:23</em>
+                                    
+                                    </span>
+                                    <span class="w212 psrwd_line25">5加仑<br />
+                                    3加仑<br />
+                                    支装水350ml*24支（箱装）</span>
+                                    <span class="w70 psrwd_line25">5<br />134<br />1
+                                    </span>
+                                    <span class="w70 psrwd_line25">5<br />134<br />1
+                                    </span>
+                                    <span class="w240_1">NO.100000 陈丽丽 020-2806263<br />
+                                    环市东路398号
+                                    </span>
+                                    <span class="w90 psrwd_8_2" >待配送</span>
+                                    <span class="w90_1" > <a href="#">打印单据</a><br /><a href="#">配送</a><br /><a href="#">取消</a></span>
+                                    
+                                </p>
+                                <p class="w973 psrwd_9">
+                                	<span class="ssdgl_78">应收货款：</span>
+                                    <span class="ssdgl_652">
+                                    	  <span class="ssdgl_214"><input type="checkbox" checked="false" name="checkbox" id="checkbox" /> 订单号：2-201505280001 <em style="margin-left:5px;">￥650.00</em></span>
+                                          <span class="ssdgl_214"><input type="checkbox" checked="false" name="checkbox" id="checkbox" /> 订单号：2-201505280001 <em style="margin-left:5px;">贵宾卡-NO.22222222</em></span>
+                                          <span class="ssdgl_214"><input type="checkbox" checked="false" name="checkbox" id="checkbox" /> 订单号：2-201505280001 <em style="margin-left:5px;">￥650.00</em></span>
+                                          <span class="ssdgl_214"><input type="checkbox" checked="false" name="checkbox" id="checkbox" /> 订单号：2-201505280001 <em style="margin-left:5px;">贵宾卡-NO.22222222</em></span>
+                                    </span>
+                                </p>
+                            </p>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="psrwd_8_1"></div>
+                        <!--1  -->
+                        
+                         <!--2  -->
+                        <div class="psrwd_5_1 ">
+                        	<p class="w30 psrwd_8_3">2</p> 
+                            <p class="w973">
+                            	<p class="w973 psrwd_8">
+                                	<span class="w180_1" >送水单号：<a href="#"><em style="color:#005ea7;">3-201505280001</em></a><br />
+                                    区庄自营店/ 欧阳龙龙<br />
+                                    <em style="color:#999;">2015-4-28 10:23</em>
+                                    
+                                    </span>
+                                    <span class="w212 psrwd_line25">5加仑<br />
+                                    3加仑<br />
+                                    支装水350ml*24支（箱装）</span>
+                                    <span class="w70 psrwd_line25">5<br />134<br />1
+                                    </span>
+                                    <span class="w70 psrwd_line25">5<br />134<br />1
+                                    </span>
+                                    <span class="w240_1">NO.100000 陈丽丽 020-2806263<br />
+                                    环市东路398号
+                                    </span>
+                                    <span class="w90 psrwd_8_2" >配送中</span>
+                                    <span class="w90_1" > <a href="#">签收</a><br /><a href="#">拒收</a></span>
+                                    
+                                </p>
+                                <p class="w973 psrwd_9">
+                                	<span class="ssdgl_78">应收货款：</span>
+                                    <span class="ssdgl_652">
+                                    	  <span class="ssdgl_214"><input type="checkbox" checked="false" name="checkbox" id="checkbox" /> 订单号：2-201505280001 <em style="margin-left:5px;">￥650.00</em></span>
+                                          <span class="ssdgl_214"><input type="checkbox" checked="false" name="checkbox" id="checkbox" /> 订单号：2-201505280001 <em style="margin-left:5px;">贵宾卡-NO.22222222</em></span>
+                                          <span class="ssdgl_214"><input type="checkbox" checked="false" name="checkbox" id="checkbox" /> 订单号：2-201505280001 <em style="margin-left:5px;">￥650.00</em></span>
+                                          <span class="ssdgl_214"><input type="checkbox" checked="false" name="checkbox" id="checkbox" /> 订单号：2-201505280001 <em style="margin-left:5px;">贵宾卡-NO.22222222</em></span>
+                                    </span>
+                                </p>
+                            </p>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="psrwd_8_1"></div>
+                        <!--2  -->
+                        
+                        
+                        <!--3  -->
+                        <div class="psrwd_5_1 ">
+                        	<p class="w30 psrwd_8_3">3</p> 
+                            <p class="w973">
+                            	<p class="w973 psrwd_8">
+                                	<span class="w180_1" >送水单号：<a href="#"><em style="color:#005ea7;">3-201505280001</em></a><br />
+                                    区庄自营店 / 欧阳龙龙<br />
+                                    <em style="color:#999;">2015-4-28 10:23</em>
+                                    
+                                    </span>
+                                    <span class="w212 psrwd_line25">5加仑<br />
+                                    3加仑<br />
+                                    支装水350ml*24支（箱装）</span>
+                                    <span class="w70 psrwd_line25">5<br />134<br />1
+                                    </span>
+                                    <span class="w70 psrwd_line25">5<br />134<br />1
+                                    </span>
+                                    <span class="w240_1">NO.100000 陈丽丽 020-2806263<br />
+                                    环市东路398号
+                                    </span>
+                                    <span class="w90 psrwd_8_2" style="color:#999;">已签收</span>
+                                    <span class="w90_1" > <a href="#">回单确认 </a></span>
+                                    
+                                </p>
+                                <p class="w973 psrwd_9">
+                                	<span class="ssdgl_78">应收货款：</span>
+                                    <span class="ssdgl_652">
+                                    	  <span class="ssdgl_214"><input type="checkbox" checked="false" name="checkbox" id="checkbox" /> 订单号：2-201505280001 <em style="margin-left:5px;">￥650.00</em></span>
+                                          <span class="ssdgl_214"><input type="checkbox" checked="false" name="checkbox" id="checkbox" /> 订单号：2-201505280001 <em style="margin-left:5px;">贵宾卡-NO.22222222</em></span>
+                                          
+                                    </span>
+                                </p>
+                            </p>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="psrwd_8_1"></div>
+                        <!--3 -->
+                        
+                         <!--4  -->
+                        <div class="psrwd_5_1 ">
+                        	<p class="w30 psrwd_8_3">4</p> 
+                            <p class="w973">
+                            	<p class="w973 psrwd_8">
+                                	<span class="w180_1" ><a href="#">送水单号：<em style="color:#005ea7;">3-201505280001</em></a><br />
+                                    区庄自营店 / 欧阳龙龙<br />
+                                    <em style="color:#999;">2015-4-28 10:23</em>
+                                    
+                                    </span>
+                                    <span class="w212 psrwd_line25">5加仑<br />
+                                    3加仑<br />
+                                    支装水350ml*24支（箱装）</span>
+                                    <span class="w70 psrwd_line25">5<br />134<br />1
+                                    </span>
+                                    <span class="w70 psrwd_line25">5<br />134<br />1
+                                    </span>
+                                    <span class="w240_1">NO.100000 陈丽丽 020-2806263<br />
+                                    环市东路398号
+                                    </span>
+                                    <span class="w90 psrwd_8_2" style="color:#999;">已取消</span>
+                                    
+                                </p>
+                                <p class="w973 psrwd_9">
+                                	<span class="ssdgl_78">应收货款：</span>
+                                    <span class="ssdgl_652">
+                                    	  <span class="ssdgl_214"><input type="checkbox" checked="false" name="checkbox" id="checkbox" /> 订单号：2-201505280001 <em style="margin-left:5px;">￥650.00</em></span>
+                                          <span class="ssdgl_214"><input type="checkbox" checked="false" name="checkbox" id="checkbox" /> 订单号：2-201505280001 <em style="margin-left:5px;">贵宾卡-NO.22222222</em></span>
+                                          
+                                    </span>
+                                </p>
+                            </p>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="psrwd_8_1"></div>
+                        <!--4 -->
+                        
+                         <!--5  -->
+                        <div class="psrwd_5_1 ">
+                        	<p class="w30 psrwd_8_3">4</p> 
+                            <p class="w973">
+                            	<p class="w973 psrwd_8">
+                                	<span class="w180_1" >送水单号：<a href="#"><em style="color:#005ea7;">3-201505280001</em></a><br />
+                                    区庄自营店 / 欧阳龙龙<br />
+                                    <em style="color:#999;">2015-4-28 10:23</em>
+                                    
+                                    </span>
+                                    <span class="w212 psrwd_line25">5加仑<br />
+                                    3加仑<br />
+                                    支装水350ml*24支（箱装）</span>
+                                    <span class="w70 psrwd_line25">5<br />134<br />1
+                                    </span>
+                                    <span class="w70 psrwd_line25">5<br />134<br />1
+                                    </span>
+                                    <span class="w240_1">NO.100000 陈丽丽 020-2806263<br />
+                                    环市东路398号
+                                    </span>
+                                    <span class="w90 psrwd_8_2" style="color:#999;">已拒收</span>
+                                    
+                                </p>
+                                <p class="w973 psrwd_9">
+                                	<span class="ssdgl_78">应收货款：</span>
+                                    <span class="ssdgl_652">
+                                    	  <span class="ssdgl_214"><input type="checkbox" checked="false" name="checkbox" id="checkbox" /> 订单号：2-201505280001 <em style="margin-left:5px;">￥650.00</em></span>
+                                          <span class="ssdgl_214"><input type="checkbox" checked="false" name="checkbox" id="checkbox" /> 订单号：2-201505280001 <em style="margin-left:5px;">贵宾卡-NO.22222222</em></span>
+                                          
+                                    </span>
+                                </p>
+                            </p>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="psrwd_8_1"></div>
+                        <!--5 -->
+                        
+                        <!--6  -->
+                        <div class="psrwd_5_1 ">
+                        	<p class="w30 psrwd_8_3">6</p> 
+                            <p class="w973">
+                            	<p class="w973 psrwd_8">
+                                	<span class="w180_1" >送水单号：<a href = "javascript:void(0)" onclick = "document.getElementById('light3').style.display='block';document.getElementById('fade').style.display='block'"><em style="color:#005ea7;">3-201505280001</em></a><br />
+                                    区庄自营店 / 欧阳龙龙<br />
+                                    <em style="color:#999;">2015-4-28 10:23</em>
+                                    
+                                    </span>
+                                    <span class="w212 psrwd_line25">5加仑<br />
+                                    3加仑<br />
+                                    支装水350ml*24支（箱装）</span>
+                                    <span class="w70 psrwd_line25">5<br />134<br />1
+                                    </span>
+                                    <span class="w70 psrwd_line25">5<br />134<br />1
+                                    </span>
+                                    <span class="w240_1">NO.100000 陈丽丽 020-2806263<br />
+                                    环市东路398号
+                                    </span>
+                                    <span class="w90 psrwd_8_2" style="color:#999;">已回单</span>
+                                    
+                                </p>
+                                <p class="w973 psrwd_9">
+                                	<span class="ssdgl_78">应收货款：</span>
+                                    <span class="ssdgl_652">
+                                    	  <span class="ssdgl_214"><input type="checkbox" checked="false" name="checkbox" id="checkbox" /> 订单号：2-201505280001 <em style="margin-left:5px;">￥650.00</em></span>
+                                          <span class="ssdgl_214"><input type="checkbox" checked="false" name="checkbox" id="checkbox" /> 订单号：2-201505280001 <em style="margin-left:5px;">贵宾卡-NO.22222222</em></span>
+                                          
+                                    </span>
+                                </p>
+                            </p>
+                            <div class="clear"></div>
+                        </div>
+                       
+                        <!--6 -->
+                       
+                        <div class="psrwd_6">
+                            <span style="margin-right:10px;">1-10/1000</span>
+                        	<span><a href="#"><img src="images/hygl_02.jpg" ></a></span>
+                            <span><a href="#"><img src="images/hygl_03.jpg" ></a></span>
+                            <span style="margin-right:0px;">
+                            
+                            	<div class="psrwd_7">
+                                        <a href="#" class="hygl_6_1">1</a>
+                                        <a href="#">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#">4</a>
+                                        <a href="#">5</a>
+                                        <a href="#">6</a>
+                                        <a href="#">...</a>
+                                        <a href="#">10</a>
+                                    </div>	
+                            </span>
+                            <span><a href="#"><img src="images/hygl_04.jpg"></a></span>
+                            <span><a href="#"><img src="images/hygl_05.jpg"></a></span>
+                            <div class="clear"></div>
+                            
+                        </div>
+                        
+						<div class="clear"></div>
+                  </li>
+              </ul>
+              <!--切换四 -->
+         </div>
+           <script>
+            function $_class(name){
+             var elements = document.getElementsByTagName("*");
+             for(s=0;s<elements.length;s++){
+              if(elements[s].className==name){
+               return  elements[s];
+              }
+             }
+            }
+            var tabList = $_class("menu_zzjs_net").getElementsByTagName("li")
+             tabCon = $_class("sub_zzjs").getElementsByTagName("ul");
+            for(i=0;i<tabList.length;i++){
+             (function(){
+              var t = i;
+              tabList[t].onmouseover = function(){
+               for(o=0;o<tabCon.length;o++){
+                tabCon[o].style.display = "none";
+                tabList[o].className = "";
+                if(t==o){
+                 this.className = "this_zzjs";
+                 tabCon[o].style.display = "block";
+                }
+               }
+              }
+             })();
+			 
+            }
+			
+			
+			 
+            </script>
+        <!--切换效果-->
+
+        <div class="clear"></div>
+        
+        
+      </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>中国进出口商品溯源系统</title>
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<link href="css/index.css" rel="stylesheet" type="text/css">
+</head>
+
+<body style="background:#fff;">
+
+<!--头部-->
+<div class="top" style="background:#fff;">
+	<div class="top_1" >
+    	<div class="top_2"><img src="images/logo_a.png"/></div>
+    	<div class="sunnva">heyang 您好! <a href="#">修改密码</a> <a href="#">退出登录</a></div>
+    </div>
+</div>
+<!--头部-->
+
+<!--内容 -->
+<div class="login_banner">
+	<div class="login_1">
+   	  <div class="login_2">
+       	  <ul>
+           	  <li style="margin-top:30px;"><input type="text" name="user" class="input_349" placeholder="帐号" id="textfield" /></li>
+              <li><input type="password" name="password" class="input_349_1" placeholder="密码" id="textfield" /></li>
+              <li><p><input type="text" name="code" class="input_180" placeholder="验证码" id="textfield" /></p>
+                <p><img src="images/login_5.png" width="102" height="42"></p> 
+              <p style="line-height:42px; color:#1b66c7;">换一张</p></li>
+              <div class="clear"></div>
+              
+              <li class="login_4" style="margin-top:40px; margin-bottom:20px;"><a class="btn_save" href="zxcy_htbi.html">登 录</a></li>
+
+              <li><p><a href="zhzc.html" style=" color:#1b66c7">立即注册</a></p> <p style="margin-left:230px;"><a href="zhmm.html" style=" color:#1b66c7">忘记密码</a></p></li>
+          </ul>
+          
+          <div class="pmgl_tcym_1 error_box" style="bottom:130px;">
+             <em style="margin-left:5px; color:#d22222;"></em>
+       	 </div>
+        </div>
+    </div>
+</div>
+<!--内容 -->
+<div class="footer">
+	<div class="bottom" >
+    	经营许可证编号：粤ICP备09041281号-1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &copy;Copyright &nbsp;&nbsp;广州宽度信息技术有限公司 All Rights Reserved
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="js/validation.js"></script>
+<script>
+	jQuery(function($){
+		//验证
+		$('a.btn_save').on('click',newSave);
+	});
+	function newSave(){
+	var form={
+		user:$('input[name="user"]').val(),
+		password:$('input[name="password"]').val(),
+		code:$('input[name="code"]').val(),
+	};
+	newSaveValid(form);
+	//到此检测通过，提交form到后端
+	var params={
+		url:'',
+		type:'post',
+		data:form,
+		success:function(res){
+			console.log(res);
+		},
+		dataType:'json'
+	};
+	$.ajax(params);
+}
+function newSaveValid(form){
+	var err=$('.error_box>em');	
+	if(valid_test.isEmpty(form.user)){
+		err.html('请输入用户名');
+		return false;
+	}else{
+		err.empty();
+	}
+	
+	if(valid_test.isEmpty(form.password)){
+		err.html('请输入密码');
+		return false;
+	}else{
+		err.empty();
+	}
+	if(valid_test.isEmpty(form.code)){
+		err.html('请输入验证码');
+		return false;
+	}else{
+		err.empty();
+	}
+}
+</script>
+
+</body>
+</html>

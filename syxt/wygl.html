@@ -1,0 +1,473 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>企业管理</title>
+<link href="css/common.css" rel="stylesheet" />
+<link href="css/index.css" rel="stylesheet" />
+<script language="javascript">    
+function changeF() {
+  document.getElementById('txt').value = document.getElementById('sel').options[document.getElementById('sel').selectedIndex].value;
+} 
+</script>  
+</head>
+
+<body>
+
+<!--添加弹窗 删除 -->
+		 <div id="light1" class="ycgl_tc yctc_498">
+         	<!--列表 -->
+         	<div class="htyg_tc">
+            	<ul>
+                	<li class="htyg_tc_1">提醒</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light1').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/htyg_tc.png"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            <div class="yctc_458 ycgl_tc_1">
+            	<ul style="width:220px; height:106px; margin:25px auto;">
+                	 <li style="font-size:14px; height:66px; text-align:center;">确定删除吗？删除后将不能恢复。</li>
+                     <div class="clear"></div>
+                     <li><p class="ybjk_pcgl_1" style="margin-right:0px;"><a href = "javascript:void(0)" onclick = "document.getElementById('light1').style.display='none';document.getElementById('fade').style.display='none'">关闭</a></p> 
+                     <p class="ybjk_pcgl_2" style="margin-right:0px;"><a href="#">确认</a></p></li>
+                     
+                </ul>
+            </div>
+         
+         </div> 
+        <div id="fade" class="black_overlay"></div>         
+        
+<!--添加弹窗删除 -->
+
+<!--编辑 弹窗 -->
+         <div id="light2" class="ycgl_tc yctc_940">
+            <!--列表 -->
+            <div class="htyg_tc">
+                <ul>
+                    <li class="htyg_tc_1">编辑企业</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/htyg_tc.png"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            <div class="yctc_880 ycgl_tc_1">
+                <ul>
+                     <li>
+                         <p style="margin-left: 0px; margin-right: 0px;">
+                         <span class="yygl_1"><em style="color: #ff0000;">*</em>企业名称</span>
+                         <span><input type="text" name="textfield" class="input_280" id="textfield" /></span> 
+                         </p>
+                         <p style=" margin-right: 0px;">
+                         <span class="yygl_1"><em style="color: #ff0000;">*</em>省份</span>
+                         <span><select name="select" class="select_280" id="select"><option>全部</option></select></span> 
+                         </p>
+                     </li>
+                     <div class="clear"></div>
+
+                     <li>
+                         <p style=" margin-left: 0px; margin-right: 0px;">
+                         <span class="yygl_1"><em style="color: #ff0000;">*</em>业务类型</span>
+                         <span class="yygl_2"><input type="checkbox" name="checkbox" id="checkbox" /></span>
+                         <span style="font-size: 12px; margin-left: 3px; margin-right: 10px;">跨境电商</span>
+                         <span class="yygl_2"><input type="checkbox" name="checkbox" id="checkbox" /></span>
+                         <span style="font-size: 12px; margin-left: 3px; margin-right: 10px;">一般进口</span> 
+                         <span class="yygl_2"><input type="checkbox" name="checkbox" id="checkbox" /></span>
+                         <span style="font-size: 12px; margin-left: 3px; margin-right: 10px;">市场采购出口</span> 
+                         <span class="yygl_2"><input type="checkbox" name="checkbox" id="checkbox" /></span>
+                         <span style="font-size: 12px; margin-left: 3px;">备案生产企业出口</span> 
+                         </p>
+                         <p style=" margin-right: 0px;">
+                         <span class="yygl_1"><em style="color: #ff0000;">*</em>城市</span>
+                         <span><select name="select" class="select_280" id="select"><option>全部</option></select></span> 
+                         </p>
+                     </li>
+                     <div class="clear"></div>
+                      <li class="relative">
+
+                         <p style="margin-left: 0px; margin-right: 0px;">
+                         <span class="yygl_1">企业类型 </span>
+                         <span style=" width:358px;">
+                             
+                              <select id="sel"  class="select_348" style="float: right; z-index:88; position:absolute; left:114px; top:0px;" onchange="changeF();">
+                                <option value="111">111</option>
+                                <option value="222">222</option>
+                                <option value="333">333</option>
+                            </select>
+                            <input type="text" id="txt" value="" placeholder="登录名" style="position:absolute; width:330px; height:26px; left:115px;top:1px;z-index:99; " />
+                         </span> 
+                         </p>
+
+                         <p style=" margin-right: 0px;">
+                         <span class="yygl_1"><em style="color: #ff0000;">*</em>区县</span>
+                         <span><select name="select" class="select_280" id="select"><option>全部</option></select></span> 
+                         </p>
+                     </li>
+                     <div class="clear"></div>
+                      <li>
+                         <p style="margin-left: 0px; margin-right: 0px;">
+                         <span class="yygl_1">法人代表</span>
+                         <span><input type="text" name="textfield" class="input_280" id="textfield" /></span> 
+                         </p>
+                         <p style=" margin-right: 0px;">
+                         <span class="yygl_1">企业网址</span>
+                         <span><input type="text" name="textfield" class="input_292" id="textfield" /></span> 
+                         </p>
+                     </li>
+                     <div class="clear"></div>
+                     <li>
+                         <p style="margin-left: 0px; margin-right: 0px;">
+                         <span class="yygl_1">组织机构代码 </span>
+                         <span><input type="text" name="textfield" class="input_280" id="textfield" /></span> 
+                         </p>
+                         <p style=" margin-right: 0px;">
+                         <span class="yygl_1">仓库企业备案号</span>
+                         <span><input type="text" name="textfield" class="input_292" id="textfield" /></span> 
+                         </p>
+                     </li>
+                     <div class="clear"></div>
+                     <li>
+                         <p style="margin-left: 0px; margin-right: 0px;">
+                         <span class="yygl_1">企业备案号 </span>
+                         <span><input type="text" name="textfield" class="input_280" id="textfield" /></span> 
+                         </p>
+                         <p style=" margin-right: 0px;">
+                         <span class="yygl_1">官方微信</span>
+                         <span><input type="text" name="textfield" class="input_292" id="textfield" /></span> 
+                         </p>
+                     </li>
+                     <div class="clear"></div>
+                     <li>
+                         <p style="margin-left: 0px; margin-right: 0px;">
+                         <span class="yygl_1">公司电话 </span>
+                         <span><input type="text" name="textfield" class="input_280" id="textfield" /></span> 
+                         </p>
+                         <p style=" margin-right: 0px;">
+                         <span class="yygl_1">企业QQ</span>
+                         <span><input type="text" name="textfield" class="input_292" id="textfield" /></span> 
+                         </p>
+                     </li>
+                     <div class="clear"></div>
+                     <li>
+                         <p style="margin-left: 0px; margin-right: 0px;">
+                         <span class="yygl_1">联系人 </span>
+                         <span><input type="text" name="textfield" class="input_280" id="textfield" /></span> 
+                         </p>
+                         <p style=" margin-right: 0px;">
+                         <span class="yygl_1">联系电话</span>
+                         <span><input type="text" name="textfield" class="input_292" id="textfield" /></span> 
+                         </p>
+                     </li>
+                     <div class="clear"></div>
+                     <li>
+                         <p style="margin-left: 0px; margin-right: 0px;">
+                         <span class="yygl_1">企业地址 </span>
+                         <span><input type="text" name="textfield" class="input_280" id="textfield" /></span> 
+                         </p>
+                     </li>
+                     <div class="clear"></div>
+                     <li>
+                          <p style="margin-left: 0px; margin-right: 0px;">
+                         <span class="yygl_1">企业介绍 </span>
+                         <span><textarea name="textarea" id="textarea" class="textarea_348" cols="45" rows="5"></textarea></span> 
+                         </p>
+                         <p style=" margin-right: 0px;">
+                         <span class="yygl_1">企业备注</span>
+                         <span><textarea name="textarea" id="textarea" class="textarea_292" cols="45" rows="5"></textarea></span> 
+                         </p>
+                         
+                     </li>
+                     <div class="clear"></div>
+
+                     <li style="margin-top: 30px; margin-left: 350px;">
+                     <p class="ybjk_pcgl_2" style="margin-right:0px;"><a href="#">保存</a></p>
+                    <p class="ybjk_pcgl_1" style="margin-right:0px;"><a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='none';document.getElementById('fade').style.display='none'">关闭</a></p> 
+                     </li>
+                     
+                </ul>
+            </div>
+         
+         </div> 
+        <div id="fade" class="black_overlay"></div>         
+        
+<!--编辑 弹窗 -->
+
+<!--新增 弹窗 -->
+         <div id="light3" class="ycgl_tc yctc_940">
+            <!--列表 -->
+            <div class="htyg_tc">
+                <ul>
+                    <li class="htyg_tc_1">新增企业</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light3').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/htyg_tc.png"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            <div class="yctc_880 ycgl_tc_1">
+                <ul>
+                     <li>
+                         <p style="margin-left: 0px; margin-right: 0px;">
+                         <span class="yygl_1"><em style="color: #ff0000;">*</em>企业名称</span>
+                         <span><input type="text" name="textfield" class="input_280" id="textfield" /></span> 
+                         </p>
+                         <p style=" margin-right: 0px;">
+                         <span class="yygl_1"><em style="color: #ff0000;">*</em>省份</span>
+                         <span><select name="select" class="select_280" id="select"><option>全部</option></select></span> 
+                         </p>
+                     </li>
+                     <div class="clear"></div>
+
+                     <li>
+                         <p style=" margin-left: 0px; margin-right: 0px;">
+                         <span class="yygl_1"><em style="color: #ff0000;">*</em>业务类型</span>
+                         <span class="yygl_2"><input type="checkbox" name="checkbox" id="checkbox" /></span>
+                         <span style="font-size: 12px; margin-left: 3px; margin-right: 10px;">跨境电商</span>
+                         <span class="yygl_2"><input type="checkbox" name="checkbox" id="checkbox" /></span>
+                         <span style="font-size: 12px; margin-left: 3px; margin-right: 10px;">一般进口</span> 
+                         <span class="yygl_2"><input type="checkbox" name="checkbox" id="checkbox" /></span>
+                         <span style="font-size: 12px; margin-left: 3px; margin-right: 10px;">市场采购出口</span> 
+                         <span class="yygl_2"><input type="checkbox" name="checkbox" id="checkbox" /></span>
+                         <span style="font-size: 12px; margin-left: 3px;">备案生产企业出口</span> 
+                         </p>
+                         <p style=" margin-right: 0px;">
+                         <span class="yygl_1"><em style="color: #ff0000;">*</em>城市</span>
+                         <span><select name="select" class="select_280" id="select"><option>全部</option></select></span> 
+                         </p>
+                     </li>
+                     <div class="clear"></div>
+                      <li>
+
+                         <p style="margin-left: 0px; margin-right: 0px;">
+                         <span class="yygl_1">企业类型 </span>
+                         <span><select name="select" class="select_348" id="select"><option>全部</option></select></span> 
+                         </p>
+
+                         <p style=" margin-right: 0px;">
+                         <span class="yygl_1"><em style="color: #ff0000;">*</em>区县</span>
+                         <span><select name="select" class="select_280" id="select"><option>全部</option></select></span> 
+                         </p>
+                     </li>
+                     <div class="clear"></div>
+                      <li>
+                         <p style="margin-left: 0px; margin-right: 0px;">
+                         <span class="yygl_1">法人代表</span>
+                         <span><input type="text" name="textfield" class="input_280" id="textfield" /></span> 
+                         </p>
+                         <p style=" margin-right: 0px;">
+                         <span class="yygl_1">企业网址</span>
+                         <span><input type="text" name="textfield" class="input_292" id="textfield" /></span> 
+                         </p>
+                     </li>
+                     <div class="clear"></div>
+                     <li>
+                         <p style="margin-left: 0px; margin-right: 0px;">
+                         <span class="yygl_1">组织机构代码 </span>
+                         <span><input type="text" name="textfield" class="input_280" id="textfield" /></span> 
+                         </p>
+                         <p style=" margin-right: 0px;">
+                         <span class="yygl_1">仓库企业备案号</span>
+                         <span><input type="text" name="textfield" class="input_292" id="textfield" /></span> 
+                         </p>
+                     </li>
+                     <div class="clear"></div>
+                     <li>
+                         <p style="margin-left: 0px; margin-right: 0px;">
+                         <span class="yygl_1">企业备案号 </span>
+                         <span><input type="text" name="textfield" class="input_280" id="textfield" /></span> 
+                         </p>
+                         <p style=" margin-right: 0px;">
+                         <span class="yygl_1">官方微信</span>
+                         <span><input type="text" name="textfield" class="input_292" id="textfield" /></span> 
+                         </p>
+                     </li>
+                     <div class="clear"></div>
+                     <li>
+                         <p style="margin-left: 0px; margin-right: 0px;">
+                         <span class="yygl_1">公司电话 </span>
+                         <span><input type="text" name="textfield" class="input_280" id="textfield" /></span> 
+                         </p>
+                         <p style=" margin-right: 0px;">
+                         <span class="yygl_1">企业QQ</span>
+                         <span><input type="text" name="textfield" class="input_292" id="textfield" /></span> 
+                         </p>
+                     </li>
+                     <div class="clear"></div>
+                     <li>
+                         <p style="margin-left: 0px; margin-right: 0px;">
+                         <span class="yygl_1">联系人 </span>
+                         <span><input type="text" name="textfield" class="input_280" id="textfield" /></span> 
+                         </p>
+                         <p style=" margin-right: 0px;">
+                         <span class="yygl_1">联系电话</span>
+                         <span><input type="text" name="textfield" class="input_292" id="textfield" /></span> 
+                         </p>
+                     </li>
+                     <div class="clear"></div>
+                     <li>
+                         <p style="margin-left: 0px; margin-right: 0px;">
+                         <span class="yygl_1">企业地址 </span>
+                         <span><input type="text" name="textfield" class="input_280" id="textfield" /></span> 
+                         </p>
+                     </li>
+                     <div class="clear"></div>
+                     <li>
+                          <p style="margin-left: 0px; margin-right: 0px;">
+                         <span class="yygl_1">企业介绍 </span>
+                         <span><textarea name="textarea" id="textarea" class="textarea_348" cols="45" rows="5"></textarea></span> 
+                         </p>
+                         <p style=" margin-right: 0px;">
+                         <span class="yygl_1">企业备注</span>
+                         <span><textarea name="textarea" id="textarea" class="textarea_292" cols="45" rows="5"></textarea></span> 
+                         </p>
+                         
+                     </li>
+                     <div class="clear"></div>
+
+                     <li style="margin-top: 30px; margin-left: 350px;">
+                     <p class="ybjk_pcgl_2" style="margin-right:0px;"><a href="#">保存</a></p>
+                    <p class="ybjk_pcgl_1" style="margin-right:0px;"><a href = "javascript:void(0)" onclick = "document.getElementById('light3').style.display='none';document.getElementById('fade').style.display='none'">关闭</a></p> 
+                     </li>
+                     
+                </ul>
+            </div>
+         
+         </div> 
+        <div id="fade" class="black_overlay"></div>         
+        
+<!--新增 弹窗 -->
+
+<!--头部-->
+<div class="top">
+	<div class="top_1">
+    	<div class="top_2"><a href="index.html"><img src="images/logo.png"/></a></div>
+    	<div class="sunnva">heyang 您好! <a href="#">修改密码</a> <a href="#">退出登录</a></div>
+    </div>
+</div>
+<!--头部-->
+
+<!--主框架-->
+<div class="ymfw-container">
+
+	<!--用码服务左边-->
+	<div class="ymfw-left">
+         <!--左边1--> 
+      <div class="ymfw-left_1">
+          <h2><p><img src="images/ymfw-left_1.png"/></p> 
+          <p class="ymfw-left_2">数据管理</p></h2>
+          <ul>
+            <li><a href="wygl.html" class="ymfw-left_5">企业管理</a></li>
+            <li><a href="jsgl.html">角色管理</a></li>
+            <li><a href="yhgl.html">用户管理</a></li>
+          </ul>
+        </div>
+        <!--左边1--> 
+         <!--左边1--> 
+        <div class="ymfw-left_1">
+            <h2><p><img src="images/ymfw-left_1.png"/></p> 
+            <p class="ymfw-left_2">码管理</p></h2>
+            <ul>
+              <li><a href="jmgl.html">进码管理</a></li>
+              <li><a href="ymgl.html">印码管理</a></li>
+              <li><a href="ddgl.html">订单管理</a></li>
+            </ul>
+            
+        </div>
+         <!--左边1--> 
+      <!--左边1--> 
+        <div class="ymfw-left_1">
+            <h2><p><img src="images/ymfw-left_1.png"/></p> 
+            <p class="ymfw-left_2">内容管理</p></h2>
+            <ul>
+              <li><a href="xtxx.html">溯源资讯</a></li>
+              <li><a href="xtgg.html">系统公告</a></li>
+            </ul>
+            
+        </div>
+         <!--左边1--> 
+         <!--左边1--> 
+      <div class="ymfw-left_1" style="padding-bottom:0px; border-bottom:none;">
+          <h2><p><img src="images/ymfw-left_1.png"/></p> 
+            <p class="ymfw-left_2">业务监管</p></h2>
+            <ul>
+              <li><a href="smtj.html">扫码统计</a></li>
+              <li><a href="ymtj.html">用码统计</a></li>
+            </ul>
+            
+        </div>
+         <!--左边1--> 
+    </div>	
+    <!--用码服务左边-->  
+    
+    <!--用码服务右边-->
+	<div class="ymfw-right">
+		<div class="ymfw-right_1">企业管理</div>
+
+        <div class=" ymfw-right-zgj">
+        	<div class="yyzx">
+                <p class="yyzx_ny">
+                    <a href ="javascript:void(0)" onclick = "document.getElementById('light3').style.display='block';document.getElementById('fade').style.display='block'">新增企业
+                    </a> 
+                </p>
+                <p class="yyzx_nf"><a href ="#">导出数据</a></p>
+            </div>
+            <div class="ymfw-right-zgj_4">
+            	<ul>
+                	<li>
+                    <p>企业名称</p> 
+                    <p><input type="text" name="textfield" class="input_179" placeholder="企业名称" id="textfield" /></p> 
+                    </li>
+                    <li>
+                    <p>企业类型</p> 
+                    <p>  <select name="select" class="input_179" id="select"><option>全部</option></select></p> 
+                    </li>
+                   
+                    <li class="ymfw-right-zgj_4r"><p><a href="#">查询</a></p> </li>
+                </ul>
+                <div class="ymfw-right-syys"><!--模糊搜索下拉-->
+                <a href="#">11111</a>
+                <a href="#">11111</a>
+                </div>
+           </div>
+           <div class="yyzx_lr" style="border-top: 1px solid #ddd; border-left: 1px solid #ddd;">
+                <table>
+                    <tr>
+                        <th width="310">企业名称</th>
+                        <th width="110">企业类型 </th>
+                        <th width="110">地区 </th>
+                        <th width="310">地址</th>
+                        <th width="140">操作</th>
+                    </tr>
+                    <tr>
+                        <td><p class="yygl">公司名公司名公司名公司名公司名</p></td>
+                        <td><p>国企</p></td>
+                        <td>广东</td>
+                        <td><p class="yygl">广州市天河区广州市天河区广州市天河区广州市天河区</p></td>
+                        <td><span class="ymfw-right-yhgl">
+                        <a href ="javascript:void(0)" onclick = "document.getElementById('light2').style.display='block';document.getElementById('fade').style.display='block'">编辑</a></span> 
+                        <span class="ymfw-right-yhgl"><a href ="javascript:void(0)" onclick = "document.getElementById('light1').style.display='block';document.getElementById('fade').style.display='block'">删除</a></span></td>
+                    </tr>
+                </table>
+                <div class="yyzx_1">
+
+                        <p class="yyzx_2"><a href="#"></a></p>
+                        <p style="margin-left:5px; margin-right:5px;">1/10</p>
+                        <p class="yyzx_3"><a href="#"></a></p>
+                        <p style="margin-left:12px; margin-right:8px;"><input type="text" name="textfield" class="input_58" id="textfield" /></p>
+                        <p class="ymfw-right-zgj_7"><a href="#">跳转</a></p>
+               </div>
+             </div>
+
+          </div>
+            <div class="clear"></div>
+        </div>
+    </div>	
+    <!--用码服务右边-->  
+    
+</div>
+<!--主框架-->
+
+</body>
+</html>

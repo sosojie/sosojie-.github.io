@@ -1,0 +1,408 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>角色管理</title>
+<link href="css/common.css" rel="stylesheet" />
+<link href="css/index.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+<!--添加弹窗 删除 -->
+		 <div id="light1" class="ycgl_tc yctc_498">
+         	<!--列表 -->
+         	<div class="htyg_tc">
+            	<ul>
+                	<li class="htyg_tc_1">提醒</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light1').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/htyg_tc.png"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            <div class="yctc_458 ycgl_tc_1">
+            	<ul style="width:220px; height:106px; margin:25px auto;">
+                	 <li style="font-size:14px; height:66px; text-align:center;">确定删除吗？删除后将不能恢复。</li>
+                     <div class="clear"></div>
+                     <li><p class="ybjk_pcgl_1" style="margin-right:0px;"><a href = "javascript:void(0)" onclick = "document.getElementById('light1').style.display='none';document.getElementById('fade').style.display='none'">关闭</a></p> 
+                     <p class="ybjk_pcgl_2" style="margin-right:0px;"><a href="#">确认</a></p></li>
+                     
+                </ul>
+            </div>
+         
+         </div> 
+        <div id="fade" class="black_overlay"></div>         
+        
+<!--添加弹窗删除 -->
+
+<!--编辑 弹窗 -->
+         <div id="light2" class="ycgl_tc yctc_498">
+            <!--列表 -->
+            <div class="htyg_tc">
+                <ul>
+                    <li class="htyg_tc_1">编辑角色</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/htyg_tc.png"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            <div class="yctc_458 ycgl_tc_1">
+                <ul>
+                     <li>
+                         <p class="right_yhgl"><em style="color: #ff0000;">*</em>角色名称 </p>
+                         <p><input type="text" name="textfield" class="input_400" id="textfield" /></p>
+                     </li>
+                     <div class="clear"></div>
+                  
+                     <li>
+                         <p class="right_yhgl"><em style="color: #ff0000;">*</em>角色类型 </p>
+                         <p>
+                             <span style="margin-top: 10px;"><input type="radio" name="radio" id="radio" value="radio" /></span>
+                             <span style="margin-left: 5px;">平台角色</span>
+                         </p>
+                          <p>
+                             <span style="margin-top: 10px;"><input type="radio" name="radio" id="radio" value="radio" /></span>
+                             <span style="margin-left: 5px;">企业角色</span>
+                         </p>
+                     </li>
+                     <div class="clear"></div>
+                     <li>
+                         <p class="right_yhgl">角色描述 </p>
+                         <p><textarea name="textarea" id="textarea" class="textarea_352" cols="45" rows="5"></textarea></p>
+                     </li>
+                     <div class="clear"></div>
+
+                     <li style="margin-top: 30px; margin-left: 140px;">
+                     <p class="ybjk_pcgl_2" style="margin-right:0px;"><a href="#">保存</a></p>
+                    <p class="ybjk_pcgl_1" style="margin-right:0px;"><a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='none';document.getElementById('fade').style.display='none'">关闭</a></p> 
+                     </li>
+                     
+                </ul>
+            </div>
+         
+         </div> 
+        <div id="fade" class="black_overlay"></div>              
+        
+<!--编辑 弹窗 -->
+
+<!--新增 弹窗 -->
+         <div id="light3" class="ycgl_tc yctc_498">
+            <!--列表 -->
+            <div class="htyg_tc">
+                <ul>
+                    <li class="htyg_tc_1">新增角色</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light3').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/htyg_tc.png"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            <div class="yctc_458 ycgl_tc_1">
+                <ul>
+                     <li>
+                         <p class="right_yhgl"><em style="color: #ff0000;">*</em>角色名称 </p>
+                         <p><input type="text" name="textfield" class="input_400" id="textfield" /></p>
+                     </li>
+                     <div class="clear"></div>
+                  
+                     <li>
+                         <p class="right_yhgl"><em style="color: #ff0000;">*</em>角色类型 </p>
+                         <p>
+                             <span style="margin-top: 10px;"><input type="radio" name="radio" id="radio" value="radio" /></span>
+                             <span style="margin-left: 5px;">平台角色</span>
+                         </p>
+                          <p>
+                             <span style="margin-top: 10px;"><input type="radio" name="radio" id="radio" value="radio" /></span>
+                             <span style="margin-left: 5px;">企业角色</span>
+                         </p>
+                     </li>
+                     <div class="clear"></div>
+                     <li>
+                         <p class="right_yhgl">角色描述 </p>
+                         <p><textarea name="textarea" id="textarea" class="textarea_352" cols="45" rows="5"></textarea></p>
+                     </li>
+                     <div class="clear"></div>
+
+                     <li style="margin-top: 30px; margin-left: 140px;">
+                     <p class="ybjk_pcgl_2" style="margin-right:0px;"><a href="#">保存</a></p>
+                    <p class="ybjk_pcgl_1" style="margin-right:0px;"><a href = "javascript:void(0)" onclick = "document.getElementById('light3').style.display='none';document.getElementById('fade').style.display='none'">关闭</a></p> 
+                     </li>
+                     
+                </ul>
+            </div>
+         
+         </div> 
+        <div id="fade" class="black_overlay"></div>           
+        
+<!--新增 弹窗 -->
+
+<!--角色授权 弹窗 -->
+         <div id="light4" class="ycgl_tc yctc_498">
+            <!--列表 -->
+            <div class="htyg_tc">
+                <ul>
+                    <li class="htyg_tc_1">角色授权</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light4').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/htyg_tc.png"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            <div class="yctc_458 ycgl_tc_1">
+                <ul>
+                     <li class="jsgl_4" style="margin-top: 0px;">
+                         <h2 class="jsgl_2">
+                             <p class="jsgl_3" style="margin-right: 0px;"><input type="checkbox" name="checkbox" id="checkbox" /></p>
+                             <p>基础数据管理</p>
+                         </h2>
+                         <p >
+                              <span  class="jsgl_3" style="margin-right: 10px;"><input type="checkbox" name="checkbox" id="checkbox" /></span>
+                              <span>企业管理</span>
+                          </p>
+                          <p >
+                              <span  class="jsgl_3" style="margin-right: 10px;"><input type="checkbox" name="checkbox" id="checkbox" /></span>
+                              <span>资质管理</span>
+                          </p>
+                          <p >
+                              <span  class="jsgl_3" style="margin-right: 10px;"><input type="checkbox" name="checkbox" id="checkbox" /></span>
+                              <span>产品管理</span>
+                          </p>
+                          <p >
+                              <span  class="jsgl_3" style="margin-right: 10px;"><input type="checkbox" name="checkbox" id="checkbox" /></span>
+                              <span> 渠道管理</span>
+                          </p>
+                          <p >
+                              <span  class="jsgl_3" style="margin-right: 10px;"><input type="checkbox" name="checkbox" id="checkbox" /></span>
+                              <span> 用户管理</span>
+                          </p>
+                          <p >
+                              <span  class="jsgl_3" style="margin-right: 10px;"><input type="checkbox" name="checkbox" id="checkbox" /></span>
+                              <span> 渠道管理</span>
+                          </p>
+                          <p >
+                              <span  class="jsgl_3" style="margin-right: 10px;"><input type="checkbox" name="checkbox" id="checkbox" /></span>
+                              <span> APP管理</span>
+                          </p>
+                          <p >
+                              <span  class="jsgl_3" style="margin-right: 10px;"><input type="checkbox" name="checkbox" id="checkbox" /></span>
+                              <span> 订单查询</span>
+                          </p>
+                     </li>
+                     <div class="clear"></div>
+                     <li class="jsgl_4" style="margin-top: 0px;">
+                         <h2 class="jsgl_2">
+                             <p class="jsgl_3" style="margin-right: 0px;"><input type="checkbox" name="checkbox" id="checkbox" /></p>
+                             <p>业务监管</p>
+                         </h2>
+                         <p >
+                              <span  class="jsgl_3" style="margin-right: 10px;"><input type="checkbox" name="checkbox" id="checkbox" /></span>
+                              <span>批次召回</span>
+                          </p>
+                          <p >
+                              <span  class="jsgl_3" style="margin-right: 10px;"><input type="checkbox" name="checkbox" id="checkbox" /></span>
+                              <span>扫码查询</span>
+                          </p>
+                          <p >
+                              <span  class="jsgl_3" style="margin-right: 10px;"><input type="checkbox" name="checkbox" id="checkbox" /></span>
+                              <span>异常管理</span>
+                          </p>
+                          
+                     </li>
+                     <div class="clear"></div>
+                      <li class="jsgl_4" style="margin-top: 0px;">
+                         <h2 class="jsgl_2">
+                             <p class="jsgl_3" style="margin-right: 0px;"><input type="checkbox" name="checkbox" id="checkbox" /></p>
+                             <p>生产管理</p>
+                         </h2>
+                         <p >
+                              <span  class="jsgl_3" style="margin-right: 10px;"><input type="checkbox" name="checkbox" id="checkbox" /></span>
+                              <span>批次管理 </span>
+                          </p>
+                          <p >
+                              <span  class="jsgl_3" style="margin-right: 10px;"><input type="checkbox" name="checkbox" id="checkbox" /></span>
+                              <span>排班管理</span>
+                          </p>
+                          <p >
+                              <span  class="jsgl_3" style="margin-right: 10px;"><input type="checkbox" name="checkbox" id="checkbox" /></span>
+                              <span>采集查询</span>
+                          </p>
+                          <p >
+                              <span  class="jsgl_3" style="margin-right: 10px;"><input type="checkbox" name="checkbox" id="checkbox" /></span>
+                              <span>进口贸易</span>
+                          </p>
+                          <p >
+                              <span  class="jsgl_3" style="margin-right: 10px;"><input type="checkbox" name="checkbox" id="checkbox" /></span>
+                              <span>跨境电商</span>
+                          </p>
+                          
+                     </li>
+                     <div class="clear"></div>
+                     <li class="jsgl_4" style="margin-top: 0px;">
+                         <h2 class="jsgl_2">
+                             <p class="jsgl_3" style="margin-right: 0px;"><input type="checkbox" name="checkbox" id="checkbox" /></p>
+                             <p>包装管理</p>
+                         </h2>
+                         <p >
+                              <span  class="jsgl_3" style="margin-right: 10px;"><input type="checkbox" name="checkbox" id="checkbox" /></span>
+                              <span>印码管理</span>
+                          </p>
+                          <p >
+                              <span  class="jsgl_3" style="margin-right: 10px;"><input type="checkbox" name="checkbox" id="checkbox" /></span>
+                              <span>贴标管理</span>
+                          </p>
+                     </li>
+                     <div class="clear"></div>
+                     <li class="jsgl_4" style="margin-top: 0px;">
+                         <h2 class="jsgl_2">
+                             <p class="jsgl_3" style="margin-right: 0px;"><input type="checkbox" name="checkbox" id="checkbox" /></p>
+                             <p>内容管理</p>
+                         </h2>
+                         <p >
+                              <span  class="jsgl_3" style="margin-right: 10px;"><input type="checkbox" name="checkbox" id="checkbox" /></span>
+                              <span>资讯管理</span>
+                          </p>
+                          
+                     </li>
+                     <div class="clear"></div>
+                     <li style="margin-top: 30px; margin-left: 140px;">
+                     <p class="ybjk_pcgl_2" style="margin-right:0px;"><a href="#">保存</a></p>
+                    <p class="ybjk_pcgl_1" style="margin-right:0px;"><a href = "javascript:void(0)" onclick = "document.getElementById('light4').style.display='none';document.getElementById('fade').style.display='none'">关闭</a></p> 
+                     </li>
+                     
+                </ul>
+            </div>
+         
+         </div> 
+        <div id="fade" class="black_overlay"></div>           
+        
+<!--角色授权 弹窗 -->
+
+
+<!--头部-->
+<div class="top">
+	<div class="top_1">
+    	<div class="top_2"><a href="index.html"><img src="images/logo.png"/></a></div>
+    	<div class="sunnva">heyang 您好! <a href="#">修改密码</a> <a href="#">退出登录</a></div>
+    </div>
+</div>
+<!--头部-->
+
+<!--主框架-->
+<div class="ymfw-container">
+
+	<!--用码服务左边-->
+	<div class="ymfw-left">
+        <!--左边1--> 
+      <div class="ymfw-left_1">
+          <h2><p><img src="images/ymfw-left_1.png"/></p> 
+          <p class="ymfw-left_2">数据管理</p></h2>
+          <ul>
+            <li><a href="wygl.html" >企业管理</a></li>
+            <li><a href="jsgl.html" class="ymfw-left_5">角色管理</a></li>
+            <li><a href="yhgl.html">用户管理</a></li>
+          </ul>
+        </div>
+        <!--左边1--> 
+         <!--左边1--> 
+        <div class="ymfw-left_1">
+            <h2><p><img src="images/ymfw-left_1.png"/></p> 
+            <p class="ymfw-left_2">码管理</p></h2>
+            <ul>
+              <li><a href="jmgl.html">进码管理</a></li>
+              <li><a href="ymgl.html">印码管理</a></li>
+              <li><a href="ddgl.html">订单管理</a></li>
+            </ul>
+            
+        </div>
+         <!--左边1--> 
+      <!--左边1--> 
+      <div class="ymfw-left_1">
+          <h2><p><img src="images/ymfw-left_1.png"/></p> 
+            <p class="ymfw-left_2">内容管理</p></h2>
+            <ul>
+              <li><a href="xtxx.html">溯源资讯</a></li>
+              <li><a href="xtgg.html">系统公告</a></li>
+            </ul>
+            
+        </div>
+         <!--左边1--> 
+         <!--左边1--> 
+      <div class="ymfw-left_1" style="padding-bottom:0px; border-bottom:none;">
+          <h2><p><img src="images/ymfw-left_1.png"/></p> 
+            <p class="ymfw-left_2">业务监管</p></h2>
+            <ul>
+              <li><a href="smtj.html">扫码统计</a></li>
+              <li><a href="ymtj.html">用码统计</a></li>
+            </ul>
+            
+        </div>
+         <!--左边1-->  
+  </div>	
+    <!--用码服务左边-->  
+    
+    <!--用码服务右边-->
+	<div class="ymfw-right">
+		<div class="ymfw-right_1">角色管理</div>
+
+        <div class=" ymfw-right-zgj">
+        	<div class="yyzx">
+                <p class="yyzx_ny">
+                    <a href ="javascript:void(0)" onclick = "document.getElementById('light3').style.display='block';document.getElementById('fade').style.display='block'">新增角色
+                    </a> 
+                </p>
+                <p class="yyzx_nf"><a href ="#">导出数据</a></p>
+            </div>
+            <div class="ymfw-right-zgj_4" style="height: 40px; ">
+            	<ul>
+                	<li>
+                    <p>角色名称</p> 
+                    <p><input type="text" name="textfield" class="input_179" placeholder="角色名称" id="textfield" /></p> 
+                    </li>
+                    <li class="ymfw-right-zgj_4r"><p><a href="#">查询</a></p> </li>
+                </ul>
+           </div>
+           <div class="yyzx_lr" style="border-top: 1px solid #ddd; border-left: 1px solid #ddd;">
+                <table>
+                    <tr>
+                        <th width=" 140">角色名称</th>
+                        <th width="110">角色类型 </th>
+                        <th width="310">所属企业 </th>
+                        <th width="190">角色描述</th>
+                        <th width="230">操作</th>
+                    </tr>
+                    <tr>
+                        <td><p class="jsgl_1">公司名公司名公司名名</p></td>
+                        <td><p>国企角色</p></td>
+                        <td ><p class="yygl">广州市天河区广州市天广州州州州市天河区</p></td>
+                        <td>广东</td>
+                        
+                        <td><span class="ymfw-right-yhgl">
+                        <a href ="javascript:void(0)" onclick = "document.getElementById('light2').style.display='block';document.getElementById('fade').style.display='block'">编辑</a></span> 
+                        <span class="ymfw-right-yhgl"><a href ="javascript:void(0)" onclick = "document.getElementById('light1').style.display='block';document.getElementById('fade').style.display='block'">删除</a></span>
+                          <span class="ymfw-right-yhgl"><a href ="javascript:void(0)" onclick = "document.getElementById('light4').style.display='block';document.getElementById('fade').style.display='block'">角色授权</a></span>
+                        </td>
+                    </tr>
+                </table>
+             </div>
+             <div class="yyzx_1" style="margin-right: 20px;">
+
+                        <p class="yyzx_2"><a href="#"></a></p>
+                        <p style="margin-left:5px; margin-right:5px;">1/10</p>
+                        <p class="yyzx_3"><a href="#"></a></p>
+                        <p style="margin-left:12px; margin-right:8px;"><input type="text" name="textfield" class="input_58" id="textfield" /></p>
+                        <p class="ymfw-right-zgj_7"><a href="#">跳转</a></p>
+               </div>
+          </div>
+            <div class="clear"></div>
+        </div>
+    </div>	
+    <!--用码服务右边-->  
+    
+</div>
+<!--主框架-->
+
+</body>
+</html>

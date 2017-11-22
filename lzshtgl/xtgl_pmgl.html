@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>系统管理--部门管理</title>
+<link href="css/css.css" rel="stylesheet" />
+</head>
+
+
+<body>
+<!--头部 -->
+<div class="gzt">
+	<div class="gzt_1">
+    	<ul>
+        	<li class="gzt_1_1"><img src="images/gzt.jpg"></li>
+            <li class="gzt_1_2"><span>您好，方贤浩</span><a href="#">修改密码</a><a href="#">退出登录</a></li>
+        </ul>
+    </div>
+</div>
+<!--头部 -->
+
+<div class="gzt_1">
+    	<!--1 -->
+    	<div class="gzt_3">
+        	<ul>
+            	<li><a href="gzt.html" >工作台</a></li>
+                <li><a href="bssgl.html">档案管理</a></li>
+                <li><a href="gdgl_zxts.html">工单管理</a></li>
+                <li><a href="xzgl_htgl.html">行政管理</a></li>
+                <li><a href="rsgl_zbsz.html">人事管理</a></li>
+                <li><a href="cwgl_zsd.html">财务管理</a></li>
+                <li><a href="ssdgl.html">订单管理</a></li>
+                <li><a href="bgyp_ypsq.html">办公用品</a></li>
+                <li><a href="tjbp_ysbp.html">统计报表</a></li>
+                <li><a href="xtgl_pmgl.html" class="gzt_3_1">系统管理</a></li>
+            </ul>
+        </div>
+        <!--1 -->
+      <div class="clear"></div>
+      <div class="hygl_left">
+      	   <h2 style="background:url(images/hygl.jpg) no-repeat 20px center;">系统管理</h2>	
+           <ul>
+               <li><a href="#" class="hygl_left_1">部门管理</a></li>
+               <li><a href="#">用户管理</a></li>
+               <li><a href="#">角色管理</a></li>
+               <li><a href="#">岗位管理</a></li>
+               <li><a href="#">产品管理</a></li>
+               <li><a href="#">真知码管理</a></li>
+               <li><a href="#">促销管理</a></li>
+               <li><a href="#" >系统参数设置</a></li>
+           </ul>
+      </div>
+      <div class="hygl_right">
+      	<div class="hygl_1">部门管理</div>
+        
+        <div class="psrwd_0">
+        
+        	<ul>
+            	<li>
+                	<a href = "javascript:void(0)" onclick = "document.getElementById('light4').style.display='block';document.getElementById('fade').style.display='block'"><p style="margin-top:2px;"><img src="images/pmgl.jpg" ></p> 
+                	<p>新增部门</p></a>
+                </li>
+
+            </ul>
+      </div>
+        
+         <!--1-1 -->
+   
+        <!--添加弹窗4 -->
+         <div id="light4" class="ssdgl_tcps">
+         	<!--列表 -->
+         	<div class="htyg_tc">
+            	<ul>
+                	<li class="htyg_tc_1">新增部门</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light4').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/hygl_06.jpg"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            <div class="ssdgl_tcps_1">
+            	<ul>
+                	<li><p>&nbsp;&nbsp;部门级别：</p> <p style="margin-right:10px;"> <input type="radio" name="radio" id="radio" value="radio" />  一级部门</p> 
+                    	<p> <input type="radio" name="radio" id="radio" value="radio" />  二级部门</p> 
+                    </li>
+                    <div class="clear"></div>
+                     <li>
+                            	<p style="line-height:22px;"><em style="color:#d22222;">*</em>&nbsp;部门名称：</p>
+                                <p> <input type="text" class="pmgl250" name="textfield" id="textfield" value="配送商名称" onMouseOver="this.style.borderColor='#00a4b7'" onMouseOut="this.style.borderColor=''" onFocus="if (value =='配送商名称'){value =''}" onBlur="if (value ==''){value='配送商名称'}"/ /> </p>
+                            </li>
+                  <div class="clear"></div>
+                  
+                   <li>
+                            	<p style="line-height:22px;"><em style="color:#d22222;">*</em>&nbsp;上级部门：</p>
+                                <p> <input type="text" class="pmgl250" name="textfield" id="textfield" value="配送商名称" onMouseOver="this.style.borderColor='#00a4b7'" onMouseOut="this.style.borderColor=''" onFocus="if (value =='配送商名称'){value =''}" onBlur="if (value ==''){value='配送商名称'}"/ /> </p>
+                    </li>
+                   	<div class="clear"></div> 
+                    <li>
+                            	<p style="line-height:22px;"><em style="color:#d22222;">*</em>&nbsp;部门主管：</p>
+                                <p><select class="pmgl198" name="">
+            	  <option>请选择</option>
+            	  </select> </p>
+                    </li>
+                  <div class="clear"></div>
+                  
+                    <li>
+                            	<p style="line-height:22px;"><em style="color:#d22222;">*</em>&nbsp;分管领导：</p>
+                                <p><select class="pmgl198" name="">
+            	  <option>请选择</option>
+            	  </select> </p>
+                    </li>
+                  <div class="clear"></div>
+                  
+                    <p class="htyg_tc_6" style="margin-left:118px; margin-top:30px;"><a href="#">保存</a></p> 
+                        
+                   <p class="htyg_tc_7" style=" margin-top:30px;"><a href = "javascript:void(0)" onclick = "document.getElementById('light4').style.display='none';document.getElementById('fade').style.display='none'">取消</a></p></li>
+                </ul>
+                 <div class="pmgl_tcym_1">
+                 	<em style="margin-left:5px; color:#d22222;">填写错误报错信息显示在这里，在点击保存后给予相应的提示！</em>
+                </div>
+            </div>
+            
+         
+         </div> 
+        <div id="fade" class="black_overlay"></div>  
+        <!--添加弹窗4 -->
+        
+        <!--添加弹窗2 -->
+         <div id="light2" class="ssdgl_tcps">
+         	<!--列表 -->
+         	<div class="htyg_tc">
+            	<ul>
+                	<li class="htyg_tc_1">删除</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/hygl_06.jpg"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            <div class="ssdgl_tcps_1">
+            	<ul>
+                	<li class="ssdgl_tcps_2">确认删除该部门？</li>
+                    
+                    <li> 
+                    <p class="htyg_tc_6" style="margin-left:118px;"><a href="#">保存</a></p> 
+                        
+                   <p class="htyg_tc_7"><a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='none';document.getElementById('fade').style.display='none'">取消</a></p></li>
+                </ul>
+            </div>
+            
+         
+         </div> 
+        <div id="fade" class="black_overlay"></div>  
+        <!--添加弹窗2 -->
+        
+
+		
+
+        <!--切换效果-->
+        
+        <div class="psrwd_5">
+    	 <!--导航  -->
+        	<ul class="menu_zzjs_net">
+                 <li class="this_zzjs"><a href="javascript:void(0)">一级部门</a></li>
+                 
+                 <li style="width:251px;"><a href="javascript:void(0)"> 二级部门</a></li>
+        	 </ul>
+        <!--导航  -->
+     </div>
+     <div class="clear"></div>
+         <div class="sub_zzjs">
+         	  <ul style="display:block;">
+              	  <li >
+                  		<div class="psrwd_5_1 psrwd_5_2" style="background:#f5f5f5;">
+                       
+                            <p class="pmgl184">部门名称</p> <p class="pmgl330">上级部门</p>
+                            <p class="pmgl180">部门主管</p> <p class=" pmgl180" >分管领导</p>  <p class="pmgl120" >操作</p> 
+                            
+                        </div>
+                        
+                        <!--1  -->
+                      	<div class="psrwd_5_1 psrwd_5_2">
+                            <p class="pmgl184"><em style="color:#005ea7;">财务部</em></p> <p class="pmgl330">广州市南洲水有限公司</p>
+                            <p class="pmgl180">李晓明</p> <p class=" pmgl180" >欧阳晓明</p>  <p class="pmgl120 pmgl_005ea7" ><a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='block';document.getElementById('fade').style.display='block'" >删除</a></p> 
+                            
+                        </div>
+                        <!--1  -->
+                        
+                        <!--1  -->
+                      	<div class="psrwd_5_1 psrwd_5_2">
+                            <p class="pmgl184"><em style="color:#005ea7;">管理部</em></p> <p class="pmgl330">广州市南洲水有限公司</p>
+                            <p class="pmgl180">李晓明</p> <p class=" pmgl180" >欧阳晓明</p>  <p class="pmgl120 pmgl_005ea7" ><a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='block';document.getElementById('fade').style.display='block'" >删除</a></p> 
+                            
+                        </div>
+                        <!--1  -->
+                        
+                        <!--1  -->
+                      	<div class="psrwd_5_1 psrwd_5_2">
+                            <p class="pmgl184"><em style="color:#005ea7;">行政部</em></p> <p class="pmgl330">广州市南洲水有限公司</p>
+                            <p class="pmgl180">李晓明</p> <p class=" pmgl180" >欧阳晓明</p>  <p class="pmgl120 pmgl_005ea7" ><a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='block';document.getElementById('fade').style.display='block'" >删除</a></p> 
+                            
+                        </div>
+                        <!--1  -->
+                        
+                        <!--1  -->
+                      	<div class="psrwd_5_1 psrwd_5_2">
+                            <p class="pmgl184"><em style="color:#005ea7;">后勤部</em></p> <p class="pmgl330">广州市南洲水有限公司</p>
+                            <p class="pmgl180">李晓明</p> <p class=" pmgl180" >欧阳晓明</p>  <p class="pmgl120 pmgl_005ea7" ><a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='block';document.getElementById('fade').style.display='block'" >删除</a></p> 
+                            
+                        </div>
+                        <!--1  -->
+                        
+                        <!--1  -->
+                      	<div class="psrwd_5_1 psrwd_5_2">
+                            <p class="pmgl184"><em style="color:#005ea7;">产品部</em></p> <p class="pmgl330">广州市南洲水有限公司</p>
+                            <p class="pmgl180">李晓明</p> <p class=" pmgl180" >欧阳晓明</p>  <p class="pmgl120 pmgl_005ea7" ><a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='block';document.getElementById('fade').style.display='block'" >删除</a></p> 
+                            
+                        </div>
+                        <!--1  -->
+						<div class="clear"></div>
+                  </li>
+              </ul>
+             
+              <!--切换2-->
+              <ul>
+              	  <li >
+                  			<div class="psrwd_5_1 psrwd_5_2" style="background:#f5f5f5;">
+                       
+                            <p class="pmgl519"> 部门名称</p>
+                            <p class="pmgl180">上级部门</p> <p class=" pmgl180" >部门主管</p>  <p class="pmgl120" >操作</p> 
+                            
+                        </div>
+                         <!--0  -->
+                        	<div class="psrwd_5_1 psrwd_5_2" >
+                       
+                            <p class="pmgl519"><em style="color:#005ea7;">石牌桥自营店</em></p>
+                            <p class="pmgl180">自营店</p> <p class=" pmgl180" >分管领导</p>  <p class="pmgl120 pmgl_005ea7" ><a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='block';document.getElementById('fade').style.display='block'" >删除</a></p> 
+                            
+                        </div>
+                        <!--0  -->	
+                         <!--1  -->
+                        	<div class="psrwd_5_1 psrwd_5_2" >
+                       
+                            <p class="pmgl519"><em style="color:#005ea7;">石牌桥自营店</em></p>
+                            <p class="pmgl180">自营店</p> <p class=" pmgl180" >分管领导</p>  <p class="pmgl120 pmgl_005ea7" ><a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='block';document.getElementById('fade').style.display='block'" >删除</a></p> 
+                            
+                        </div>
+                        <!--1  -->
+						 <!--2  -->
+                       	<div class="psrwd_5_1 psrwd_5_2" >
+                       
+                            <p class="pmgl519"><em style="color:#005ea7;">石牌桥自营店</em></p>
+                            <p class="pmgl180">自营店</p> <p class=" pmgl180" >分管领导</p>  <p class="pmgl120 pmgl_005ea7" ><a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='block';document.getElementById('fade').style.display='block'" >删除</a></p> 
+                            
+                        </div>
+                        <!--2  -->
+                        
+                         <!--3  -->
+                       	<div class="psrwd_5_1 psrwd_5_2" >
+                       
+                            <p class="pmgl519"><em style="color:#005ea7;">石牌桥自营店</em></p>
+                            <p class="pmgl180">自营店</p> <p class=" pmgl180" >分管领导</p>  <p class="pmgl120 pmgl_005ea7" ><a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='block';document.getElementById('fade').style.display='block'" >删除</a></p> 
+                            
+                        </div>
+                        <!--3 -->
+
+                      
+						<div class="clear"></div>
+                  </li>
+              </ul>
+              <!--切换2 -->
+         </div>
+           <script>
+            function $_class(name){
+             var elements = document.getElementsByTagName("*");
+             for(s=0;s<elements.length;s++){
+              if(elements[s].className==name){
+               return  elements[s];
+              }
+             }
+            }
+            var tabList = $_class("menu_zzjs_net").getElementsByTagName("li")
+             tabCon = $_class("sub_zzjs").getElementsByTagName("ul");
+            for(i=0;i<tabList.length;i++){
+             (function(){
+              var t = i;
+              tabList[t].onmouseover = function(){
+               for(o=0;o<tabCon.length;o++){
+                tabCon[o].style.display = "none";
+                tabList[o].className = "";
+                if(t==o){
+                 this.className = "this_zzjs";
+                 tabCon[o].style.display = "block";
+                }
+               }
+              }
+             })();
+			 
+            }
+			
+			
+			 
+            </script>
+        <!--切换效果-->
+
+        <div class="clear"></div>
+        
+        
+      </div>
+</div>
+</body>
+</html>

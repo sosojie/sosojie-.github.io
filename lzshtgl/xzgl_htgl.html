@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>行政管理--合同管理</title>
+<link href="css/css.css" rel="stylesheet" />
+<link href="css/oa.css" rel="stylesheet" />
+</head>
+
+
+<body>
+<!--头部 -->
+<div class="gzt">
+	<div class="gzt_1">
+    	<ul>
+        	<li class="gzt_1_1"><img src="images/gzt.jpg"></li>
+            <li class="gzt_1_2"><span>您好，方贤浩</span><a href="#">修改密码</a><a href="#">退出登录</a></li>
+        </ul>
+    </div>
+</div>
+<!--头部 -->
+
+<div class="gzt_1">
+    	<!--1 -->
+    	<div class="gzt_3">
+        	<ul>
+            	<li><a href="gzt.html" >工作台</a></li>
+                <li><a href="bssgl.html">档案管理</a></li>
+                <li><a href="gdgl_zxts.html">工单管理</a></li>
+                <li><a href="xzgl_htgl.html" class="gzt_3_1">行政管理</a></li>
+                <li><a href="rsgl_zbsz.html">人事管理</a></li>
+                <li><a href="cwgl_zsd.html">财务管理</a></li>
+                <li><a href="ssdgl.html">订单管理</a></li>
+                <li><a href="bgyp_ypsq.html">办公用品</a></li>
+                <li><a href="tjbp_ysbp.html">统计报表</a></li>
+                <li><a href="xtgl_pmgl.html">系统管理</a></li>
+            </ul>
+        </div>
+        <!--1 -->
+      <div class="clear"></div>
+      <div class="hygl_left">
+      	   <h2 style="background:url(images/hygl2_4.jpg) no-repeat 20px center;">行政管理</h2>	
+           <ul>
+               <li><a href="#" class="hygl_left_1">合同管理</a></li>
+               <li><a href="#" >制度管理</a></li>
+               <li><a href="#" >约车管理</a></li>
+               <li><a href="#" >证件管理</a></li>
+           </ul>
+      </div>
+      <div class="hygl_right">
+      	<div class="hygl_1">合同管理</div>
+        
+         <!--1 -->
+        <div class="psrwd">
+        	<ul>
+                  <li >
+                  <p>合同类型：</p>
+                  <p>
+                  <select class="oainput_130" name=""> <option>合同类型</option></select>
+                  </p>
+                 </li>
+                  <li style="margin-left:20px;">
+                  <p>合同名称：</p>
+                  <p><input class="oainput_284" type="text"  placeholder="合同名称"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p>
+                 </li>
+                  <li style="margin-left:20px;">
+                  <p>合同乙方：</p>
+                  <p><input class="oainput_284" type="text"  placeholder="合同乙方"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p>
+                 </li><br />
+                  <li >
+                  <p>合同编号：</p>
+                  <p><input class="hygl_2_3" type="text"  placeholder="合同编号"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p>
+                 </li>
+                  <li style="margin-left:20px;">
+                  <p>到期时间：</p>
+                  <p><input class="oainput_172" type="text"  placeholder="选择时间"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p>
+                 </li>
+                 <li style="margin-right:10px;"><p class="hygl_2_1">至</p>
+                 <p><input class="oainput_172" type="text"  placeholder="选择时间"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p></li>
+               <li style="margin-left:135px;"><input type="submit" class="psrwd_1_2" name="button" id="button" value="查询"></li>
+               <li><input type="submit" class="psrwd_1_2" name="button" id="button" value="重置"></li>
+            </ul>
+        </div>
+         <!--1 -->
+        <div class="psrwd_0">
+        
+        	<ul>
+            	<li style="margin-top:10px;">
+                	<a href = "javascript:void(0)" onclick = "document.getElementById('light4_1').style.display='block';document.getElementById('fade').style.display='block'"><p style="margin-top:2px;"><img src="images/pmgl.jpg" ></p> 
+                	<p>新增合同</p></a>
+                </li>
+               
+
+            </ul>
+      </div>
+        
+         <!--1-1 -->
+   
+        
+         <!--添加弹窗4_1 -->
+         <div id="light4_1" class="ycgl_tc htgltc_798">
+         	<!--列表 -->
+         	<div class="htyg_tc">
+            	<ul>
+                	<li class="htyg_tc_1">新增合同</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light4_1').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/hygl_06.jpg"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            
+            <div class="ycgl_tc_1 htgltc_758">
+            	<ul>
+                	
+                     <li style="margin-top:0px;">
+                            	<p style="line-height:22px;"><em class="zjgl_3">*</em>合同编号：</p>
+                                <p><input class="hygl_150" type="text"  placeholder="请输入"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p>
+                                <p style="line-height:22px; margin-left:45px;"><em class="zjgl_3">*</em>合同类型：</p>
+                                <p> <select class="hygl_150" name=""> <option>请选择</option>  </select></p>
+                                <p style="line-height:22px; margin-left:45px;"><em class="zjgl_3">*</em>合同状态：</p>
+                                <p> <select class="hygl_150" name=""> <option>请选择</option>  </select></p>
+                            </li>
+                    <div class="clear"></div>
+                    
+                    <li>
+                            	<p style="line-height:22px;"><em class="zjgl_3">*</em>合同名称：</p>
+                                <p><input class="oainput_410" type="text"  placeholder="请输入"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p>
+                                
+                                <p style="line-height:22px; margin-left:45px;"><em class="zjgl_3">*</em>合同金额：</p>
+                                <p> <input class="oainput_150" type="text"  placeholder="请输入"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p>
+                            </li>
+                  <div class="clear"></div>
+                  
+                   <li style="margin-top:30px;">
+                            	<p style="line-height:22px;"><em class="zjgl_3">*</em>甲方单位：</p>
+                                <p><input class="oainput_198" type="text"  placeholder="请输入"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p>
+                                <p style="line-height:22px; margin-left:37px;">联系人：</p>
+                                <p> <input class="oainput_120" type="text"  placeholder="请输入"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p>
+                                <p style="line-height:22px; margin-left:53px;">联系电话：</p>
+                                <p> <input class="oainput_150" type="text"  placeholder="请输入"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p>
+                            </li>
+                    <div class="clear"></div>
+                    
+                     <li >
+                            	<p style="line-height:22px;"><em class="zjgl_3">*</em>乙方单位：</p>
+                                <p><input class="oainput_198" type="text"  placeholder="请输入"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p>
+                                <p style="line-height:22px; margin-left:37px;">联系人：</p>
+                                <p> <input class="oainput_120" type="text"  placeholder="请输入"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p>
+                                <p style="line-height:22px; margin-left:53px;">联系电话：</p>
+                                <p> <input class="oainput_150" type="text"  placeholder="请输入"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p>
+                            </li>
+                    <div class="clear"></div>
+                     <li >
+                            	<p style="line-height:22px;"><em class="zjgl_3">*</em>合同内容：</p>
+                                <p>
+                                <textarea name="Content" rows="6" id="Content"  class="oainput_670" placeholder="请输入"  onMouseOver="this.style.borderColor='#00a4b7'"  
+                                onMouseOut="this.style.borderColor=''"></textarea>
+                                </p>
+                            </li>
+                    <div class="clear"></div>
+                    
+                     <li >
+                            	<p style="line-height:22px; width:68px; text-align:right;">合同备注：</p>
+                                <p>
+                                <textarea name="Content" rows="6" id="Content"  class="oainput_670_2" placeholder="合同备注"  onMouseOver="this.style.borderColor='#00a4b7'"  
+                                onMouseOut="this.style.borderColor=''"></textarea>
+                                </p>
+                            </li>
+                    <div class="clear"></div>
+                    
+                     <li >
+                            	<p style="line-height:22px; width:68px; text-align:right;">合同附件：</p>
+                                <p><input class="oainput_410" type="text"  placeholder="请输入"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p>
+                                <p style="margin-left:10px; margin-top:1px;"><input type="submit" class="psrwd_1_2_1" name="button" id="button" value="选择"></p>
+                                
+                            </li>
+                    <div class="clear"></div>
+                     <li >
+                            	<p style="line-height:22px;"><em style="color:#ff7800; margin-right:5px; margin-left:8px;">模板下载<em style="font-family: '微软雅黑';">>>></em></em></p>
+                                <p  style="line-height:22px;"><a href="#" style="color:#005ea7;">销售合同模板下载.doc</a></p>
+                                
+                                
+                            </li>
+                    <div class="clear"></div>
+                     <li style="margin-top:30px;">
+                            	<p style="line-height:22px; width:68px; text-align:right;">到期时间：</p>
+                                <p style="width:395px;"><input class="oainput_172" type="text"  placeholder="请选择"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p>
+                                <p style="line-height:22px; margin-left:40px;">提醒时间：</p>
+                                <p> <input class="oainput_172" type="text"  placeholder="请选择"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p>
+                               
+                            </li>
+                    <div class="clear"></div>
+                    <li>
+                            	<p style="line-height:22px; width:68px; text-align:right;">起草时间：</p>
+                                <p style="width:395px;"><input class="oainput_172" type="text"  placeholder="请选择"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p>
+                            </li>
+                    <div class="clear"></div>
+                     <li>
+                            	<p style="line-height:22px; width:68px; text-align:right;">审批时间：</p>
+                                <p style="width:395px;">
+                                <input class="oainput_172" type="text"  placeholder="请选择"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p>
+                                <p style="line-height:22px; margin-left:40px;">签订时间：</p>
+                                <p> <input class="oainput_172" type="text"  placeholder="请选择"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p>
+                               
+                            </li>
+                    <div class="clear"></div>
+                    
+                     <li>
+                            	<p style="line-height:22px;">计划开工时间：</p>
+                                <p style="width:362px;"><input class="oainput_172" type="text"  placeholder="请选择"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p>
+                                <p style="line-height:22px; margin-left:32px;">计划竣工时间：</p>
+                                <p> <input class="oainput_172" type="text"  placeholder="请选择"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p>
+                               
+                            </li>
+                    <div class="clear"></div>
+                    
+                  <li>
+                    <p class="htyg_tc_6" style="margin-left:348px; margin-top:30px;"><a href="#">保存</a></p> 
+                        
+                   <p class="htyg_tc_7" style=" margin-top:30px;"><a href = "javascript:void(0)" onclick = "document.getElementById('light4_1').style.display='none';document.getElementById('fade').style.display='none'">取消</a></p></li>
+                </ul>
+                 <div class="pmgl_tcym_1">
+                 	<em style="margin-left:5px; color:#d22222;">填写错误报错信息显示在这里，在点击保存后给予相应的提示！</em>
+                </div>
+            </div>
+            
+         
+         </div> 
+        <div id="fade" class="black_overlay"></div>  
+        <!--添加弹窗4_1 -->
+        
+         <!--添加弹窗2 -->
+         <div id="light2" class="ycgl_tc htgltc_798">
+         	<!--列表 -->
+         	<div class="htyg_tc">
+            	<ul>
+                	<li class="htyg_tc_1">修改合同</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/hygl_06.jpg"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            
+            <div class="ycgl_tc_1 htgltc_758">
+            	<ul>
+                	
+                     <li style="margin-top:0px;">
+                            	<p style="line-height:22px;"><em class="zjgl_3">*</em>合同编号：</p>
+                                <p><input class="hygl_150" type="text"  value="DLS-SC200900X" onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p>
+                                <p style="line-height:22px; margin-left:45px;"><em class="zjgl_3">*</em>合同类型：</p>
+                                <p> <select class="hygl_150" name=""> <option>集团订水合同</option>  </select></p>
+                                <p style="line-height:22px; margin-left:45px;"><em class="zjgl_3">*</em>合同状态：</p>
+                                <p> <select class="hygl_150" name=""> <option>待审批</option>  </select></p>
+                            </li>
+                    <div class="clear"></div>
+                    
+                    <li>
+                            	<p style="line-height:22px;"><em class="zjgl_3">*</em>合同名称：</p>
+                                <p><input class="oainput_410" type="text"  value="穗水商贸经营管理平台项目签约合同"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p>
+                                
+                                <p style="line-height:22px; margin-left:45px;"><em class="zjgl_3">*</em>合同金额：</p>
+                                <p> <input class="oainput_150" type="text"  value="10000000"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p>
+                            </li>
+                  <div class="clear"></div>
+                  
+                   <li style="margin-top:30px;">
+                            	<p style="line-height:22px;"><em class="zjgl_3">*</em>甲方单位：</p>
+                                <p><input class="oainput_198" type="text"  value="穗水商贸有限责任公司"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p>
+                                <p style="line-height:22px; margin-left:37px;">联系人：</p>
+                                <p> <input class="oainput_120" type="text"  value="张三三"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p>
+                                <p style="line-height:22px; margin-left:53px;">联系电话：</p>
+                                <p> <input class="oainput_150" type="text"  value="15812345678"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p>
+                            </li>
+                    <div class="clear"></div>
+                    
+                     <li >
+                            	<p style="line-height:22px;"><em class="zjgl_3">*</em>乙方单位：</p>
+                                <p><input class="oainput_198" type="text"  value="广州宽度信息技术有限责任公司"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" >
+                                </p>
+                                <p style="line-height:22px; margin-left:37px;">联系人：</p>
+                                <p> <input class="oainput_120" type="text"  value="李四十四"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p>
+                                <p style="line-height:22px; margin-left:53px;">联系电话：</p>
+                                <p> <input class="oainput_150" type="text"  value="15812345678"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p>
+                            </li>
+                    <div class="clear"></div>
+                     <li >
+                            	<p style="line-height:22px;"><em style="color:#d22222;line-height: 25px;float: left; margin-right:3px;">*</em>合同内容：</p>
+                                <p>
+                                <textarea name="Content" rows="6" id="Content"  class="oainput_670" onMouseOver="this.style.borderColor='#00a4b7'"  
+                                onMouseOut="this.style.borderColor=''">合同主要内容建设工程项目总承包和施工总承包的最大不同指出在于承包商要负责全部或部分的设计，并负责物资设备的采购。
+(一)项目总承包的任务从时间范围上，一般可包括从工程立项到交付使用的工程建设全过程，具体包括：勘察设计、设备采购、施工、试车(或交付使用)等内容。</textarea>
+                                </p>
+                            </li>
+                    <div class="clear"></div>
+                    
+                     <li >
+                            	<p style="line-height:22px; width:68px; text-align:right;">合同备注：</p>
+                                <p>
+                                <textarea name="Content" rows="6" id="Content"  class="oainput_670_2" onMouseOver="this.style.borderColor='#00a4b7'"  
+                                onMouseOut="this.style.borderColor=''">建设工程项目总承包和施工总承包的最大不同指出在于承包商要负责全部或部分的设计，并负责物资设备的采购。</textarea>
+                                </p>
+                            </li>
+                    <div class="clear"></div>
+                    
+                     <li >
+                            	<p style="line-height:22px; width:68px; text-align:right;">合同附件：</p>
+                                <p style="line-height:22px;"><em style="color:#005ea7;">穗水商贸经营管理平台项目签约合同.doc</em></p>
+                                <p style="margin-left:10px; margin-top:1px;"><input type="submit" class="psrwd_1_2_1" name="button" id="button" value="修改"></p>
+                                
+                            </li>
+                    <div class="clear"></div>
+                     <li >
+                            	<p style="line-height:22px;"><em style="color:#ff7800; margin-right:5px; margin-left:8px;">模板下载<em style="font-family: '微软雅黑';">>>></em></em></p>
+                                <p style="line-height:22px;"><a href="#" style="color:#005ea7;">销售合同模板下载.doc</a></p>
+                                
+                                
+                            </li>
+                    <div class="clear"></div>
+                     <li style="margin-top:30px;">
+                            	<p style="line-height:22px; width:68px; text-align:right;">到期时间：</p>
+                                <p  style="width:395px;">
+                                <input class="oainput_172" type="text"  value="2015-5-12 "  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p>
+                                <p style="line-height:22px; margin-left:40px;">提醒时间：</p>
+                                <p > 
+                                <input class="oainput_172" type="text"  value="2015-5-5"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p>
+                               
+                            </li>
+                    <div class="clear"></div>
+                    <li>
+                            	<p style="line-height:22px; width:68px; text-align:right;">起草时间：</p>
+                                <p style="width:395px;">
+                                <input class="oainput_172" type="text"  value="2015-3-12"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p>
+                            </li>
+                    <div class="clear"></div>
+                     <li>
+                            	<p style="line-height:22px; width:68px; text-align:right;">审批时间：</p>
+                                <p style="width:395px;">
+                                <input class="oainput_172" type="text"  value="2015-4-12"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p>
+                                <p style="line-height:22px; margin-left:40px;">签订时间：</p>
+                                <p >
+                                 <input class="oainput_172" type="text"  value="2015-4-13"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p>
+                               
+                            </li>
+                    <div class="clear"></div>
+                    
+                     <li>
+                            	<p style="line-height:22px;">计划开工时间：</p>
+                                <p style="width:362px;"><input class="oainput_172" type="text"  value="2015-4-15"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p>
+                                <p style="line-height:22px; margin-left:32px;">计划竣工时间：</p>
+                                <p > <input class="oainput_172" type="text"  value="2015-4-18"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p>
+                               
+                            </li>
+                    <div class="clear"></div>
+                    
+                  <li>
+                    <p class="htyg_tc_6" style="margin-left:348px; margin-top:30px;"><a href="#">保存</a></p> 
+                        
+                   <p class="htyg_tc_7" style=" margin-top:30px;"><a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='none';document.getElementById('fade').style.display='none'">取消</a></p></li>
+                </ul>
+                 <div class="pmgl_tcym_1">
+                 	<em style="margin-left:5px; color:#d22222;">填写错误报错信息显示在这里，在点击保存后给予相应的提示！</em>
+                </div>
+            </div>
+            
+         
+         </div> 
+        <div id="fade" class="black_overlay"></div>  
+        <!--添加弹窗2 -->
+        
+         <!--添加弹窗1 -->
+         <div id="light1" class="ycgl_tc htgltc_798">
+         	<!--列表 -->
+         	<div class="htyg_tc">
+            	<ul>
+                	<li class="htyg_tc_1">查看合同</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light1').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/hygl_06.jpg"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            
+            <div class="ycgl_tc_1 htgltc_758">
+            	<ul>
+                	
+                     <li style="line-height:22px; margin-top:0px;">
+                            	<p><em class="zjgl_3">*</em>合同状态：
+                                <em style="color:#ff7800; font-weight:600;">待审批</em></p><br />
+                                <div class="clear"></div>
+                                <p><em class="zjgl_3">*</em>合同编号：
+                                <em>DLS-SC200900X</em></p><br />
+                                <div class="clear"></div>
+                                <p><em class="zjgl_3">*</em>合同名称：
+                                <em>穗水商贸经营管理平台项目签约合同</em></p><br />
+                                <div class="clear"></div>
+                                <p><em class="zjgl_3">*</em>合同类型：
+                                <em>集团订水合同</em></p><br />
+                                <div class="clear"></div>
+                                <p><em class="zjgl_3">*</em>合同金额：
+                                <em>10000000</em></p><br />
+                                <div class="clear"></div>
+                            </li> 
+                    <div class="clear"></div>
+                    
+                     <li style="line-height:22px; margin-top:20px;">
+                            	<p><em class="zjgl_3">*</em>甲方单位：
+                                <em >穗水商贸有限责任公司</em></p><br />
+                                <div class="clear"></div>
+                                <p><span class="zjgl_2">联系人：</span>
+                                张三三</p><br />
+                                <div class="clear"></div>
+                                <p><span class="zjgl_2">联系电话：</span>
+                                <em>15812345678</em></p><br />
+                                
+                            </li> 
+                    <div class="clear"></div>
+                    
+                     <li style="line-height:22px; margin-top:20px;">
+                            	<p><em class="zjgl_3">*</em>乙方单位：
+                                <em >穗水商贸有限责任公司</em></p><br />
+                                <div class="clear"></div>
+                                <p><span style="width:68px; text-align:right;">联系人：</span>
+                                李四十四</p><br />
+                                <div class="clear"></div>
+                                <p><span style="width:68px; text-align:right;">联系电话：</span>
+                                <em>15812345678</em></p>
+                                
+                            </li> 
+                    <div class="clear"></div>
+                    
+                     <li style="line-height:22px; margin-top:20px;">
+                            	<p><em class="zjgl_3">*</em>合同内容：</p>
+                                
+                                <p style="width:680px;">  合同主要内容<br />
+建设工程项目总承包和施工总承包的最大不同指出在于承包商要负责全部或部分的设计，并负责物资设备的采购。<br />
+(一)项目总承包的任务<br />
+从时间范围上，一般可包括从工程立项到交付使用的工程建设全过程，具体包括：勘察设计、设备采购、施工、试车(或交付使用)等内容。</p><br />
+								<div class="clear"></div>
+                                <p><span style="width:68px; text-align:right;">合同备注：</span></p>
+                                <p style="width:680px;">建设工程项目总承包和施工总承包的最大不同指出在于承包商要负责全部或部分的设计，并负责物资设备的采购。</p><br />
+                                <div class="clear"></div>
+                                <p><span style="width:68px; text-align:right;">合同附件：</span>
+                                <a href="#" style="color:#005ea7;">穗水商贸经营管理平台项目签约合同.doc</a></p>
+                                
+                            </li> 
+                    <div class="clear"></div>
+                     <li style="line-height:22px; margin-top:20px;">
+                                <p><span style="width:68px; text-align:right;">到期时间：</span>
+                                <em>2015-5-12 </em></p><br />
+                                <div class="clear"></div>
+                                <p><span style="width:68px; text-align:right;">提醒时间：</span>
+                                <em>2015-5-5</em></p><br />
+                                <div class="clear"></div>
+                                <p><span style="width:68px; text-align:right;">起草时间：</span>
+                                <em>2015-3-12</em></p>
+                                
+                            </li> 
+                    <div class="clear"></div>
+                   
+                </ul>
+                 
+            </div>
+            
+         
+         </div> 
+        <div id="fade" class="black_overlay"></div>  
+        <!--添加弹窗2 -->
+        
+        
+      
+        
+        
+        
+        
+        
+       
+        <!--添加弹窗3-->
+         <div id="light3" class="ycgl_tc yctc_298">
+         	<!--列表 -->
+         	<div class="htyg_tc">
+            	<ul>
+                	<li class="htyg_tc_1">删除</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light3').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/hygl_06.jpg"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            <div class="ycgl_tc_1 yctc_258">
+            	<ul>
+                	<li class="ssdgl_tcps_2">确认删除该合同？</li>
+                    
+                    <li> 
+                    <p class="htyg_tc_6" style="margin-left:58px;"><a href="#">是</a></p> 
+                        
+                   <p class="htyg_tc_7"><a href = "javascript:void(0)" onclick = "document.getElementById('light3').style.display='none';document.getElementById('fade').style.display='none'">否</a></p></li>
+                </ul>
+            </div>
+            
+         
+         </div> 
+        <div id="fade" class="black_overlay"></div>  
+        <!--添加弹窗3-->
+
+
+        <!--切换效果-->
+         <div class="ckgl_kccx">
+         	<table>
+            	<tr>
+                	<th class="htgl_219">合同名称</th>
+
+                    <th class="htgl_113">合同编号</th>
+                    <th class="htgl_113">合同类型</th>
+                    <th class="htgl_181">合同乙方</th>
+                    <th class="htgl_90">签订时间</th>
+                    <th class="htgl_90">到期时间</th>
+                    <th class="htgl_90"> 
+                    <select class="yjd_80_1" name="select" id="select">
+                    <option>全部状态</option> 
+                    <option>待审批</option> 
+                    <option>待签订</option>
+                    <option>已签订</option>
+                    <option>已归档</option>
+                    <option>已作废</option>
+                    </select>
+                     </th>
+                    <th class="htgl_90">操作</th>
+                </tr>
+                
+                <tr>
+                	<td>
+                    	<div class="htgl_219"> 
+                        <a href = "javascript:void(0)" onclick = "document.getElementById('light1').style.display='block';document.getElementById('fade').style.display='block'">
+                        <em title="穗水商贸经营管理平台项目签约">穗水商贸经营管理平台项目签约</em></a></div>
+                    </td>
+                    <td>
+                    	DLS-SC200900X
+                  </td>
+                    <td>
+                    	加盟合同
+                    </td>
+                     <td>
+                    	<div class="htgl_181">广州宽度信息技术有限公司</div>
+                    </td>
+                     <td>
+                    	2015-4-22
+                    </td>
+                     <td>
+                    	2015-4-22
+                    </td>
+                     <td>
+                    	<p class="kfzx_bottom_4_1">待审批</p>
+                    </td>
+                    <td>
+                   <a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='block';document.getElementById('fade').style.display='block'">修改</a> 
+                    <em style="margin-left:10px;">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light3').style.display='block';document.getElementById('fade').style.display='block'">删除</a></em>
+                     </td>                   
+                </tr>
+                
+                 <tr>
+                	<td>
+                    	<div class="htgl_219"> 
+                        <a href = "javascript:void(0)" onclick = "document.getElementById('light1').style.display='block';document.getElementById('fade').style.display='block'">
+                         <em title="穗水商贸经营管理平台项目签约">穗水商贸经营管理平台项目签约</em></a></div>
+                    </td>
+                    <td>
+                    	DLS-SC200900X
+                  </td>
+                    <td>
+                    	加盟合同
+                    </td>
+                     <td>
+                    	<div class="htgl_181">广州宽度信息技术有限公司</div>
+                    </td>
+                     <td>
+                    	2015-4-22
+                    </td>
+                     <td>
+                    	2015-4-22
+                    </td>
+                     <td>
+                    	<p class="kfzx_bottom_4_1">待签订</p>
+                    </td>
+                    <td>
+                   <a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='block';document.getElementById('fade').style.display='block'">修改</a> 
+                    <em style="margin-left:10px;">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light3').style.display='block';document.getElementById('fade').style.display='block'">删除</a></em>
+                     </td>                   
+                </tr>
+                
+                 <tr>
+                	<td>
+                    	<div class="htgl_219"> 
+                        <a href = "javascript:void(0)" onclick = "document.getElementById('light1').style.display='block';document.getElementById('fade').style.display='block'">
+                         <em title="穗水商贸经营管理平台项目签约">穗水商贸经营管理平台项目签约</em></a></div>
+                    </td>
+                    <td>
+                    	DLS-SC200900X
+                  </td>
+                    <td>
+                    	加盟合同
+                    </td>
+                     <td>
+                    	<div class="htgl_181">广州宽度信息技术有限公司</div>
+                    </td>
+                     <td>
+                    	2015-4-22
+                    </td>
+                     <td>
+                    	2015-4-22
+                    </td>
+                     <td>
+                    	<p class="kfzx_bottom_4_2" style=" color:#999;">已签订</p>
+                    </td>
+                    <td>
+                   <a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='block';document.getElementById('fade').style.display='block'">修改</a> 
+                    <em style="margin-left:10px;">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light3').style.display='block';document.getElementById('fade').style.display='block'">删除</a></em>
+                     </td>                   
+                </tr>
+                
+                <tr>
+                	<td>
+                    	<div class="htgl_219"> 
+                        <a href = "javascript:void(0)" onclick = "document.getElementById('light1').style.display='block';document.getElementById('fade').style.display='block'">
+                         <em title="穗水商贸经营管理平台项目签约">穗水商贸经营管理平台项目签约</em></a></div>
+                    </td>
+                    <td>
+                    	DLS-SC200900X
+                  </td>
+                    <td>
+                    	加盟合同
+                    </td>
+                     <td>
+                    	<div class="htgl_181">广州宽度信息技术有限公司</div>
+                    </td>
+                     <td>
+                    	2015-4-22
+                    </td>
+                     <td>
+                    	2015-4-22
+                    </td>
+                     <td>
+                    	<p class="kfzx_bottom_4_2" style=" color:#999;">已归档</p>
+                    </td>
+                    <td>
+                   <a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='block';document.getElementById('fade').style.display='block'">修改</a> 
+                    <em style="margin-left:10px;">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light3').style.display='block';document.getElementById('fade').style.display='block'">删除</a></em>
+                     </td>                   
+                </tr>
+                
+                 <tr>
+                	<td>
+                    	<div class="htgl_219"> 
+                        <a href = "javascript:void(0)" onclick = "document.getElementById('light1').style.display='block';document.getElementById('fade').style.display='block'">
+                         <em title="穗水商贸经营管理平台项目签约">穗水商贸经营管理平台项目签约</em></a></div>
+                    </td>
+                    <td>
+                    	DLS-SC200900X
+                  </td>
+                    <td>
+                    	加盟合同
+                    </td>
+                     <td>
+                    	<div class="htgl_181">广州宽度信息技术有限公司</div>
+                    </td>
+                     <td>
+                    	2015-4-22
+                    </td>
+                     <td>
+                    	2015-4-22
+                    </td>
+                     <td>
+                    	<p class="kfzx_bottom_4_2" style=" color:#999;">已作废</p>
+                    </td>
+                    <td>
+                   <a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='block';document.getElementById('fade').style.display='block'">修改</a> 
+                    <em style="margin-left:10px;">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light3').style.display='block';document.getElementById('fade').style.display='block'">删除</a></em>
+                     </td>                   
+                </tr>
+                
+               
+            </table>
+        	
+        </div>
+        
+          
+        <!--切换效果-->  
+        
+      </div>
+</div>
+</body>
+</html>

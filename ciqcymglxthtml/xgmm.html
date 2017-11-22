@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>修改密码</title>
+<link href="css/common.css" rel="stylesheet" />
+<link href="css/index.css" rel="stylesheet" />
+
+</head>
+
+<body>
+<!--头部-->
+<div class="top">
+	<div class="top_1">
+    	<div class="top_2"><img src="images/logo.png"/></div>
+    	<div class="sunnva">heyang 您好! <a href="#">修改密码</a> <a href="#">退出登录</a></div>
+    </div>
+</div>
+<!--头部-->
+
+
+<!--主框架-->
+<div class="ymfw-container">
+	<div class="ymfw-right_1">修改密码</div> 
+    <div class="zhzc">
+    	<ul>
+            <li class="zhzc_mt15">
+            	<p class="zhzc_width"><em class="zhzc_cored">*</em>旧密码：</p>
+                <p class="zhzc_ml10"><input type="text" name="user" class="input_510" /></p>
+            </li>
+            <li class="zhzc_mt15">
+            	<p class="zhzc_width"><em class="zhzc_cored">*</em>新密码：</p>
+                <p class="zhzc_ml10"><input type="password" name="password" class="input_510" /></p>
+            </li>
+            <li class="zhzc_mt15">
+            	<p class="zhzc_width"><em class="zhzc_cored">*</em>再输新密码：</p>
+                <p class="zhzc_ml10"><input type="password" name="crpassword" class="input_510" /></p>
+            </li>
+        </ul>
+        <div class="pmgl_tcym_1 error_box">
+             <em style="margin-left:5px; color:#d22222;"></em>
+       </div>
+        <div class="zhzc_2" style="margin-top:40px;">
+        	<a class="btn_save" href="javascript:void(0);">提交</a>
+        </div>
+    </div>
+    
+</div>
+<!--主框架-->
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="js/validation.js"></script>
+<script>
+	
+	function newSave(){
+	
+	var form={
+		user:$('input[name="user"]').val(),
+		password:$('input[name="password"]').val(),
+		crpassword:$('input[name="crpassword"]').val(),
+	};
+	newSaveValid(form);
+	//到此检测通过，提交form到后端
+	var params={
+		url:'',
+		type:'post',
+		data:form,
+		success:function(res){
+			console.log(res);
+		},
+		dataType:'json'
+	};
+	$.ajax(params);
+}
+function newSaveValid(form){
+	var err=$('.error_box>em');	
+	if(valid_test.isEmpty(form.user)){
+		err.html('请输入旧密码');
+		return false;
+	}else{
+		err.empty();
+	}
+	
+	if(valid_test.isEmpty(form.password)){
+		err.html('请输入密码');
+		return false;
+	}else{
+		err.empty();
+	}
+	if(valid_test.isEmpty(form.crpassword)){
+		err.html('请在输入一次密码');
+		return false;
+	}else{
+		err.empty();
+	}
+	if(form.password!=form.crpassword){
+		err.html('两次密码不一致');
+		return false;
+	}
+}
+</script>
+</body>
+</html>

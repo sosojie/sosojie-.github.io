@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>配送商管理</title>
+<link href="css/css.css" rel="stylesheet" />
+</head>
+
+
+<body>
+<!--头部 -->
+<div class="gzt">
+	<div class="gzt_1">
+    	<ul>
+        	<li class="gzt_1_1"><img src="images/gzt.jpg"></li>
+            <li class="gzt_1_2"><span>您好，方贤浩</span><a href="#">修改密码</a><a href="#">退出登录</a></li>
+        </ul>
+    </div>
+</div>
+<!--头部 -->
+
+<div class="gzt_1">
+    	<!--1 -->
+    	<div class="gzt_3">
+        	<ul>
+              
+            	  <li><a href="gzt.html" >工作台</a></li>
+                <li><a href="bssgl.html" class="gzt_3_1">档案管理</a></li>
+                <li><a href="gdgl_zxts.html">工单管理</a></li>
+                <li><a href="xzgl_htgl.html">行政管理</a></li>
+                <li><a href="rsgl_zbsz.html">人事管理</a></li>
+                <li><a href="cwgl_zsd.html">财务管理</a></li>
+                <li><a href="ssdgl.html">订单管理</a></li>
+                <li><a href="bgyp_ypsq.html">办公用品</a></li>
+                <li><a href="tjbp_ysbp.html">统计报表</a></li>
+                <li><a href="xtgl_pmgl.html">系统管理</a></li>
+            </ul>
+        </div>
+        <!--1 -->
+      <div class="clear"></div>
+      <div class="hygl_left">
+      	   <h2 style="background:url(images/hygl2_9.png) 20px center no-repeat;">档案管理</h2>	
+           <ul>
+               <li><a href="#" class="hygl_left_1">配送商管理</a></li>
+               <li><a href="#">门店管理</a></li>
+               <li><a href="#" >会员管理</a></li>
+
+           </ul>
+      </div>
+      <div class="hygl_right">
+      	<div class="hygl_1">配送商管理</div>
+        <!--1 -->
+        <div class="hygl_2">
+        	<ul>
+            	  
+                  <li>
+                  <input type="text" class="psrwd_1_0" name="textfield" id="textfield" value="配送商名称" onMouseOver="this.style.borderColor='#00a4b7'" onMouseOut="this.style.borderColor=''" onFocus="if (value =='配送商名称'){value =''}" onBlur="if (value ==''){value='配送商名称'}"/ /></li>
+                 <li>
+                 <input type="text" class="psrwd_1_0" name="textfield" id="textfield" value="联系地址" onMouseOver="this.style.borderColor='#00a4b7'" onMouseOut="this.style.borderColor=''" onFocus="if (value =='联系地址'){value =''}" onBlur="if (value ==''){value='联系地址'}"/ /></li>
+                 <li><input type="submit" class="hygl_2_4" name="button" id="button" value="查询"></li>
+            </ul>
+        </div>
+        <!--1 -->
+        <!--2 -->
+        <div class="hygl_3">
+        	<li class="hygl_3_1"><a style=" padding-left:14px;" href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">新增配送商</a></li>
+            <li class="hygl_3_2"><a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='block';document.getElementById('fade').style.display='block'">注销</a></li>
+
+        </div>
+        <!--2 -->
+        
+          <!--添加弹窗2 -->
+         <div id="light2" class="ssdgl_tcps">
+         	<!--列表 -->
+         	<div class="htyg_tc">
+            	<ul>
+                	<li class="htyg_tc_1">注销</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/hygl_06.jpg"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            <div class="ssdgl_tcps_1">
+            	<ul>
+                	<li class="ssdgl_tcps_2">确认注销该/所选配送商？</li>
+                    <li><textarea name="Content" rows="6" id="Content"  class="ssdgl_textarea368"onfocus="if(this.value=='备忘') {this.value='';}this.style.color='#999';" onBlur="if(this.value=='') {this.value='备忘';this.style.color='#999';}">备忘</textarea></li>
+                    <li> 
+                    <p class="htyg_tc_6" style="margin-left:118px;"><a href="#">保存</a></p> 
+                        
+                   <p class="htyg_tc_7"><a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='none';document.getElementById('fade').style.display='none'">取消</a></p></li>
+                </ul>
+            </div>
+            
+         
+         </div> 
+        <div id="fade" class="black_overlay"></div>  
+        <!--添加弹窗2-->
+        
+        
+       
+        
+     
+        
+        
+        <!--添加弹窗 -->
+         <div id="light" class="white_content">
+         	<!--列表 -->
+         	<div class="htyg_tc">
+            	<ul>
+                	<li class="htyg_tc_1">详情</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/hygl_06.jpg"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            <div class=" htyg_tc_3">
+            	<ul>
+                	<li style="margin-top:20px;">
+                    <div class="htyg_tc_4">
+                    <p class="htyg_tc_41" ><em style="color:#d22222;margin-right:5px;">*</em>配送商名称：</p>
+                    <p> <input type="text" class="hygl_250" name="textfield" id="textfield" value="广州日报配送有限公司" onMouseOver="this.style.borderColor='#00a4b7'" onMouseOut="this.style.borderColor=''" onFocus="if (value =='广州日报配送有限公司'){value =''}" onBlur="if (value ==''){value='广州日报配送有限公司'}"/ /></p>
+                    </div>
+                    </li>
+                    <div class="clear"></div>
+                    <li >
+                    <div class="htyg_tc_4">
+                    <p class="htyg_tc_41"><em style="color:#d22222;margin-right:5px;">*</em>配送商电话：</p>
+                    <p><input type="text" class="hygl_250" name="textfield" id="textfield" value=" 020-12345678" onMouseOver="this.style.borderColor='#00a4b7'" onMouseOut="this.style.borderColor=''" onFocus="if (value ==' 020-12345678'){value =''}" onBlur="if (value ==''){value=' 020-12345678'}"/ /></p>
+                    </div>
+                    </li>
+                    <div class="clear"></div>
+                     <li >
+                    <div class="htyg_tc_4">
+                    <p class="htyg_tc_41"><em style="color:#d22222; margin-right:5px;">*</em>联系地址：</p>
+                    
+                    <p ><select class="hygl_90" name="">
+            	  <option>请选择</option>
+            	  </select></p>  
+                  <p style="margin-left:10px;"><select class="hygl_90" name="">
+            	  <option>请选择</option>
+            	  </select></p>  
+                   <p style="margin-left:10px;"><select class="hygl_90" name="">
+            	  <option>请选择</option>
+            	  </select></p> 
+                    </div>
+                      <div class="htyg_tc_5" style="float:left; margin-left:86px; margin-top:5px;">
+                    	<p>
+                        <input type="text" class="hygl_250" name="textfield" id="textfield" value="请输入详细地址" onMouseOver="this.style.borderColor='#00a4b7'" onMouseOut="this.style.borderColor=''" onFocus="if (value =='请输入详细地址'){value =''}" onBlur="if (value ==''){value='请输入详细地址'}"/ />
+                       </p>
+                    </div>
+                    </li>
+                    <div class="clear"></div>
+                     <li >
+                    <div class="htyg_tc_4">
+                    <p class="htyg_tc_41"><em style="color:#d22222;margin-right:5px;">*</em>联系人：</p>
+                    <p><input type="text" class="hygl_250" name="textfield" id="textfield" value="陈丽丽  " onMouseOver="this.style.borderColor='#00a4b7'" onMouseOut="this.style.borderColor=''" onFocus="if (value ==' 陈丽丽  '){value =''}" onBlur="if (value ==''){value=' 陈丽丽  '}"/ /></p>
+                    </div>
+                    </li>
+                    
+                     <li >
+                    <div class="htyg_tc_4">
+                    <p class="htyg_tc_41"><em style="color:#d22222;margin-right:5px;">*</em>联系人电话：</p>
+                    <p><input type="text" class="hygl_250" name="textfield" id="textfield" value=" 020-12345678" onMouseOver="this.style.borderColor='#00a4b7'" onMouseOut="this.style.borderColor=''" onFocus="if (value ==' 020-12345678'){value =''}" onBlur="if (value ==''){value=' 020-12345678'}"/ /></p>
+                    </div>
+                    </li>
+						
+                      <li style="margin-top:10px;"><textarea name="Content" rows="6" id="Content"  class="ssdgl_7_3"onfocus="if(this.value=='备忘') {this.value='';}this.style.color='#999';" onBlur="if(this.value=='') {this.value='备忘';this.style.color='#999';}">备忘</textarea> </li>
+                    
+                    <li>
+                    	<p class="htyg_tc_6" style="margin-left:168px;"><a href="#">保存</a></p> 
+                        
+                        <p class="htyg_tc_7"><a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">取消</a></p>
+                    </li>
+                </ul>
+                
+                 <!-- <div class="hygl_tcym_1">
+           	    <img src="images/hygl_07.jpg" ><em style="margin-left:5px;">可以使用</em>
+                <img src="images/hygl_08.jpg" ><em style="margin-left:5px; color:#d22222;">不可使用</em>
+                </div>-->
+                 <div class="hygl_tcym_3">
+                 	<em style="margin-left:5px; color:#d22222;">填写错误报错信息显示在这里，在点击保存后给予相应的提示！</em>
+                </div>
+            </div>
+            
+         
+         </div> 
+        <div id="fade" class="black_overlay"></div>  
+        <!--添加弹窗 -->
+        
+         <!--添加弹窗3 -->
+         <div id="light3" class="white_content">
+         	<!--列表 -->
+         	<div class="htyg_tc">
+            	<ul>
+                	<li class="htyg_tc_1">详情</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light3').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/hygl_06.jpg"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            <div class=" htyg_tc_3">
+            	<ul>
+                	<li style="margin-top:20px;">
+                    <div class="htyg_tc_4">
+                    <p class="htyg_tc_41" ><em style="color:#d22222;margin-right:5px;">*</em>配送商名称：</p>
+                    <p> <input type="text" class="hygl_250" name="textfield" id="textfield" onMouseOver="this.style.borderColor='#00a4b7'" onMouseOut="this.style.borderColor=''" onFocus="if (value ==''){value =''}" onBlur="if (value ==''){value=''}"/ /></p>
+                    </div>
+                    </li>
+                    <div class="clear"></div>
+                    <li >
+                    <div class="htyg_tc_4">
+                    <p class="htyg_tc_41"><em style="color:#d22222;margin-right:5px;">*</em>配送商电话：</p>
+                    <p><input type="text" class="hygl_250" name="textfield" id="textfield" value=" " onMouseOver="this.style.borderColor='#00a4b7'" onMouseOut="this.style.borderColor=''" onFocus="if (value ==''){value =''}" onBlur="if (value ==''){value=''}"/ /></p>
+                    </div>
+                    </li>
+                    <div class="clear"></div>
+                     <li >
+                    <div class="htyg_tc_4">
+                    <p class="htyg_tc_41"><em style="color:#d22222; margin-right:5px;">*</em>联系地址：</p>
+                    
+                    <p ><select class="hygl_90" name="">
+            	  <option>请选择</option>
+            	  </select></p>  
+                  <p style="margin-left:10px;"><select class="hygl_90" name="">
+            	  <option>请选择</option>
+            	  </select></p>  
+                   <p style="margin-left:10px;"><select class="hygl_90" name="">
+            	  <option>请选择</option>
+            	  </select></p> 
+                    </div>
+                      <div class="htyg_tc_5" style="float:left; margin-left:86px; margin-top:5px;">
+                    	<p>
+                       <input type="text" class="hygl_250" name="textfield" id="textfield" value=" " onMouseOver="this.style.borderColor='#00a4b7'" onMouseOut="this.style.borderColor=''" onFocus="if (value ==''){value =''}" onBlur="if (value ==''){value=''}"/ />
+                       </p>
+                    </div>
+                    </li>
+                    <div class="clear"></div>
+                     <li >
+                    <div class="htyg_tc_4">
+                    <p class="htyg_tc_41"><em style="color:#d22222;margin-right:5px;">*</em>联系人：</p>
+                    <p><input type="text" class="hygl_250" name="textfield" id="textfield" value="  " onMouseOver="this.style.borderColor='#00a4b7'" onMouseOut="this.style.borderColor=''" onFocus="if (value =='  '){value =''}" onBlur="if (value ==''){value='  '}"/ /></p>
+                    </div>
+                    </li>
+                    
+                     <li >
+                    <div class="htyg_tc_4">
+                    <p class="htyg_tc_41"><em style="color:#d22222;margin-right:5px;">*</em>联系人电话：</p>
+                    <p><input type="text" class="hygl_250" name="textfield" id="textfield" value="" onMouseOver="this.style.borderColor='#00a4b7'" onMouseOut="this.style.borderColor=''" onFocus="if (value ==' '){value =''}" onBlur="if (value ==''){value=' '}"/ /></p>
+                    </div>
+                    </li>
+						
+                      <li style="margin-top:10px;"><textarea name="Content" rows="6" id="Content"  class="ssdgl_7_3"onfocus="if(this.value=='备忘') {this.value='';}this.style.color='#999';" onBlur="if(this.value=='') {this.value='备忘';this.style.color='#999';}">备忘</textarea> </li>
+                    
+                    <li>
+                    	<p class="htyg_tc_6" style="margin-left:168px;"><a href="#">保存</a></p> 
+                        
+                        <p class="htyg_tc_7"><a href = "javascript:void(0)" onclick = "document.getElementById('light3').style.display='none';document.getElementById('fade').style.display='none'">取消</a></p>
+                    </li>
+                </ul>
+                
+                 <!-- <div class="hygl_tcym_1">
+           	    <img src="images/hygl_07.jpg" ><em style="margin-left:5px;">可以使用</em>
+                <img src="images/hygl_08.jpg" ><em style="margin-left:5px; color:#d22222;">不可使用</em>
+                </div>-->
+                 <div class="hygl_tcym_3">
+                 	<em style="margin-left:5px; color:#d22222;">填写错误报错信息显示在这里，在点击保存后给予相应的提示！</em>
+                </div>
+            </div>
+            
+         
+         </div> 
+        <div id="fade" class="black_overlay"></div>  
+        <!--添加弹窗3 -->
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!--3 -->
+        <div class="hygl_4">
+        	<ul>
+            	<li style="background:#f5f5f5;">
+                    <p class="w32"><input type="checkbox" name="checkbox" id="checkbox" /></p>
+                    <p class="w240_2">配送商名称</p>
+                    <p class="w349">联系地址</p>
+                    <p class="w119">联系人</p>
+                    <p class="w164">联系人电话</p>
+                 
+                    <p class="w91" >状态</p>
+                   
+                </li>
+                <li>
+                    <p class="w32"><input type="checkbox" name="checkbox" id="checkbox" /></p>
+                    <p class="w240_2"><a href = "javascript:void(0)" onclick = "document.getElementById('light3').style.display='block';document.getElementById('fade').style.display='block'" title="广州日报配送有限公司广州日报配送有限公司广州日报配送有限公司">广州日报配送有限公司广州日报配送有限公司广州日报配送有限公司</a></p>
+                    <p class="w349">广州市天河区东圃镇东圃大马路51号）</p>
+                    <p class="w119">陈丽丽</p>
+                    <p class="w164">15812345678</p>
+                 
+                    <p class="w91 kfzx_bottom_4_1" >正常</p>
+                   
+                </li>
+              
+                <li>
+                    <p class="w32"><input type="checkbox" name="checkbox" id="checkbox" /></p>
+                    <p class="w240_2"><a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">广州日报配送有限公司</a></p>
+                    <p class="w349">广州市天河区东圃镇东圃大马路51号）</p>
+                    <p class="w119">陈丽丽</p>
+                    <p class="w164">15812345678</p>
+                 
+                    <p class="w91 kfzx_bottom_4_2" style="color:#999;">已注销</p>
+                   
+                </li>
+                
+                
+               
+            </ul>
+           
+        </div>
+         <div class="hygl_5">
+            	<ul>
+                	<li><a href="#"><img src="images/hygl_02.jpg" ></a></li>
+                    <li><a href="#"><img src="images/hygl_03.jpg" ></a></li>
+                    <li style="margin-right:0px;">
+                    	<div class="hygl_6">
+                        	<a href="#" class="hygl_6_1">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">...</a>
+                            <a href="#">10</a>
+                        </div>	
+                    </li>
+                    <li><a href="#"><img src="images/hygl_04.jpg"></a></li>
+                    <li><a href="#"><img src="images/hygl_05.jpg"></a></li>
+                </ul>
+            </div>
+        <!--3 -->
+      </div>
+</div>
+</body>
+</html>

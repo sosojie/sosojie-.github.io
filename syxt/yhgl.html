@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>用户管理</title>
+<link href="css/common.css" rel="stylesheet" />
+<link href="css/index.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+<!--添加弹窗 删除 -->
+		 <div id="light1" class="ycgl_tc yctc_498">
+         	<!--列表 -->
+         	<div class="htyg_tc">
+            	<ul>
+                	<li class="htyg_tc_1">提醒</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light1').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/htyg_tc.png"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            <div class="yctc_458 ycgl_tc_1">
+            	<ul style="width:220px; height:106px; margin:25px auto;">
+                	 <li style="font-size:14px; height:66px; text-align:center;">确定删除吗？删除后将不能恢复。</li>
+                     <div class="clear"></div>
+                     <li><p class="ybjk_pcgl_1" style="margin-right:0px;"><a href = "javascript:void(0)" onclick = "document.getElementById('light1').style.display='none';document.getElementById('fade').style.display='none'">关闭</a></p> 
+                     <p class="ybjk_pcgl_2" style="margin-right:0px;"><a href="#">确认</a></p></li>
+                     
+                </ul>
+            </div>
+         
+         </div> 
+        <div id="fade" class="black_overlay"></div>         
+        
+<!--添加弹窗删除 -->
+
+<!--编辑 弹窗 -->
+         <div id="light2" class="ycgl_tc yctc_498">
+            <!--列表 -->
+            <div class="htyg_tc">
+                <ul>
+                    <li class="htyg_tc_1">编辑用户</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/htyg_tc.png"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            <div class="yctc_458 ycgl_tc_1">
+                <ul>
+                     <li>
+                         <p class="right_yhgl">登录名 </p>
+                         <p><input type="text" name="textfield" style="background: #eee;" class="input_400" value="登录名" id="textfield" /></p>
+                     </li>
+                     <div class="clear"></div>
+                     <li>
+                         <p class="right_yhgl">用户名称 </p>
+                         <p><input type="text" name="textfield" class="input_400" placeholder="用户名称" id="t  extfield" /></p>
+                     </li>
+                     <div class="clear"></div>
+                     <li>
+                         <p class="right_yhgl">角色分配 </p>
+                         <p><select name="select" class="select_400" id="select"><option>全部</option></select></p>
+                     </li>
+                     <div class="clear"></div>
+                     <li>
+                         <p class="right_yhgl">密码 </p>
+                         <p><input type="text" name="textfield" class="input_400" placeholder="密码" id="textfield" /></p>
+                     </li>
+                     <div class="clear"></div>
+                     <li>
+                         <p class="right_yhgl">用户状态 </p>
+                         <p>
+                             <span style="margin-top: 10px;"><input type="radio" name="radio" id="radio" value="radio" /></span>
+                             <span style="margin-left: 5px;">启用</span>
+                         </p>
+                          <p>
+                             <span style="margin-top: 10px;"><input type="radio" name="radio" id="radio" value="radio" /></span>
+                             <span style="margin-left: 5px;">禁用</span>
+                         </p>
+                     </li>
+                     <div class="clear"></div>
+                     <li>
+                         <p class="right_yhgl">所属企业 </p>
+                         <p><select name="select" class="select_400" id="select"><option>全部</option></select></p>
+                     </li>
+                     <div class="clear"></div>
+
+                     <li style="margin-top: 30px; margin-left: 140px;">
+                     <p class="ybjk_pcgl_2" style="margin-right:0px;"><a href="#">保存</a></p>
+                    <p class="ybjk_pcgl_1" style="margin-right:0px;"><a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='none';document.getElementById('fade').style.display='none'">关闭</a></p> 
+                     </li>
+                     
+                </ul>
+            </div>
+         
+         </div> 
+        <div id="fade" class="black_overlay"></div>         
+        
+<!--编辑 弹窗 -->
+
+<!--新增 弹窗 -->
+         <div id="light3" class="ycgl_tc yctc_498">
+            <!--列表 -->
+            <div class="htyg_tc">
+                <ul>
+                    <li class="htyg_tc_1">新增用户</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light3').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/htyg_tc.png"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            <div class="yctc_458 ycgl_tc_1">
+                <ul>
+                     <li>
+                         <p class="right_yhgl">登录名 </p>
+                         <p><input type="text" name="textfield" class="input_400" id="textfield" /></p>
+                     </li>
+                     <div class="clear"></div>
+                     <li>
+                         <p class="right_yhgl">用户名称 </p>
+                         <p><input type="text" name="textfield" class="input_400"  id="t  extfield" /></p>
+                     </li>
+                     <div class="clear"></div>
+                     <li>
+                         <p class="right_yhgl">角色分配 </p>
+                         <p><select name="select" class="select_400" id="select"><option>全部</option></select></p>
+                     </li>
+                     <div class="clear"></div>
+                     <li>
+                         <p class="right_yhgl">密码 </p>
+                         <p><input type="text" name="textfield" class="input_400" id="textfield" /></p>
+                     </li>
+                     <div class="clear"></div>
+                     <li>
+                         <p class="right_yhgl">用户状态 </p>
+                         <p>
+                             <span style="margin-top: 10px;"><input type="radio" name="radio" id="radio" value="radio" /></span>
+                             <span style="margin-left: 5px;">启用</span>
+                         </p>
+                          <p>
+                             <span style="margin-top: 10px;"><input type="radio" name="radio" id="radio" value="radio" /></span>
+                             <span style="margin-left: 5px;">禁用</span>
+                         </p>
+                     </li>
+                     <div class="clear"></div>
+                     <li>
+                         <p class="right_yhgl">所属企业 </p>
+                         <p><select name="select" class="select_400" id="select"><option>全部</option></select></p>
+                     </li>
+                     <div class="clear"></div>
+
+                     <li style="margin-top: 30px; margin-left: 140px;">
+                     <p class="ybjk_pcgl_2" style="margin-right:0px;"><a href="#">保存</a></p>
+                    <p class="ybjk_pcgl_1" style="margin-right:0px;"><a href = "javascript:void(0)" onclick = "document.getElementById('light3').style.display='none';document.getElementById('fade').style.display='none'">关闭</a></p> 
+                     </li>
+                     
+                </ul>
+            </div>
+         
+         </div> 
+        <div id="fade" class="black_overlay"></div>         
+        
+<!--新增 弹窗 -->
+
+<!--头部-->
+<div class="top">
+	<div class="top_1">
+    	<div class="top_2"><a href="index.html"><img src="images/logo.png"/></a></div>
+    	<div class="sunnva">heyang 您好! <a href="#">修改密码</a> <a href="#">退出登录</a></div>
+    </div>
+</div>
+<!--头部-->
+
+<!--主框架-->
+<div class="ymfw-container">
+
+	<!--用码服务左边-->
+	<div class="ymfw-left">
+       
+       <!--左边1--> 
+      <div class="ymfw-left_1">
+          <h2><p><img src="images/ymfw-left_1.png"/></p> 
+          <p class="ymfw-left_2">数据管理</p></h2>
+          <ul>
+            <li><a href="wygl.html" >企业管理</a></li>
+            <li><a href="jsgl.html">角色管理</a></li>
+            <li><a href="yhgl.html" class="ymfw-left_5">用户管理</a></li>
+          </ul>
+        </div>
+        <!--左边1--> 
+         <!--左边1--> 
+        <div class="ymfw-left_1">
+            <h2><p><img src="images/ymfw-left_1.png"/></p> 
+            <p class="ymfw-left_2">码管理</p></h2>
+            <ul>
+              <li><a href="jmgl.html">进码管理</a></li>
+              <li><a href="ymgl.html">印码管理</a></li>
+              <li><a href="ddgl.html">订单管理</a></li>
+            </ul>
+            
+        </div>
+         <!--左边1--> 
+      <!--左边1--> 
+        <div class="ymfw-left_1">
+            <h2><p><img src="images/ymfw-left_1.png"/></p> 
+            <p class="ymfw-left_2">内容管理</p></h2>
+            <ul>
+              <li><a href="xtxx.html">溯源资讯</a></li>
+              <li><a href="xtgg.html">系统公告</a></li>
+            </ul>
+            
+        </div>
+         <!--左边1--> 
+         <!--左边1--> 
+      <div class="ymfw-left_1" style="padding-bottom:0px; border-bottom:none;">
+          <h2><p><img src="images/ymfw-left_1.png"/></p> 
+            <p class="ymfw-left_2">业务监管</p></h2>
+            <ul>
+              <li><a href="smtj.html">扫码统计</a></li>
+              <li><a href="ymtj.html">用码统计</a></li>
+            </ul>
+            
+        </div>
+         <!--左边1--> 
+
+    </div>	
+    <!--用码服务左边-->  
+    
+    <!--用码服务右边-->
+	<div class="ymfw-right">
+		<div class="ymfw-right_1">用户管理</div>
+
+        <div class=" ymfw-right-zgj">
+        	<div class="yyzx">
+                <p class="yyzx_ny">
+                    <a href ="javascript:void(0)" onclick = "document.getElementById('light3').style.display='block';document.getElementById('fade').style.display='block'">新增用户
+                    </a> 
+                </p>
+                <p class="yyzx_nf"><a href ="#">导出数据</a></p>
+            </div>
+            <div class="ymfw-right-zgj_4" style="height: 40px; ">
+            	<ul>
+                	<li>
+                    <p>登录名</p> 
+                    <p><input type="text" name="textfield" class="input_179" placeholder="登录名" id="textfield" /></p> 
+                    </li>
+                    <li>
+                    <p>所属企业</p> 
+                    <p>  <select name="select" class="input_179" id="select"><option>全部</option></select></p> 
+                    </li>
+                   
+                    <li class="ymfw-right-zgj_4r"><p><a href="#">查询</a></p> </li>
+                </ul>
+           </div>
+           <div class="yyzx_lr" style="border-top: 1px solid #ddd; border-left: 1px solid #ddd;">
+                <table>
+                    <tr>
+                        <th width="210">登录名</th>
+                        <th width="210">用户名</th>
+                        <th width="210">分配角色</th>
+                        <th width="210">所属企业</th>
+                        <th width="140">操作</th>
+                    </tr>
+                    <tr>
+                        <td><p class="ymfw-right-yhgl_1">oujinhua01</p></td>
+                        <td><p class="ymfw-right-yhgl_1">oujinhua01</p></td>
+                        <td><p class="ymfw-right-yhgl_1">oujinhua01</p></td>
+                        <td>qiye1</td>
+                        <td><span class="ymfw-right-yhgl">
+                        <a href ="javascript:void(0)" onclick = "document.getElementById('light2').style.display='block';document.getElementById('fade').style.display='block'">编辑</a></span> 
+                        <span class="ymfw-right-yhgl"><a href ="javascript:void(0)" onclick = "document.getElementById('light1').style.display='block';document.getElementById('fade').style.display='block'">删除</a></span></td>
+                    </tr>
+                </table>
+             </div>
+          </div>
+            <div class="clear"></div>
+        </div>
+    </div>	
+    <!--用码服务右边-->  
+    
+</div>
+<!--主框架-->
+
+</body>
+</html>

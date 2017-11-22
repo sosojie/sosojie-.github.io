@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>财务管理---折水单管理</title>
+<link href="css/css.css" rel="stylesheet" />
+</head>
+
+
+<body>
+<!--头部 -->
+<div class="gzt">
+	<div class="gzt_1">
+    	<ul>
+        	<li class="gzt_1_1"><img src="images/gzt.jpg"></li>
+            <li class="gzt_1_2"><span>您好，方贤浩</span><a href="#">修改密码</a><a href="#">退出登录</a></li>
+        </ul>
+    </div>
+</div>
+<!--头部 -->
+
+<div class="gzt_1">
+    	<!--1 -->
+    	<div class="gzt_3">
+        	<ul>
+            	<li><a href="gzt.html" >工作台</a></li>
+                <li><a href="bssgl.html">档案管理</a></li>
+                <li><a href="gdgl_zxts.html">工单管理</a></li>
+                <li><a href="xzgl_htgl.html">行政管理</a></li>
+                <li><a href="rsgl_zbsz.html">人事管理</a></li>
+                <li><a href="cwgl_zsd.html" class="gzt_3_1">财务管理</a></li>
+                <li><a href="ssdgl.html">订单管理</a></li>
+                <li><a href="bgyp_ypsq.html">办公用品</a></li>
+                <li><a href="tjbp_ysbp.html">统计报表</a></li>
+                <li><a href="xtgl_pmgl.html">系统管理</a></li>
+            </ul>
+        </div>
+        <!--1 -->
+      <div class="clear"></div>
+      <div class="hygl_left">
+      	   <h2 style="background:url(images/hygl2_5.jpg) 20px center no-repeat;">财务管理</h2>	
+           <ul>
+               <li><a href="#" class="hygl_left_1">折水单管理</a></li>
+               <li><a href="#">押金单管理</a></li>
+               <li><a href="#" >贵宾卡管理</a></li>
+               <li><a href="#" >结算管理</a></li>
+
+           </ul>
+      </div>
+      <div class="hygl_right">
+      	<div class="hygl_1">折水单管理</div>
+        <!--1 -->
+        <div class="hygl_2">
+        	<ul>
+            	<li><input type="text" class="psrwd_1_0" name="textfield" id="textfield" value="所属门店" onMouseOver="this.style.borderColor='#00a4b7'" onMouseOut="this.style.borderColor=''" onFocus="if (value =='所属门店'){value =''}" onBlur="if (value ==''){value='所属门店'}"/ />
+               </li>
+                  <li>
+                 <input type="text" class="psrwd_1_0" name="textfield" id="textfield" value="折水单编号" onMouseOver="this.style.borderColor='#00a4b7'" onMouseOut="this.style.borderColor=''" onFocus="if (value =='折水单编号'){value =''}" onBlur="if (value ==''){value='折水单编号'}"/ /></li>
+                
+                
+                 <li><input type="submit" class="hygl_2_4" name="button" id="button" value="查询"></li>
+            </ul>
+        </div>
+        <!--1 -->
+        <!--2 -->
+       <div class="psrwd_0" style="margin-top:0px;">
+        
+        	<ul>
+            	<li>
+                	<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'"><p style="margin-top:2px;"><img src="images/pmgl.jpg" ></p> 
+                	<p>新增折水单</p></a>
+                </li>
+               <!-- <li>
+                	<a href = "javascript:void(0)" onclick = "document.getElementById('light4_1').style.display='block';document.getElementById('fade').style.display='block'"><p style="margin-top:2px;"><img src="images/psrwd_0.jpg" ></p> 
+                	<p>打印单据</p></a>
+                </li> -->
+                
+
+            </ul>
+      </div>
+        <!--2 -->
+         
+        
+        <!--添加弹窗 -->
+         <div id="light" class="white_content">
+         	<!--列表 -->
+         	<div class="htyg_tc">
+            	<ul>
+                	<li class="htyg_tc_1">新增折水单</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/hygl_06.jpg"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            <div class=" htyg_tc_3">
+            	<ul>
+                	<li style="margin-top:20px;">
+                    <div class="htyg_tc_4">
+                    <p class="htyg_tc_40">用户卡号：</p>
+                    <p>5加仑桶装水</p>
+                    </div>
+                    </li>
+                    <div class="clear"></div>
+                    <li >
+                    <div class="htyg_tc_4">
+                    <p class="htyg_tc_40"><em style="color:#d22222;margin-right:5px;">*</em>折水门店：</p>
+                    <p><input type="text" class="hygl_150" name="textfield" id="textfield" value="输入门店名称" onMouseOver="this.style.borderColor='#00a4b7'" onMouseOut="this.style.borderColor=''" onFocus="if (value =='输入门店名称'){value =''}" onBlur="if (value ==''){value='输入门店名称'}"/ /></p>
+                    </div>
+                    </li>
+                    <div class="clear"></div> 
+                    
+                     <li >
+                    <div class="htyg_tc_4">
+                    <p class="htyg_tc_40"><em style="color:#d22222; margin-right:5px;">*</em>折水数量：</p>
+                    <p><input type="text" class="hygl_150" name="textfield" id="textfield" value="请输入" onMouseOver="this.style.borderColor='#00a4b7'" onMouseOut="this.style.borderColor=''" onFocus="if (value =='请输入'){value =''}" onBlur="if (value ==''){value='请输入'}"/ /></p>  
+                    </div>
+                    </li>
+                    <div class="clear"></div>
+                    <li >
+                    <div class="htyg_tc_4">
+                    <p class="htyg_tc_40"><em style="color:#d22222;margin-right:5px;">*</em>折水方式：</p>
+                    <p style="margin-top:2px;"><input type="checkbox" name="checkbox" id="checkbox" /></p>
+                    <p style="margin-left:5px;">提供发票</p>
+                    <p style="margin-left:20px; margin-top:2px; margin-right:5px;"><input type="checkbox" name="checkbox" id="checkbox" /></p>
+                    <p>自提</p>
+                    </div>
+                    </li>
+                    <div class="clear"></div>
+                 
+                  
+                    
+                      <li style="margin-top:10px;">
+                        <div class="htyg_tc_4">
+                          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;备注：</p>
+                          <p>
+                          <textarea name="Content" rows="6" id="Content"  class="zsd_7_3"onfocus="if(this.value=='备忘') {this.value='';}this.style.color='#999';" onBlur="if(this.value=='') {this.value='备忘';this.style.color='#999';}">备忘</textarea></p> 
+                      </div>
+                      </li>
+                    
+                    <li>
+                    	<p class="htyg_tc_6" style="margin-left:180px;"><a href="#">保存</a></p> 
+                        
+                        <p class="htyg_tc_7"><a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">取消</a></p>
+                    </li>
+                </ul>
+                
+                
+            </div>
+            
+         
+         </div> 
+        <div id="fade" class="black_overlay"></div>  
+        <!--添加弹窗 -->
+        
+        
+         <!--添加弹窗2 -->
+        <div id="light_2" class="cwjl_js" style="width:700px;">
+         	<!--列表 -->
+         	<div class="htyg_tc">
+            	<ul>
+                	<li class="htyg_tc_1">详情</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light_2').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/hygl_06.jpg"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            <div class="js_2" style="width:620px;">
+            	<!--表格 -->
+            	<div class="zsd_1">
+                	<ul>
+                    	<li>折水单号：3-201412145897</li>
+                        <li>状态：<em style="color:#ff7800; font-weight:600;">未使用</em></li>
+                        <li>折水门店：区庄店</li>
+                        <li>折水方式：折水，不提供发票，自提</li>
+                         <li>折水数量：5加仑桶装水 100桶</li>
+                        <li>创建时间：2015-02-12</li>
+                        <li>来源：结算账单7-20150528001</li>
+                    </ul>
+                </div>
+                <!--表格 -->
+            	<div class="js_2_5" style="margin-top:10px; margin-bottom:20px;">
+                	<div class="js_2_6" style="left:220px; ">
+                    	<p class="htyg_tc_6" style="margin-right:10px;"> <a href="#" style="margin-top:0px; font-size:12px; font-weight:normal;">打印</a></p>
+                    </div>
+                </div>
+
+            </div>
+         
+         </div> 
+        <div id="fade" class="black_overlay"></div> 
+        <!--添加弹窗2 -->
+        
+        <!--3 -->
+        <div class="hygl_4">
+        	<ul>
+            	<li style="background:#f5f5f5;">
+                    <p class="zxts">序号</p>
+                    <p class="zsd_150">折水单号</p>
+                    <p class="zxts_90">代送数量</p>
+                    <p class="zxts_90">折水数量</p>
+                    <p class="zxts_90">折现金额</p>
+                    <p class="zxts_116">折水门店</p>
+                    <p class="zxts_116">开票时间</p>
+                    <p class="zxts_116">使用时间</p>
+                    <p class="w117">   
+                   <select class="ssdgl_80" name="">
+            	  <option >使用状态</option>
+                  <option>未使用</option>
+                  <option>已使用</option>
+            	  </select></p>
+                    <p class="w68" style="border-right:none;">操作</p>
+                   
+                </li>
+                <li >
+                    <p class="zxts">1</p>
+                    <p class="zsd_150"><a href = "javascript:void(0)" onclick = "document.getElementById('light_2').style.display='block';document.getElementById('fade').style.display='block'">3-20150415-0003</a></p>
+                    <p class="zxts_90">158</p>
+                    <p class="zxts_90">500</p>
+                    <p class="zxts_90">&nbsp;</p>
+                    <p class="zxts_116">东圃供水点</p>
+                    <p class="zxts_116">2015-4-22 14:35</p>
+                    <p class="zxts_116">2015-4-23 15:35</p>
+                    <p class="w117" style=" color:#ff7800; font-weight:600;">   
+                    未使用</p>
+                    <p class="w68" style="border-right:none;"><a href="#">打印单据</a></p>
+                   
+                </li>
+
+            </ul>
+           
+        </div>
+         <div class="hygl_5">
+            	<ul>
+                	<li><a href="#"><img src="images/hygl_02.jpg" ></a></li>
+                    <li><a href="#"><img src="images/hygl_03.jpg" ></a></li>
+                    <li style="margin-right:0px;">
+                    	<div class="hygl_6">
+                        	<a href="#" class="hygl_6_1">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">...</a>
+                            <a href="#">10</a>
+                        </div>	
+                    </li>
+                    <li><a href="#"><img src="images/hygl_04.jpg"></a></li>
+                    <li><a href="#"><img src="images/hygl_05.jpg"></a></li>
+                </ul>
+            </div>
+        <!--3 -->
+      </div>
+</div>
+</body>
+</html>

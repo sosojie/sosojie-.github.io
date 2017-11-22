@@ -1,0 +1,425 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>订单管理</title>
+<link href="css/common.css" rel="stylesheet" />
+<link href="css/index.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+<!--新增 弹窗 -->
+         <div id="light3" class="ycgl_tc yctc_700">
+            <!--列表 -->
+            <div class="htyg_tc">
+                <ul>
+                    <li class="htyg_tc_1">新增订单</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light3').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/htyg_tc.png"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            <div class="yctc_640 ycgl_tc_1">
+                <ul>
+                     <li>
+                         <p class="right_yhgl"><em style="color: #ff0000;">*</em>购买企业 </p>
+                         <p><input type="text" name="textfield" class="input_510" id="textfield" /></p>
+                     </li>
+                     <div class="clear"></div>
+                       <li>
+                         <p class="right_yhgl"><em style="color: #ff0000;">*</em>赋码业务 </p>
+                         <p>
+                             <span style="margin-top: 10px;"><input type="radio" name="radio" id="radio" value="radio" /></span>
+                             <span style="margin-left: 5px;">跨境电商  </span>
+                         </p>
+                          <p>
+                             <span style="margin-top: 10px;"><input type="radio" name="radio" id="radio" value="radio" /></span>
+                             <span style="margin-left: 5px;"> 一般进口</span>
+                         </p>
+                          <p>
+                             <span style="margin-top: 10px;"><input type="radio" name="radio" id="radio" value="radio" /></span>
+                             <span style="margin-left: 5px;">贸易出口</span>
+                         </p>
+                         <p>
+                             <span style="margin-top: 10px;"><input type="radio" name="radio" id="radio" value="radio" /></span>
+                             <span style="margin-left: 5px;">工厂出品</span>
+                         </p>
+                     </li>
+                     <div class="clear"></div>
+                      <li>
+                         <p class="right_yhgl"><em style="color: #ff0000;">*</em>收货方式 </p>
+                         <p>
+                             <span style="margin-top: 10px;"><input type="radio" name="radio" id="radio" value="radio" /></span>
+                             <span style="margin-left: 5px;"> 快递  </span>
+                         </p>
+                          <p>
+                             <span style="margin-top: 10px;"><input type="radio" name="radio" id="radio" value="radio" /></span>
+                             <span style="margin-left: 5px;"> 亲送</span>
+                         </p>
+                          <p>
+                             <span style="margin-top: 10px;"><input type="radio" name="radio" id="radio" value="radio" /></span>
+                             <span style="margin-left: 5px;">自提</span>
+                         </p>
+                         
+                     </li>
+                     <div class="clear"></div>
+                     <li>
+                         <p class="right_yhgl">收货人 </p>
+                         <p><input type="text" name="textfield" class="input_246" placeholder="姓名" id="textfield" /></p>
+                         <p><input type="text" name="textfield" class="input_246" placeholder="联系方式" id="textfield" /></p>
+                     </li>
+                     <div class="clear"></div>
+                      <li>
+                         <p class="right_yhgl">收货地址 </p>
+                         <p><input type="text" name="textfield" class="input_510" id="textfield" /></p>
+                     </li>
+                     <div class="clear"></div>
+                     <li>
+                         <p class="right_yhgl">备注 </p>
+                         <p><textarea name="textarea" id="textarea" class="textarea_525" cols="45" rows="5"></textarea></p>
+                     </li>
+                     <div class="clear"></div>
+                     <li>
+                         <p style="margin-top:10px; margin-left:95px; margin-right:0px;"><input type="checkbox" name="checkbox" id="checkbox"> </p>
+                         <p>不计入统计（系统默认不勾选，即默认计入统计）</p>
+                     </li>
+                     <div class="clear"></div>
+                </ul>
+            </div>
+           <div class="ddgl"></div>
+           <div class="yctc_640 ycgl_tc_1">
+               <ul>
+                   <li >
+                       <p class="right_yhgl">购买标签 </p>
+                       <p><input type="text" name="textfield" class="input_445" id="textfield" /></p>
+                       <p class="ymfw-right-yhgl" style="margin-right: 0px;"><a href="#">添加</a></p>
+                   </li>
+                   <div class="clear"></div>
+                   <li style="border-top: 1px solid #ddd; border-left: 1px solid #ddd;">
+                       <table>
+                           <tr>
+                               <th>卷标编号</th>
+                               <th>类型</th>
+                               <th>规格</th>
+                               <th>数量</th>
+                               <th>标签码值</th>
+                               <th>操作</th>
+                           </tr>
+                           <tr>
+                               <td>1</td>
+                               <td>10</td>
+                               <td>数量</td>
+                               <td>标签码值</td>
+                               <td>规格</td>
+                               <td><span class="cff3430">删除</span></td>
+                           </tr>
+                       </table>
+                   </li> 
+                   <div class="clear"></div>
+                   <li><p>合计：2000卷，共10000个标签</p><p style="float:right;">翻页</p></li>
+                   <div class="clear"></div>
+                    <li style="margin-top: 30px; margin-left: 280px;">
+                     <p class="ybjk_pcgl_2" style="margin-right:0px;"><a href="#">提交</a></p>
+                     </li>
+               </ul>
+           </div>
+         </div> 
+        <div id="fade" class="black_overlay"></div>         
+        
+<!--新增 弹窗 -->
+
+<!--查看 弹窗 -->
+         <div id="light2" class="ycgl_tc yctc_700">
+            <!--列表 -->
+            <div class="htyg_tc">
+                <ul>
+                    <li class="htyg_tc_1">订单详情</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/htyg_tc.png"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            <div class="yctc_640 ycgl_tc_1">
+                <ul>
+                     <li>
+                         <p class="right_yhgl"><em style="color: #ff0000;">*</em>购买企业 </p>
+                         <p><input type="text" name="textfield" class="input_510" id="textfield" /></p>
+                     </li>
+                     <div class="clear"></div>
+                       <li>
+                         <p class="right_yhgl"><em style="color: #ff0000;">*</em>赋码业务 </p>
+                         <p>
+                             <span style="margin-top: 10px;"><input type="radio" name="radio" id="radio" value="radio" /></span>
+                             <span style="margin-left: 5px;">跨境电商  </span>
+                         </p>
+                          <p>
+                             <span style="margin-top: 10px;"><input type="radio" name="radio" id="radio" value="radio" /></span>
+                             <span style="margin-left: 5px;"> 一般进口</span>
+                         </p>
+                          <p>
+                             <span style="margin-top: 10px;"><input type="radio" name="radio" id="radio" value="radio" /></span>
+                             <span style="margin-left: 5px;">贸易出口</span>
+                         </p>
+                         <p>
+                             <span style="margin-top: 10px;"><input type="radio" name="radio" id="radio" value="radio" /></span>
+                             <span style="margin-left: 5px;">工厂出品</span>
+                         </p>
+                     </li>
+                     <div class="clear"></div>
+                      <li>
+                         <p class="right_yhgl"><em style="color: #ff0000;">*</em>收货方式 </p>
+                         <p>
+                             <span style="margin-top: 10px;"><input type="radio" name="radio" id="radio" value="radio" /></span>
+                             <span style="margin-left: 5px;"> 快递  </span>
+                         </p>
+                          <p>
+                             <span style="margin-top: 10px;"><input type="radio" name="radio" id="radio" value="radio" /></span>
+                             <span style="margin-left: 5px;"> 亲送</span>
+                         </p>
+                          <p>
+                             <span style="margin-top: 10px;"><input type="radio" name="radio" id="radio" value="radio" /></span>
+                             <span style="margin-left: 5px;">自提</span>
+                         </p>
+                         
+                     </li>
+                     <div class="clear"></div>
+                     <li>
+                         <p class="right_yhgl">收货人 </p>
+                         <p><input type="text" name="textfield" class="input_246" placeholder="姓名" id="textfield" /></p>
+                         <p><input type="text" name="textfield" class="input_246" placeholder="联系方式" id="textfield" /></p>
+                     </li> 
+                     <div class="clear"></div>
+                      <li>
+                         <p class="right_yhgl">收货地址 </p>
+                         <p><input type="text" name="textfield" class="input_510" id="textfield" /></p>
+                     </li>
+                     <div class="clear"></div>
+                     <li>
+                         <p class="right_yhgl">备注 </p>
+                         <p><textarea name="textarea" id="textarea" class="textarea_525" cols="45" rows="5"></textarea></p>
+                     </li>
+                     <div class="clear"></div>
+                      <li>
+                         <p style="margin-top:10px; margin-left:95px; margin-right:0px;"><input type="checkbox" name="checkbox" id="checkbox"> </p>
+                         <p>不计入统计（系统默认不勾选，即默认计入统计）</p>
+                     </li>
+                     <div class="clear"></div>
+                </ul>
+            </div>
+           <div class="ddgl"></div>
+           <div class="yctc_640 ycgl_tc_1">
+               <ul>
+                   <li >
+                       <p class="right_yhgl">购买标签 </p>
+                       <p><input type="text" name="textfield" class="input_445" id="textfield" /></p>
+                       <p class="ymfw-right-yhgl" style="margin-right: 0px;"><a href="#">添加</a></p>
+                   </li>
+                   <div class="clear"></div>
+                   <li style="border-top: 1px solid #ddd; border-left: 1px solid #ddd;">
+                       <table>
+                           <tr>
+                               <th>卷标编号</th>
+                               <th>类型</th>
+                               <th>规格</th>
+                               <th>数量</th>
+                               <th>标签码值</th>
+                               <th>操作</th>
+                           </tr>
+                           <tr>
+                               <td>1</td>
+                               <td>10</td>
+                               <td>数量</td>
+                               <td>标签码值</td>
+                               <td>规格</td>
+                               <td><span class="cff3430">删除</span></td>
+                           </tr>
+                       </table>
+                   </li> 
+                   <div class="clear"></div>
+                   <li><p>合计：2000卷，共10000个标签</p><p style="float:right;">翻页</p></li>
+                   <div class="clear"></div>
+                    <li style="margin-top: 30px; margin-left: 280px;">
+                     <p class="ybjk_pcgl_2" style="margin-right:0px;"><a href="#">提交</a></p>
+                     </li>
+               </ul>
+           </div>
+         </div> 
+        <div id="fade" class="black_overlay"></div>         
+        
+<!--查看 弹窗 -->
+
+<!--头部-->
+<div class="top">
+	<div class="top_1">
+    	<div class="top_2"><a href="index.html"><img src="images/logo.png"/></a></div>
+    	<div class="sunnva">heyang 您好! <a href="#">修改密码</a> <a href="#">退出登录</a></div>
+    </div>
+</div>
+<!--头部-->
+
+<!--主框架-->
+<div class="ymfw-container">
+
+	<!--用码服务左边-->
+	<div class="ymfw-left">
+        <!--左边1--> 
+      <div class="ymfw-left_1">
+          <h2><p><img src="images/ymfw-left_1.png"/></p> 
+          <p class="ymfw-left_2">数据管理</p></h2>
+          <ul>
+            <li><a href="wygl.html" >企业管理</a></li>
+            <li><a href="jsgl.html">角色管理</a></li>
+            <li><a href="yhgl.html">用户管理</a></li>
+          </ul>
+        </div>
+        <!--左边1--> 
+         <!--左边1--> 
+        <div class="ymfw-left_1">
+            <h2><p><img src="images/ymfw-left_1.png"/></p> 
+            <p class="ymfw-left_2">码管理</p></h2>
+            <ul>
+              <li><a href="jmgl.html">进码管理</a></li>
+              <li><a href="ymgl.html">印码管理</a></li>
+              <li><a href="ddgl.html" class="ymfw-left_5">订单管理</a></li>
+            </ul>
+            
+        </div>
+         <!--左边1--> 
+      <!--左边1--> 
+      <div class="ymfw-left_1">
+          <h2><p><img src="images/ymfw-left_1.png"/></p> 
+            <p class="ymfw-left_2">内容管理</p></h2>
+            <ul>
+              <li><a href="xtxx.html">溯源资讯</a></li>
+              <li><a href="xtgg.html">系统公告</a></li>
+            </ul>
+            
+        </div>
+         <!--左边1--> 
+         <!--左边1--> 
+      <div class="ymfw-left_1" style="padding-bottom:0px; border-bottom:none;">
+          <h2><p><img src="images/ymfw-left_1.png"/></p> 
+            <p class="ymfw-left_2">业务监管</p></h2>
+            <ul>
+              <li><a href="smtj.html">扫码统计</a></li>
+              <li><a href="ymtj.html">用码统计</a></li>
+            </ul>
+            
+        </div>
+         <!--左边1--> 
+
+        
+  </div>	
+    <!--用码服务左边-->  
+    
+    <!--用码服务右边-->
+	<div class="ymfw-right">
+		<div class="ymfw-right_1">订单管理</div>
+
+        <div class=" ymfw-right-zgj">
+        	<div class="yyzx">
+                <p class="yyzx_ny">
+                    <a href ="javascript:void(0)" onclick = "document.getElementById('light3').style.display='block';document.getElementById('fade').style.display='block'">新增订单
+                    </a> 
+                </p>
+                
+            </div>
+           
+            <div class="ymfw-right-zgj_4">
+            	<ul>
+                	<li style="margin-right: 10px;">
+                    <p>订单状态</p> 
+                    <p>
+                       <select name="select" class="input_179" id="select"><option>全部</option></select>
+                    </p> 
+                    </li>
+                    <li style="margin-right: 10px;">
+                    <p>购买企业</p> 
+                    <p>
+                     <input type="text" name="textfield" class="input_179" id="textfield" /></span>
+                    </p> 
+                    </li>
+                    <li style="margin-right: 10px;">
+                    <p>发货方式</p> 
+                    <p>
+                     <input type="text" name="textfield" class="input_179" id="textfield" /></span>
+                    </p> 
+                    </li>
+                    <li style="margin-right: 0px;">
+                    <p>快递单号</p> 
+                    <p>
+                     <input type="text" name="textfield" class="input_179" id="textfield" /></span>
+                    </p> 
+                    </li>
+                    <li style="margin-right: 10px;">
+                    <p>创建时间</p> 
+                    <p>
+                        <span><input type="text" name="textfield" class="input_179" id="textfield" /></span>
+                        <span>到</span>
+                        <span><input type="text" name="textfield" class="input_179" id="textfield" /></span>
+                    </p> 
+                    </li>
+                    <li style="margin-right: 10px;">
+                    <p>订单编号</p> 
+                    <p>
+                     <input type="text" name="textfield" class="input_130" id="textfield" /></span>
+                    </p> 
+                    </li>
+                    <li style="margin-right: 10px;">
+                    <p>卷标编号</p> 
+                    <p>
+                     <input type="text" name="textfield" class="input_130" id="textfield" /></span>
+                    </p> 
+                    </li>
+                    
+                    <li class="ymfw-right-zgj_4r"><p><a href="#">查询</a></p> </li>
+                </ul>
+           </div>
+           <div class="yyzx_lr" style="border-top: 1px solid #ddd; border-left: 1px solid #ddd;">
+                <table>
+                    <tr>
+                        <th width="160">订单编号</th>
+                        <th width="90">订单数量</th>
+                        <th width="240">购买企业</th>
+                        <th width="90">发货方式</th>
+                        <th width="150">创建时间</th>
+                        <th width="70">统计</th>
+                        <th width="70">状态</th>
+                        <th width="68">操作</th>
+                    </tr>
+                    <tr>
+                        <td>DD-201601010019</td>
+                        <td>1000</td>
+                        <td><p class="ymgl_240">广东卓志供应链服务集团有限公司</p></td>
+                        <td >自提</td>
+                        <td style="font-size: 12px;">2016-01-01 01：01：01</td>
+                        <td>计入统计</td>
+                        <td>已上报</td>
+                        <td><span class="ymfw-right-yhgl">
+                        <a href ="javascript:void(0)" onclick = "document.getElementById('light2').style.display='block';document.getElementById('fade').style.display='block'">查看</a></span> </td>
+                    </tr>
+                </table>
+             </div>
+              <div class="yyzx_1" style="margin-right: 20px;">
+
+                        <p class="yyzx_2"><a href="#"></a></p>
+                        <p style="margin-left:5px; margin-right:5px;">1/10</p>
+                        <p class="yyzx_3"><a href="#"></a></p>
+                        <p style="margin-left:12px; margin-right:8px;"><input type="text" name="textfield" class="input_58" id="textfield" /></p>
+                        <p class="ymfw-right-zgj_7"><a href="#">跳转</a></p>
+               </div>
+          </div>
+            <div class="clear"></div>
+        </div>
+    </div>	
+    <!--用码服务右边-->  
+    
+</div>
+<!--主框架-->
+
+</body>
+</html>

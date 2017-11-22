@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>人事管理-指标设置</title>
+<link href="css/css.css" rel="stylesheet" />
+<link href="css/oa.css" rel="stylesheet" />
+</head>
+
+
+<body>
+<!--头部 -->
+<div class="gzt">
+	<div class="gzt_1">
+    	<ul>
+        	<li class="gzt_1_1"><img src="images/gzt.jpg"></li>
+            <li class="gzt_1_2"><span>您好，方贤浩</span><a href="#">修改密码</a><a href="#">退出登录</a></li>
+        </ul>
+    </div>
+</div>
+<!--头部 -->
+
+<div class="gzt_1">
+    	<!--1 -->
+    	<div class="gzt_3">
+        	<ul>
+            	<li><a href="gzt.html" >工作台</a></li>
+                <li><a href="bssgl.html">档案管理</a></li>
+                <li><a href="gdgl_zxts.html">工单管理</a></li>
+                <li><a href="xzgl_htgl.html">行政管理</a></li>
+                <li><a href="rsgl_zbsz.html" class="gzt_3_1">人事管理</a></li>
+                <li><a href="cwgl_zsd.html">财务管理</a></li>
+                <li><a href="ssdgl.html">订单管理</a></li>
+                <li><a href="bgyp_ypsq.html">办公用品</a></li>
+                <li><a href="tjbp_ysbp.html">统计报表</a></li>
+                <li><a href="xtgl_pmgl.html">系统管理</a></li>
+            </ul>
+        </div>
+        <!--1 -->
+      <div class="clear"></div>
+      <div class="hygl_left">
+      	   <h2 style="background:url(images/hygl2_7.jpg) no-repeat 20px center;">人事管理</h2>	
+           <ul>
+               <li><a href="#" >指标设置</a></li>
+               <li><a href="#" class="hygl_left_1">绩效管理</a></li>
+               <li><a href="#" >类目设置</a></li>
+               <li><a href="#" >工资设置</a></li>
+               <li><a href="#" >工资查询</a></li>
+           </ul>
+      </div>
+      <div class="hygl_right">
+      	<div class="hygl_1">指标设置</div>
+        
+         <!--1 -->
+        <div class="psrwd">
+        	<ul>
+            	   <li >
+                  <p>考核岗位：</p>
+                  <p><select class="oainput_130" name=""> <option>请选择</option></select></p>
+                 </li>
+                  <li style="margin-left:20px;">
+                  <p>考核指标：</p>
+                  <p><input class="oainput_284" type="text"  placeholder="指标名称"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p>
+                 </li>
+               <li><input type="submit" class="psrwd_1_2" name="button" id="button" value="查询"></li>
+               <li><input type="submit" class="psrwd_1_2" name="button" id="button" value="重置"></li>
+            </ul>
+        </div>
+         <!--1 -->
+        <div class="psrwd_0">
+        
+        	<ul>
+            	<li >
+                	<a href = "javascript:void(0)" onclick = "document.getElementById('light1').style.display='block';document.getElementById('fade').style.display='block'"><p style="margin-top:2px;"><img src="images/pmgl.jpg" ></p> 
+                	<p>新增指标</p></a>
+                </li>
+               
+
+            </ul>
+      </div>
+        
+         <!--1-1 -->
+         
+         <!--添加弹窗 新增指标 -->
+		 <div id="light1" class="ycgl_tc yctc_498">
+         	<!--列表 -->
+         	<div class="htyg_tc">
+            	<ul>
+                	<li class="htyg_tc_1">新增指标</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light1').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/hygl_06.jpg"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            
+            <div class="ycgl_tc_1 yctc_458">
+            	<ul style="margin-left:10px;">
+                	
+                     <li style="margin-top:0px;">
+                            	
+                                <p style="line-height:22px;"><em class="zjgl_3">*</em>考核岗位：</p>
+                                <p> <select class="hygl_150" name=""> <option>请选择</option>  </select></p>
+                                
+                            </li>
+                    <div class="clear"></div>
+                    
+                    <li>
+                            	<p style="line-height:22px;"><em class="zjgl_3">*</em>指标名称：</p>
+                                <p><input class="hygl_150" type="text"  placeholder="请输入"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p>
+                                <p style="line-height:22px; margin-left:30px;"><em class="zjgl_3">*</em>指标权重：</p>
+                                <p><input class="oainput_65" type="text"  placeholder="请输入"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p>
+                                <p style="line-height:22px; margin-left:5px;">%</p>
+                            </li>
+                  <div class="clear"></div>
+                 
+                     <li >
+                            	<p style="line-height:22px;" class="zjgl_2">指标说明：</p>
+                                <p>
+                                <textarea name="Content" rows="6" id="Content"  class="oainput_374" placeholder="请输入"  onMouseOver="this.style.borderColor='#00a4b7'"  
+                                onMouseOut="this.style.borderColor=''"></textarea>
+                                </p>
+                            </li>
+                    <div class="clear"></div>
+                    
+                  <li>
+                    <p class="htyg_tc_6" style="margin-left:148px; margin-top:30px;"><a href="#">保存</a></p> 
+                        
+                   <p class="htyg_tc_7" style=" margin-top:30px;"><a href = "javascript:void(0)" onclick = "document.getElementById('light1').style.display='none';document.getElementById('fade').style.display='none'">取消</a></p></li>
+                </ul>
+                 <div class="pmgl_tcym_1">
+                 	<em style="margin-left:5px; color:#d22222;">填写错误报错信息显示在这里，在点击保存后给予相应的提示！</em>
+                </div>
+            </div>
+            
+         
+         </div> 
+        <div id="fade" class="black_overlay"></div>         
+        
+        <!--添加弹窗新增指标 -->
+        
+        
+          <!--添加弹窗 修改指标 -->
+		<div id="light4" class="ycgl_tc yctc_498">
+         	<!--列表 -->
+         	<div class="htyg_tc">
+            	<ul>
+                	<li class="htyg_tc_1">修改</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light4').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/hygl_06.jpg"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            
+            <div class="ycgl_tc_1 yctc_458">
+            	<ul style="margin-left:10px;">
+                	
+                     <li style="margin-top:0px;">
+                            	
+                                <p style="line-height:22px;"><em class="zjgl_3">*</em>考核岗位：</p>
+                                <p> <select class="hygl_150" name=""> <option>文员</option>  </select></p>
+                                
+                            </li>
+                    <div class="clear"></div>
+                    
+                    <li>
+                            	<p style="line-height:22px;"><em class="zjgl_3">*</em>指标名称：</p>
+                                <p><input class="hygl_150" type="text"  value="考勤得分"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p>
+                                <p style="line-height:22px; margin-left:30px;"><em class="zjgl_3">*</em>指标权重：</p>
+                                <p><input class="oainput_65" type="text"  value="5"  onMouseOver="this.style.borderColor='#00a4b7'"  onMouseOut="this.style.borderColor=''" ></p>
+                                <p style="line-height:22px; margin-left:5px;">%</p>
+                            </li>
+                  <div class="clear"></div>
+                 
+                     <li >
+                            	<p style="line-height:22px;" class="zjgl_2">指标说明：</p>
+                                <p>
+                                <textarea name="Content" rows="6" id="Content"  class="oainput_374"  onMouseOver="this.style.borderColor='#00a4b7'"  
+                                onMouseOut="this.style.borderColor=''">不可超过？个字符</textarea>
+                                </p>
+                            </li>
+                    <div class="clear"></div>
+                    
+                  <li>
+                    <p class="htyg_tc_6" style="margin-left:148px; margin-top:30px;"><a href="#">保存</a></p> 
+                        
+                   <p class="htyg_tc_7" style=" margin-top:30px;"><a href = "javascript:void(0)" onclick = "document.getElementById('light4').style.display='none';document.getElementById('fade').style.display='none'">取消</a></p></li>
+                </ul>
+                 <div class="pmgl_tcym_1">
+                 	<em style="margin-left:5px; color:#d22222;">填写错误报错信息显示在这里，在点击保存后给予相应的提示！</em>
+                </div>
+            </div>
+            
+         
+         </div> 
+        <div id="fade" class="black_overlay"></div>               
+        <!--添加弹窗3 -->
+  
+       
+        <!--添加弹窗3-->
+         <div id="light3" class="ycgl_tc yctc_298">
+         	<!--列表 -->
+         	<div class="htyg_tc">
+            	<ul>
+                	<li class="htyg_tc_1">删除</li>
+                    <li class="htyg_tc_2">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light4').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/hygl_06.jpg"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--列表 -->
+            <div class="ycgl_tc_1 yctc_258">
+            	<ul>
+                	<li class="ssdgl_tcps_2">删除该指标信息？</li>
+                    
+                    <li> 
+                    <p class="htyg_tc_6" style="margin-left:58px;"><a href="#">是</a></p> 
+                        
+                   <p class="htyg_tc_7"><a href = "javascript:void(0)" onclick = "document.getElementById('light3').style.display='none';document.getElementById('fade').style.display='none'">否</a></p></li>
+                </ul>
+            </div>
+            
+         
+         </div> 
+        <div id="fade" class="black_overlay"></div>  
+        <!--添加弹窗3-->
+
+
+        <!--切换效果-->
+         <div class="ckgl_kccx">
+         	<table>
+            	<tr>
+                	<th class="zjgl_120">指标名称</th>
+                    
+                    <th class="zjgl_120">考核岗位</th>
+                    <th class="htgl_90">指标权重</th>
+                    <th class="rsgl_566">指标说明</th>
+                    <th class="htgl_90">操作</th>
+                </tr>
+                
+                <tr>
+                	<td>
+                    	考勤得分
+                    </td>
+                
+                    <td>
+                    	文员
+                    </td>
+                      <td>
+                    	5%
+                    </td>
+                     <td class="rsgl_566_1">
+                    	考核员工出勤率
+                    </td>
+                    
+                    <td>
+                   <a href = "javascript:void(0)" onclick = "document.getElementById('light4').style.display='block';document.getElementById('fade').style.display='block'">修改</a> 
+                    <em style="margin-left:10px;">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light3').style.display='block';document.getElementById('fade').style.display='block'">删除</a></em>
+                     </td>                   
+                </tr>
+                
+                <tr>
+                	<td>
+                    	考勤得分
+                    </td>
+                
+                    <td>
+                    	文员
+                    </td>
+                      <td>
+                    	5%
+                    </td>
+                     <td class="rsgl_566_1">
+                    	考核员工出勤率
+                    </td>
+                    
+                    <td>
+                   <a href = "javascript:void(0)" onclick = "document.getElementById('light4').style.display='block';document.getElementById('fade').style.display='block'">修改</a> 
+                    <em style="margin-left:10px;">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light3').style.display='block';document.getElementById('fade').style.display='block'">删除</a></em>
+                     </td>                   
+                </tr>
+                
+                <tr>
+                	<td>
+                    	考勤得分
+                    </td>
+                
+                    <td>
+                    	文员
+                    </td>
+                      <td>
+                    	5%
+                    </td>
+                     <td class="rsgl_566_1">
+                    	考核员工出勤率
+                    </td>
+                    
+                    <td>
+                   <a href = "javascript:void(0)" onclick = "document.getElementById('light4').style.display='block';document.getElementById('fade').style.display='block'">修改</a> 
+                    <em style="margin-left:10px;">
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light3').style.display='block';document.getElementById('fade').style.display='block'">删除</a></em>
+                     </td>                   
+                </tr>
+                
+                 
+                
+                
+                 
+                 
+               
+            </table>
+              <div class="psrwd_6" style="margin-left:640px;">
+                            <span style="margin-right:10px;">1-10/1000</span>
+                        	<span><a href="#"><img src="images/hygl_02.jpg" ></a></span>
+                            <span><a href="#"><img src="images/hygl_03.jpg" ></a></span>
+                            <span style="margin-right:0px;">
+                            
+                            	<div class="psrwd_7">
+                                        <a href="#" class="hygl_6_1">1</a>
+                                        <a href="#">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#">4</a>
+                                        <a href="#">5</a>
+                                        <a href="#">6</a>
+                                        <a href="#">...</a>
+                                        <a href="#">10</a>
+                                    </div>	
+                            </span>
+                            <span><a href="#"><img src="images/hygl_04.jpg"></a></span>
+                            <span><a href="#"><img src="images/hygl_05.jpg"></a></span>
+                            <div class="clear"></div>
+                            
+                        </div>
+        	
+        </div>
+        
+          
+        <!--切换效果-->  
+        
+      </div>
+</div>
+</body>
+</html>
